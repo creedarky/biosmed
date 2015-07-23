@@ -1,0 +1,16 @@
+[11-Jan-2014 19:03:11] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/qvadmin/public_html/MD/enviar.php on line 56
+[11-Jan-2014 19:04:24] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/qvadmin/public_html/MD/enviar.php on line 56
+[11-Jan-2014 19:07:21] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/qvadmin/public_html/MD/enviar.php on line 56
+[11-Jan-2014 19:07:29] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/qvadmin/public_html/MD/enviar.php on line 56
+[11-Jan-2014 19:08:34] PHP Catchable fatal error:  Object of class PHPMailer could not be converted to string in /home/qvadmin/public_html/MD/enviar.php on line 51
+[12-Jan-2014 22:46:01] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 64
+[12-Jan-2014 22:46:35] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 66
+[12-Jan-2014 22:47:26] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 66
+[12-Jan-2014 22:47:39] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 66
+[12-Jan-2014 22:47:54] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 66
+[12-Jan-2014 22:47:55] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 66
+[12-Jan-2014 22:48:32] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 65
+[12-Jan-2014 22:50:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qvadmin/public_html/MD/enviar.php:25) in /home/qvadmin/public_html/MD/enviar.php on line 64
+[12-Jan-2014 22:51:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qvadmin/public_html/MD/enviar.php:25) in /home/qvadmin/public_html/MD/enviar.php on line 64
+[12-Jan-2014 22:52:00] PHP Parse error:  syntax error, unexpected ';' in /home/qvadmin/public_html/MD/enviar.php on line 27
+[12-Jan-2014 22:52:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qvadmin/public_html/MD/enviar.php:25) in /home/qvadmin/public_html/MD/enviar.php on line 27

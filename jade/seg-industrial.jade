@@ -1,0 +1,178 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Short Text Layout 2 Column
+    link(rel='icon', type='image/png', href='http://demo.squidix.com/construct/images/favicon.ico')
+    link(rel='apple-touch-icon', href='http://demo.squidix.com/construct/images/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='http://demo.squidix.com/construct/images/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='http://demo.squidix.com/construct/images/apple-touch-icon-114x114.png')
+    //if lt IE 9
+      script(src='scripts/ie9.js')
+        IE7_PNG_SUFFIX=".png";
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='stylesheets/responsive.css')
+    link(rel='stylesheet', href='stylesheets/prettyPhoto.css')
+    script(src='scripts/jquery.min.js')
+    script(src='scripts/jquery.prettyPhoto.js')
+    script(src='scripts/jquery.blackandwhite.min.js')
+    script(src='scripts/js_func.js')
+    script.
+      $(function () {
+        $(".gallery a[rel^='prettyPhoto']").prettyPhoto({theme: 'dark_rounded'});
+        $('.bwWrapper').BlackAndWhite({
+          hoverEffect: true,
+          webworkerPath: false,
+          responsive: true,
+          invertHoverEffect: false
+        });
+      })
+  body
+    .wraper
+      header.header
+        a.logo(href='index.html')
+          img(src='files/2012/08/logo.png')
+        nav#mobilenav
+          .menu-top-container
+            select#menu-top.menu.dropdown-menu
+              option.blank(value='') — Menú —
+              option.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-24.menu-item-depth-0(value='') Home
+              option.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-23.menu-item-depth-0(value='quienes-somos-.html') Quiénes Somos
+              option.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-66.menu-item-depth-0(value='#') Área Personas
+              option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-182.menu-item-depth-1(value='portfolio/portfolio-filtered/index.html') GPTW
+              option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-50.menu-item-depth-1(value='short-codes/boxes/index.html') Certificaciones
+              option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-49.menu-item-depth-1(value='short-codes/tabs/index.html') Contacto
+        nav#defaultnav
+          .menu-top-container
+            ul#menu-top-1.menu
+              li#menu-item-24.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-24
+                a(href='index.html') Home
+              li#menu-item-23.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-23
+                a(href='quienes-somos-.html') Quiénes Somos
+              li#menu-item-66.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-66
+                a(href='area-personas.html') Área Personas
+              li#menu-item-26.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-26
+                a(href='gptw.html') GPTW
+              li#menu-item-1049.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1049
+                a(href='certificaciones.html') Certificaciones
+              li#menu-item-28.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-28
+                a(href='contacto.html') Contacto
+    .content_block
+      // top_title
+      .top_title
+        .fallback(style='display: block; ')
+          img(style='width: 100%;', src='images/banners/BannersMDTyE.jpg', alt='')
+      // /top_title
+      .wraper
+        h3(style='font-size:12px; padding-top:5px; padding-bottom:12px; margin: 0 0 24px 0;\
+                     border-bottom: 1px solid #e7e6e6; font-weight:normal;')
+          a(href='javascript:history.back(1)') MD Transmisiones y Ejes
+          |  > Transmisiones
+        h4(style='font-size:20px; margin-bottom:20px;')
+          a(style='color:#333', name='ancla') Transmisiones
+        // Short Text Layout 2 Column
+        .short_text_layout.short_text_col_2.gallery
+          ul
+            li
+              a(href='detalle-transmisiones-mineria_subt.html#ancla')
+                .bwWrapper
+                  img(src='images/imgproductomd_cl/ImgSEGIND.jpg', width='442', height='264', alt='')
+                  p
+                    strong Minería Subterranea
+            li
+              a(href='detalle-transmisiones-construccion.html#ancla')
+                .bwWrapper
+                  img(src='images/imgproductomd_cl/ImgSEGIND2.jpg', width='442', height='264', alt='')
+                  p
+                    strong Construcción
+            li
+              a(href='detalle-transmisiones-puerto.html#ancla')
+                .bwWrapper
+                  img(src='images/imgproductomd_cl/ImgSEGIND.jpg', width='442', height='264', alt='')
+                  p
+                    strong Puerto
+            li
+              a(href='detalle-transmisiones-agricultura.html#ancla')
+                .bwWrapper
+                  img(src='images/imgproductomd_cl/ImgSEGIND2.jpg', width='442', height='264', alt='')
+                  p
+                    strong Agricultura
+        // /Short Text Layout 2 Column
+    // footer
+    .footer
+      footer
+        // bottom about
+        .bottom_about
+          p
+            img(src='images/logo.png', alt='')
+          p
+            | Servir con excelencia y contribuir
+            br
+            | para un mundo mejor.
+          ul.social
+            li
+              a.facebook(href='team.html#') Facebook
+            li
+              a.twitter(href='team.html#') Twitter
+            li
+              a.linkedin(href='team.html#') LinkedIn
+        // /bottom about
+        // recent tweets
+        .recent_tweets
+          h3
+            span Tweets Recientes
+          ul
+            li
+              a(href='index.html#') @laurakalbag
+              |  I will be very soon. Ase result reco endation
+              a(href='index.html#') 31 minutes ago
+            li
+              a(href='index.html#') @laurakalbag
+              |  you got chocolates!? That's i I'm signing up.
+              a(href='index.html#') 37 minutes ago
+        // /recent tweets
+        // recent posts
+        .recent_posts
+          h3
+            span Especialidades
+          ul
+            li
+              a(href='index.html#') MD Aire Comprimido
+            li
+              a(href='index.html#') MD Energía
+            li
+              a(href='producto_1.html')
+                | MD Transmisiones y Ejes
+            li
+              a(href='index.html#') MD Fluidos
+            li
+              a(href='index.html#') MD Maestranza
+        // /recent posts
+        // subscribe block
+        .subscribe_block
+          h3
+            span Contáctanos
+          form#contacto(name='contacto', action='enviarok.php', method='POST')
+            p
+              input#nombre(name='nombre', type='text', placeholder='Nombre', size='42')
+            p
+              input#mail(name='mail', type='text', placeholder='Mail', size='43')
+            p
+              input#mensaje(name='mensaje', type='text', placeholder='Mensaje')
+            p
+              input#enviarButton(type='button', value='Enviar', onclick='enviar();', style='cursor: pointer !important; ')
+        // /subscribe block
+    // copyright
+    .copyright
+      .wraper
+        p
+          span Copyright 2012 Construct
+          | All Rights Reserved
+          a(href='short_text2.html#') RSS
+          a(href='short_text2.html#') Comments
+        a.top(href='short_text2.html#') Back to the top
+    // /copyright
+    // /footer
+             

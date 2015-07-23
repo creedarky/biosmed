@@ -1,0 +1,296 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title BIOSCOM CHILE Ltda
+    link(rel='apple-touch-icon', href='http://demo.squidix.com/construct/images/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='http://demo.squidix.com/construct/images/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='http://demo.squidix.com/construct/images/apple-touch-icon-114x114.png')
+    //if lt IE 9
+      script(src='scripts/ie9.js')
+        IE7_PNG_SUFFIX = ".png";
+    link(rel='stylesheet', href='../../stylesheets/style.css')
+    link(rel='stylesheet', href='../../stylesheets/responsive.css')
+    script(src='../../scripts/jquery.min.js')
+    script(src='../../scripts/jquery.bxSlider.min.js')
+    script(src='../../scripts/jquery.blackandwhite.min.js')
+    script(src='../../scripts/js_func.js')
+    script(src='../../scripts/jquery.faq.js')
+    script(src='../../scripts/jquery.simpleFAQ-0.7.min.js')
+    script.
+      $(function () {
+        $('#accordions').dltoggle();
+        $("#open").click(function (event) {
+          $('#accordions').dltoggle_show();
+          return false;
+        });
+        $("#close").click(function (event) {
+          $('#accordions').dltoggle_hide();
+          return false;
+        });
+        $('#faq').simpleFAQ();
+        $('.bwWrapper').BlackAndWhite({
+          hoverEffect: true,
+          webworkerPath: false,
+          responsive: true,
+          invertHoverEffect: false
+        });
+      });
+    script.
+      $(function () {
+        $('.features_slider').bxSlider({
+          auto: false,
+          displaySlideQty: 5,
+          moveSlideQty: 1,
+          speed: 1000
+        });
+        $('.intro_slider').bxSlider({
+          auto: false,
+          controls: false,
+          mode: 'fade',
+          pager: true
+        });
+        $('.bwWrapper').BlackAndWhite({
+          hoverEffect: true,
+          webworkerPath: false,
+          responsive: true,
+          invertHoverEffect: false
+        });
+      });
+  body
+    .wraper
+      header.header
+        a.logo(href='../../index.html')
+          img(src='../../files/2012/08/logo.png')
+        nav#mobilenav
+          .menu-top-container
+            select#menu-top.menu.dropdown-menu
+              option.blank(value='') — Menú —
+              option.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-24.menu-item-depth-0(value='') Home
+              option.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-23.menu-item-depth-0(value='quienes-somos-.html') Bioscom Chile
+              option.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-66.menu-item-depth-0(value='#') Trabaja con Nosotros
+              option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-182.menu-item-depth-1(value='portfolio/portfolio-filtered/index.html') Representaciones
+              option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-50.menu-item-depth-1(value='short-codes/boxes/index.html') Por qué Bioscom
+              option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-49.menu-item-depth-1(value='short-codes/tabs/index.html') Contacto
+        nav#defaultnav
+          .menu-top-container
+            ul#menu-top-1.menu
+              li#menu-item-24.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-24
+                a(href='index.html') Home
+              li#menu-item-23.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-23
+                a(href='quienes-somos-.html') Bioscom Chile
+              li#menu-item-66.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-66
+                a(href='area-personas.html') Trabaja con Nosotros
+              li#menu-item-26.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-26
+                a(href='gptw.html') Representaciones
+              li#menu-item-1049.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1049
+                a(href='certificaciones.html') Por qué Bioscom
+              li#menu-item-28.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-28
+                a(href='contacto.html') Contacto
+    .content_block
+      // top_title
+      .top_title
+        .fallback(style='display: block;')
+          img(style='width: 100%;', src='../../images/banners/BannersMDTyE.jpg', alt='')
+      // /top_title
+      .wraper
+        h3(style='font-size:12px; padding-top:5px; padding-bottom:12px; margin: 0 0 24px 0; font-weight:normal;\
+                                        border-bottom: 1px solid #e7e6e6;')
+          a(href='index.html') BiosMed
+          |  >
+          a(href='ginecologia.html') Ginecología
+          |  >
+          |       Mesas de Examen Ginecológico
+        // intro text
+        // Horizontal Tabs
+        .process2.horizontal_tabs
+          h4(style='font-size:20px;')
+            a(style='color:#333', name='ancla') Mesas de Examen Ginecológico
+          #h_tabs.c_after
+            ul.tab_select
+              li
+                a(href='#htab-1') Ritter 204
+              li
+                a(href='#htab-2') Ritter 222 / Midmark 622
+              li
+                a(href='#htab-3') Ritter 223 / Midmark 623
+              li
+                a(href='#htab-4') Ilumiación
+              li
+                a(href='#htab-5') Pisos Ritter
+            #htab-1
+              p
+                img(src='../../images/equipos/imgTyEMineria.jpg', width='690', height='238')
+                br
+                br
+              h3 Mesa de Examen Ginecológico Ritter 204.
+              br
+              br
+              strong Características del Producto:
+              br
+              br
+              |             - Respaldo Hidráulico
+              br
+              |             - Escabel incorporado y retráctil
+              br
+              |             - Taqueras retráctiles y movimiento de abanico
+              br
+              |             - Receptáculo de contaminados
+              br
+              |             - Cajones al frente y a un costado
+              br
+              |             - Con interruptores incorporados para enchufar equipos (220V)
+              br
+              |             - Color a elección
+              br
+              |             - Peso Máximo 225 Kg.
+              br
+              br
+              strong Información Adicional
+              br
+              br
+              |             Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud.
+              br
+              br
+              h3
+                a(href='http://www.medica.bioscom.cl/Brochure/Ritter204.pdf', target='_blank') Descargar información
+              p
+            #htab-2
+              p
+                img(src='../../images/equipos/imgTyEMineria.jpg', width='690', height='238')
+                br
+                br
+              h3 Producto 2
+              br
+              br
+              |           MOD1 | MOD2
+              p
+            #htab-3
+              p
+                img(src='../../images/equipos/imgTyEMineria.jpg', width='690', height='238')
+                br
+                br
+              h3 Producto 3
+              br
+              br
+              |           MOD1 | MOD2
+              p
+            #htab-4
+              p
+                img(src='../../images/equipos/imgTyEMineria.jpg', width='690', height='238')
+                br
+                br
+              h3 Producto 4
+              br
+              br
+              |           MOD1 | MOD2
+              p
+            #htab-5
+              p
+                img(src='../../images/equipos/imgTyEMineria.jpg', width='690', height='238')
+                br
+                br
+              h3 Producto 5
+              br
+              br
+              |           MOD1 | MOD2
+              p
+        // /Horizontal Tabs
+        .faq_list3.faq_list_marg
+          ul#faq
+            li
+              p.question
+                a(href='#ancla2')
+                  input.btn_m(type='submit', value='Cotizar')
+              a(name='ancla2')
+              .answer
+                p
+                  // Formulario
+                  form#contacto(name='contacto', action='../../enviar.php', method='POST')
+                    p
+                      label
+                        | Nombre   
+                        input#nombre(name='nombre', type='text', size='45')
+                    p
+                      label
+                        | Correo    
+                        input#mail(name='mail', type='text', size='45')
+                    p
+                      label
+                        | País        
+                        input#pais(name='pais', type='text', size='45')
+                    p
+                      label
+                        | Telefono
+                        input#telefono(name='telefono', type='text', size='45')
+                    p
+                      label
+                        | Asunto    
+                        input#asunto(name='asunto', type='text', size='45')
+                    p
+                      label
+                        | Mensaje
+                        br
+                        textarea#mensaje(name='mensaje', cols='52', rows='8')
+                    p
+                      input.btn_m(type='submit', name='Submit', value='Enviar')
+      // /intro text
+    // footer
+    .footer
+      footer
+        // bottom about
+        .bottom_about
+          p
+            img(src='../../images/logo.png', alt='')
+          p
+            | Servir con excelencia y contribuir
+            br
+            |         para un mundo mejor.
+          .social_icons
+            ul.small
+              li
+                a.facebook(href='https://www.facebook.com', target='_blank') facebook
+              li
+                a.tweeter(href='https://twitter.com', target='_blank') tweeter
+              li
+                a.in(href='http://www.linkedin.com', target='_blank') in
+              li
+                a.baby(href='https://vimeo.com') baby
+        // /bottom about
+        // recent posts
+        .recent_posts
+          h3
+            span Especialidades
+          ul
+            li
+              a(href='negocios/biosmed/aire-servicios.html') BiosMed
+            li
+              a(href='negocios/md-energia/energia-servicios.html') Industrial
+            li
+              a(href='negocios/biostetic/transmiciones-servicios.html') Biostetic
+        // /recent posts
+        // subscribe block
+        .subscribe_block
+          h3
+            span Contáctanos
+          form#contacto(name='contacto', action='enviarok.php', method='POST')
+            p
+              input#nombre(name='nombre', type='text', placeholder='Nombre', size='42')
+            p
+              input#mail(name='mail', type='text', placeholder='Correo', size='43')
+            p
+              input#mensaje(name='mensaje', type='text', placeholder='Mensaje')
+            p
+              input#enviarButton(type='button', value='Enviar', onclick='enviar();', style='cursor: pointer !important; ')
+        // /subscribe block
+    // copyright
+    .copyright
+      .wraper
+        p
+          span BIOSCOM CHILE Ltda. 2015
+          |  Todo los derechos reservados
+        a.top(href='../../index.html#') Top
+    // /copyright
+    // /footer
+                                

@@ -1,0 +1,254 @@
+doctype html
+html(lang='en')
+   head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+      title BIOSCOM CHILE Ltda
+      link(rel='shortcut icon', href='images/favicon.ico')
+      link(rel='apple-touch-icon', href='http://demo.squidix.com/construct/images/apple-touch-icon.png')
+      link(rel='apple-touch-icon', sizes='72x72', href='http://demo.squidix.com/construct/images/apple-touch-icon-72x72.png')
+      link(rel='apple-touch-icon', sizes='114x114', href='http://demo.squidix.com/construct/images/apple-touch-icon-114x114.png')
+      //if lt IE 9
+        script(src='scripts/ie9.js')
+          IE7_PNG_SUFFIX=".png";
+      link(rel='stylesheet', href='stylesheets/style.css')
+      link(rel='stylesheet', href='stylesheets/responsive.css')
+      link(rel='stylesheet', href='stylesheets/jquery.onebyone.css')
+      script(src='scripts/jquery.min.js')
+      script(src='scripts/jquery.bxSlider.min.js')
+      script(src='scripts/jquery.blackandwhite.min.js')
+      script(src='scripts/jquery.onebyone.min.js')
+      script(src='scripts/jquery.touchwipe.min.js')
+      script(src='scripts/js_func.js')
+      script.
+         $(function(){
+            $('#obo_slider').oneByOne({
+               className: 'oneByOne1',
+               easeType: 'random',
+               slideShow: true
+            });
+         })
+      script.
+         $(function(){
+            $('.features_slider').bxSlider({
+               auto: false,
+               displaySlideQty: 5,
+               moveSlideQty: 1,
+               speed : 1000
+            });
+            $('.intro_slider').bxSlider({
+               auto: true,
+               controls : false,
+               mode: 'fade',
+               pager: true
+            });
+            $('.bwWrapper').BlackAndWhite({
+               hoverEffect : true,
+               webworkerPath : false,
+               responsive:true,
+               invertHoverEffect:false
+            });
+         });
+      script(src='scripts/js_func.js')
+   body
+      .wraper
+         header.header
+            a.logo(href='index.html')
+               img(src='files/2012/08/logo.png')
+            nav#mobilenav
+               .menu-top-container
+                  select#menu-top.menu.dropdown-menu
+                     option.blank(value='') — Menú —
+                     option.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-24.menu-item-depth-0(value='') Home
+                     option.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-23.menu-item-depth-0(value='quienes-somos-.html') Bioscom Chile
+                     option.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-66.menu-item-depth-0(value='#') Trabaja con Nosotros
+                     option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-182.menu-item-depth-1(value='portfolio/portfolio-filtered/index.html') Representaciones
+                     option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-50.menu-item-depth-1(value='short-codes/boxes/index.html') Por qué Bioscom
+                     option.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-49.menu-item-depth-1(value='short-codes/tabs/index.html') Contacto
+            nav#defaultnav
+               .menu-top-container
+                  ul#menu-top-1.menu
+                     li#menu-item-24.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-24
+                        a(href='index.html') Home
+                     li#menu-item-23.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-23
+                        a(href='quienes-somos-.html') Bioscom Chile
+                     li#menu-item-66.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-66
+                        a(href='area-personas.html') Trabaja con Nosotros
+                     li#menu-item-26.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-26
+                        a(href='gptw.html') Representaciones
+                     li#menu-item-1049.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1049
+                        a(href='certificaciones.html') Por qué Bioscom
+                     li#menu-item-28.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-28
+                        a(href='contacto.html') Contacto
+      // one bt one slider
+      .wrape.homeone
+         .shadow(style='text-align: center; width: 100%; height: 100px; z-index: 999; position: absolute;')
+            img(src='images/moover/moover_shadow.png')
+         .fallback
+            img(src='images/sliders/SlidersHome1.jpg', alt='')
+         #obo_slider
+            .oneByOne_item
+               img.wp1_3.slide1_bot(src='images/sliders/SlidersHome1.jpg', alt='')
+            .oneByOne_item
+               img.wp1_3.wp1_left.slide2_bot(src='images/sliders/SlidersHome2.jpg', alt='')
+            .oneByOne_item
+               img.wp1_3.slide2_bot(src='images/sliders/SlidersHome3.jpg', alt='')
+            .oneByOne_item
+               img.wp1_3.slide3_bot(src='images/sliders/SlidersHome4.jpg', alt='')
+      // /one bt one slider
+      .content_block
+         .wraper
+            // features_block
+            .features_block
+               ul
+                  li.hidden
+                  li.design
+                     a.circle_link(href='negocios/biosmed/index.html')  
+                     h4
+                        span Área Médica
+                  li.flexible
+                     a.circle_link(href='negocios/md-energia/energia-servicios.html')  
+                     h4
+                        span Área Industrial
+                  li.support
+                     a.circle_link(href='negocios/biostetic/biostetic-servicios.html')  
+                     h4
+                        span Área Estética
+                  li.hidden
+            // /features_block
+            // intro text
+            .intro_text
+               h4.bord(style='font-size:20px;') Recientes
+               ul.intro_slider
+                  li
+                     a(href='noticias.html')
+                        .bwWrapper
+                           img(src='images/noticias/NOT1.jpg', width='426', height='238', alt='')
+                     .desc
+                        h4 Holding BIOSCOM CHILE
+                        p
+                           | Want to take a tour?  Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+                  li
+                     a(href='noticias.html')
+                        .bwWrapper
+                           img(src='images/noticias/NOT2.jpg', width='426', height='238', alt='')
+                     .desc
+                        h4 NUEVA MARCA REPRESENTADA RITTER
+                        p
+                           | Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+                  li
+                     a(href='noticias.html')
+                        .bwWrapper
+                           img(src='images/noticias/NOT3.jpg', width='426', height='238', alt='')
+                     .desc
+                        h4 BIOSCOM ESTAMOS EN TODO CHILE
+                        p
+                           | Want to take a tour?  Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+               a.read_more.btn_col(style='float: right;', href='noticias.html') + Actualidad
+               .featured_list.client_list
+                  .features_slider_wrap
+                     h3(style='font-size:20px; padding-top:30px;') Marcas Representadas
+                     ul.cs.features_slider
+                        li
+                           div
+                              .bwWrapper(style='border:none;')
+                                 a(href='shortcodes_content_sliders.html#')
+                                    img(src='images/client_logos/logo_1.jpg', alt='')
+                        li
+                           div
+                              .bwWrapper(style='border:none;')
+                                 a(href='shortcodes_content_sliders.html#')
+                                    img(src='images/client_logos/logo_2.jpg', alt='')
+                        li
+                           div
+                              .bwWrapper(style='border:none;')
+                                 a(href='shortcodes_content_sliders.html#')
+                                    img(src='images/client_logos/logo_3.jpg', alt='')
+                        li
+                           div
+                              .bwWrapper(style='border:none;')
+                                 a(href='shortcodes_content_sliders.html#')
+                                    img(src='images/client_logos/logo_4.jpg', alt='')
+                        li
+                           div
+                              .bwWrapper(style='border:none;')
+                                 a(href='shortcodes_content_sliders.html#')
+                                    img(src='images/client_logos/logo_5.jpg', alt='')
+                        li
+                           div
+                              .bwWrapper(style='border:none;')
+                                 a(href='shortcodes_content_sliders.html#')
+                                    img(src='images/client_logos/logo_6.jpg', alt='')
+            // /intro text
+      // footer
+      // social block
+      //
+        <div class="social_block">
+        <div class="wraper">
+        <p>Stay connected with us in your favorite flavor!</p>
+        <ul>
+        <li class="facebook"><a href="index.html#">Facebook</a></li>
+        <li class="twitter"><a href="index.html#">Twitter</a></li>
+        <li class="linkedin"><a href="index.html#">LinkedIn</a></li>
+        <li class="rss"><a href="index.html#">RSS</a></li>
+        <li class="dribbble"><a href="index.html#">Dribbble</a></li>
+        <li class="google"><a href="index.html#">Google+</a></li>
+        </ul>
+        </div>
+        </div>
+      // /social block
+      .footer
+         footer
+            // bottom about
+            .bottom_about
+               p
+                  img(src='images/logo.png', alt='')
+               p Slogan Corporativo.
+               .social_icons
+                  ul.small
+                     li
+                        a.facebook(href='https://www.facebook.com', target='_blank') facebook
+                     li
+                        a.tweeter(href='https://twitter.com', target='_blank') tweeter
+                     li
+                        a.in(href='http://www.linkedin.com', target='_blank') in
+                     li
+                        a.baby(href='https://vimeo.com') baby
+            // /bottom about
+            // recent tweets
+            // /recent tweets
+            // recent posts
+            .recent_posts
+               h3
+                  span Especialidades
+               ul
+                  li
+                     a(href='negocios/biosmed/aire-servicios.html') BiosMed
+                  li
+                     a(href='negocios/md-energia/energia-servicios.html') Industrial
+                  li
+                     a(href='negocios/biostetic/transmiciones-servicios.html') Biostetic
+            // /recent posts
+            // subscribe block
+            .subscribe_block
+               h3
+                  span Contáctanos
+               form#contacto(name='contacto', action='enviarok.php', method='POST')
+                  p
+                     input#nombre(name='nombre', type='text', placeholder='Nombre', size='42')
+                  p
+                     input#mail(name='mail', type='text', placeholder='Correo', size='43')
+                  p
+                     input#mensaje(name='mensaje', type='text', placeholder='Mensaje')
+                  p
+                     input#enviarButton(type='button', value='Enviar', onclick='enviar();', style='cursor: pointer !important; ')
+            // /subscribe block
+      // copyright
+      .copyright
+         .wraper
+            p
+               span BIOSCOM CHILE Ltda. 2015
+               |  Todo los derechos reservados
+            a.top(href='index.html#') Ir arriba
+      // /copyright
+      // /footer
