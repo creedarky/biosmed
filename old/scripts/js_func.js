@@ -70,6 +70,35 @@ $(function() {
 		$('#faq .technical').hide();
 		$('#faq .miscellaneous').show();
 	});
+	script.
+		$(function(){
+			$('#obo_slider').oneByOne({
+				className: 'oneByOne1',
+				easeType: 'random',
+				slideShow: true
+			});
+		})
+	script.
+		$(function(){
+			$('.features_slider').bxSlider({
+				auto: false,
+				displaySlideQty: 5,
+				moveSlideQty: 1,
+				speed : 1000
+			});
+			$('.intro_slider').bxSlider({
+				auto: true,
+				controls : false,
+				mode: 'fade',
+				pager: true
+			});
+			$('.bwWrapper').BlackAndWhite({
+				hoverEffect : true,
+				webworkerPath : false,
+				responsive:true,
+				invertHoverEffect:false
+			});
+		});
 }); 
 
 function enviar() {

@@ -1,7 +1,7 @@
 doctype html
 html.wf-loading
   head
-    title= title
+    title= title + ' | Bioscom'
 
     meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
     meta(http-equiv="Content-Language", content="en-us")
@@ -16,11 +16,11 @@ html.wf-loading
 
     //- Twitter meta tags (static)
     meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:site" content="@AxiomZenTeam")
+    meta(name="twitter:site" content="@TwitterAccount")
 
     //- Twitter meta tags (dynamic)
     block meta-twitter
-      meta(name="twitter:title" content="init() frontend")
+      meta(name="twitter:title" content="Bioscom")
       meta(name="twitter:description" content="Site description here")
       meta(name="twitter:image", content="https://www.axiomzen.co/images/az-logo-250.png")
       meta(name="twitter:url", content="https://www.axiomzen.co")
@@ -30,7 +30,7 @@ html.wf-loading
     meta(property="og:site_name" content="init() frontend")
 
     block meta-og
-      meta(property="og:title" content="init() frontend - Home")
+      meta(property="og:title" content="Bioscom")
       meta(property="og:description" content="Site description here")
       meta(property="og:image", content="https://www.axiomzen.co/images/az-logo-250.png")
       meta(property="og:url", content="https://wwww.axiomzen.co")
@@ -49,7 +49,7 @@ html.wf-loading
   body
     main
       block page-content
-
+    include footer
     //- build:js /scripts/app.js
     script(src="/bower_components/jquery/dist/jquery.js")
     script(src="/bower_components/fastclick/lib/fastclick.js")
