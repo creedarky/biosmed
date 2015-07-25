@@ -10,12 +10,6 @@
 
 `- libs` - JavaScript libraries that are not in Bower or need customization
 
-`src` - Server-side scripts, [Node.js](https://nodejs.org/) with [Express](http://expressjs.com/)
-
-`- models` - Business logic
-
-`- routes` - Routes
-
 `styles` - CSS (through Stylus)
 
 `views` - HTML (through Jade)

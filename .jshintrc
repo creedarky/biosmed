@@ -3,7 +3,8 @@
     "_": true,
     "define": false,
     "self": true,
-    "$": true
+    "$": true,
+    "alert": true
   },
   "browser": true,
   "camelcase": false,
@@ -16,7 +17,7 @@
   "latedef": false,
   "maxcomplexity": 7,
   "maxdepth": 5,
-  "maxlen": 90,
+  "maxlen": 120,
   "newcap": true,
   "node": true,
   "quotmark": "single",

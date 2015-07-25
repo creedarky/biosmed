@@ -4,10 +4,7 @@ html(lang='en')
       meta(charset='utf-8')
       meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
       title BIOSCOM CHILE Ltda
-      link(rel='shortcut icon', href='images/favicon.ico')
-      link(rel='apple-touch-icon', href='http://demo.squidix.com/construct/images/apple-touch-icon.png')
-      link(rel='apple-touch-icon', sizes='72x72', href='http://demo.squidix.com/construct/images/apple-touch-icon-72x72.png')
-      link(rel='apple-touch-icon', sizes='114x114', href='http://demo.squidix.com/construct/images/apple-touch-icon-114x114.png')
+
       //if lt IE 9
         script(src='scripts/ie9.js')
           IE7_PNG_SUFFIX=".png";
@@ -20,35 +17,6 @@ html(lang='en')
       script(src='scripts/jquery.onebyone.min.js')
       script(src='scripts/jquery.touchwipe.min.js')
       script(src='scripts/js_func.js')
-      script.
-         $(function(){
-            $('#obo_slider').oneByOne({
-               className: 'oneByOne1',
-               easeType: 'random',
-               slideShow: true
-            });
-         })
-      script.
-         $(function(){
-            $('.features_slider').bxSlider({
-               auto: false,
-               displaySlideQty: 5,
-               moveSlideQty: 1,
-               speed : 1000
-            });
-            $('.intro_slider').bxSlider({
-               auto: true,
-               controls : false,
-               mode: 'fade',
-               pager: true
-            });
-            $('.bwWrapper').BlackAndWhite({
-               hoverEffect : true,
-               webworkerPath : false,
-               responsive:true,
-               invertHoverEffect:false
-            });
-         });
       script(src='scripts/js_func.js')
    body
       .wraper
@@ -197,58 +165,6 @@ html(lang='en')
         </div>
         </div>
       // /social block
-      .footer
-         footer
-            // bottom about
-            .bottom_about
-               p
-                  img(src='images/logo.png', alt='')
-               p Slogan Corporativo.
-               .social_icons
-                  ul.small
-                     li
-                        a.facebook(href='https://www.facebook.com', target='_blank') facebook
-                     li
-                        a.tweeter(href='https://twitter.com', target='_blank') tweeter
-                     li
-                        a.in(href='http://www.linkedin.com', target='_blank') in
-                     li
-                        a.baby(href='https://vimeo.com') baby
-            // /bottom about
-            // recent tweets
-            // /recent tweets
-            // recent posts
-            .recent_posts
-               h3
-                  span Especialidades
-               ul
-                  li
-                     a(href='negocios/biosmed/aire-servicios.html') BiosMed
-                  li
-                     a(href='negocios/md-energia/energia-servicios.html') Industrial
-                  li
-                     a(href='negocios/biostetic/transmiciones-servicios.html') Biostetic
-            // /recent posts
-            // subscribe block
-            .subscribe_block
-               h3
-                  span Contáctanos
-               form#contacto(name='contacto', action='enviarok.php', method='POST')
-                  p
-                     input#nombre(name='nombre', type='text', placeholder='Nombre', size='42')
-                  p
-                     input#mail(name='mail', type='text', placeholder='Correo', size='43')
-                  p
-                     input#mensaje(name='mensaje', type='text', placeholder='Mensaje')
-                  p
-                     input#enviarButton(type='button', value='Enviar', onclick='enviar();', style='cursor: pointer !important; ')
-            // /subscribe block
-      // copyright
-      .copyright
-         .wraper
-            p
-               span BIOSCOM CHILE Ltda. 2015
-               |  Todo los derechos reservados
-            a.top(href='index.html#') Ir arriba
+
       // /copyright
       // /footer
