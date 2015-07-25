@@ -1,5 +1,36 @@
-(function () {
+/*
+ *
+ * Example file
+ *
+ */
+
+(function() {
   'use strict';
+  $.material.init();
+  var $document = $(document);
+
+  $document.ready(function() {
+    $document.on('click', 'button', function() {
+      var $button = $(this),
+          $count = $('#count');
+
+      $.post('/count/increment', function(res) {
+        if (res.newCount >= 4) {
+          $count.text(42);
+          $button.remove();
+
+          var img = $('<img>', {
+            src: 'img/goat.jpg'
+          });
+
+          $('body').append(img);
+        } else {
+          $count.text(res.newCount);
+        }
+
+      });
+    });
+  });
 
   function enviar() {
     var name = jQuery.trim(jQuery('#nombre').val());
@@ -44,6 +75,5 @@
     // utilizamos test para comprobar si el parametro valor cumple la regla
     return !!filter.test(valor);
   }
-
 
 })();
