@@ -82,6 +82,7 @@ app.use(function (err, req, res, next) {
 if (env === 'development' || env === 'staging') {
   console.log('using dev/staging error handler');
   app.use(function(err, req, res, next) {
+    console.log(err);
     var status = err.status || 500;
     res.status(status);
     res.render('error', {
@@ -94,6 +95,7 @@ if (env === 'development' || env === 'staging') {
 // Production error handler
 // No stacktraces leaked to user
 app.use(function(err, req, res, next) {
+  console.log(err);
   var status = err.status || 500;
   res.status(status);
   res.render('error', {

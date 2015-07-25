@@ -1,4 +1,8 @@
+
 extends partials/layout.jade
+
+block vars
+  - var title='Home'
 
 block extra-scripts
   //- build:js /scripts/home.js
@@ -6,9 +10,10 @@ block extra-scripts
   //- endbuild
 
 block page-content
-  p The meaning of life is
-    = ' '
-    span(id="count")= count
+  section.jumbotron.header.text-center
+    include partials/navbar
 
-  button No it's not
+
+
+
 
