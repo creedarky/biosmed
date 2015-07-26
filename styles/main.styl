@@ -7,12 +7,65 @@
 */
 
 body
-  font-family: font-serif
-  color: color-brand-main
+  color: color-darkest
+  background-color color-lightest
+  > *
+    color: color-darkest
+
+a
+  color: color-darkest
 
 button
   font-family: font-sans
 
-img
-  max-width: 50%
 
+
+.navbar-raised
+  box-shadow 0 7px 15px 0 rgba(0, 0, 0, 0.12);
+  transition box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1)
+  &.navbar
+    background-color transparent
+    color: color-darkest
+    margin-bottom 2px
+    z-index 2
+    li.active
+      a
+        background-color rgba(color-darkest,0.1)
+.navbar-brand
+  padding 5px
+  img
+    max-height 95%
+
+
+.bx-wrapper
+  box-shadow none
+  border 0
+
+.container
+  margin-bottom 20px
+  padding-bottom 50px
+
+.bw-filter
+  filter grayscale(100%)
+  transition .5s all linear
+  &:hover
+    filter grayscale(0)
+    transition .5s all linear
+
+
+.section-logo
+  background-position 0
+  width 115px
+  height 115px
+  border 0
+  transition all .4s linear
+  margin 0 auto
+  &.medica
+    background-image url('/img/secciones/S1.jpg'), url("/img/features/shadow.png")
+  &.industrial
+    background-image url('/img/secciones/S2.jpg'), url("/img/features/shadow.png")
+  &.estetica
+    background-image url('/img/secciones/S3.jpg'), url("/img/features/shadow.png")
+  &:hover
+    background-position-y -40px
+    //box-shadow  0px 40px 5px 0px rgba(color-darkest, 0.25);

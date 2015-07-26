@@ -37,25 +37,28 @@ html.wf-loading
       meta(property="og:image", content="https://www.axiomzen.co/images/az-logo-250.png")
       meta(property="og:url", content="https://wwww.axiomzen.co")
 
-    link(rel="shortcut icon" href="/img/icons/favicon.ico")
-    link(rel="apple-touch-icon" href="/img/icons/az-logo-80.png")
-    link(rel="apple-touch-icon" sizes="120x120" href="/img/icons/az-logo-160.png")
+    link(rel="shortcut icon" href="/img/favicon.ico")
+    link(rel="apple-touch-icon" href="/img/favicon.ico")
+    link(rel="apple-touch-icon" sizes="120x120" href="/img/favicon.ico")
 
     //- Google + publisher
     //- link(href="https://plus.google.com/xxxx" rel="publisher")
 
     //- build:css /css/main.css
     link(rel="stylesheet", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
-    link(rel="stylesheet", href="/bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css")
+    link(rel="stylesheet", href="/bower_components/bootstrap-material-design/dist/css/material.min.css")
     link(rel="stylesheet", href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css")
     link(rel="stylesheet", href="/bower_components/bootstrap-material-design/dist/css/roboto.min.css")
+    link(rel="stylesheet", href="/bower_components/bxslider-4/dist/jquery.bxslider.min.css")
     link(rel="stylesheet", href="/css/main.css")
     //- endbuild
+
+    block extra-styles
 
   body
     main
       block page-content
-    include footer
+      include footer
     //- build:js /scripts/app.js
     script(src="/bower_components/jquery/dist/jquery.js")
     script(src="/bower_components/fastclick/lib/fastclick.js")
@@ -67,15 +70,6 @@ html.wf-loading
     script(src="/js/main.js")
     //- endbuild
 
-    script.
-      window.viewportUnitsBuggyfill.init();
-      window.FastClick.attach(document.body);
-      window.WebFont.load({
-        google: {
-          families: ['Open Sans', 'Merriweather'],
-          timeout: 2000
-        }
-      });
 
     //- Google Analytics
     script.

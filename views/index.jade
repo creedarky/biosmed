@@ -4,14 +4,83 @@ extends partials/layout.jade
 block vars
   - var title='Home'
 
+
+
 block extra-scripts
   //- build:js /scripts/home.js
-  script(src="/js/count.js")
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
   //- endbuild
 
 block page-content
-  section.jumbotron.header.text-center
-    include partials/navbar
+  - var active = 'home'
+  include partials/navbar
+  //section.jumbotron.header.text-center
+  .row
+    ul.bxslider
+      li
+        img(src="/img/sliders/SlidersHome1.jpg")
+      li
+        img(src="/img/sliders/SlidersHome2.jpg")
+      li
+        img(src="/img/sliders/SlidersHome3.jpg")
+
+  .container
+    .row.brands
+      .col-xs-4.col-md-2.col-md-offset-3.text-center
+        a(href="#")
+          .section-logo.medica(data-src="/img/secciones/S1.jpg")
+          p Área Médica
+
+      .col-xs-4.col-md-2.text-center
+        a(href="#")
+          .section-logo.industrial(data-src="/img/secciones/S2.jpg")
+          p Área Industrial
+      .col-xs-4.col-md-2.text-center
+        a(href="#")
+          .section-logo.estetica(data-src="/img/secciones/S3.jpg")
+          p Área Estética
+
+  .container
+    .row.well
+      h4 Recientes
+      hr
+      ul.intro_slider
+        li
+          .col-xs-6
+            a(href='noticias.html')
+              .bwWrapper
+                img.bw-filter.img-responsive(src='/img/noticias/NOT1.jpg' , alt='')
+          .col-xs-6
+            .desc
+              h4 Holding BIOSCOM CHILE
+              p
+                | Want to take a tour?  Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+        li
+          .col-xs-6
+            a(href='noticias.html')
+              .bwWrapper
+                img.bw-filter.img-responsive(src='/img/noticias/NOT2.jpg', alt='')
+          .col-xs-6
+            .desc
+              h4 NUEVA MARCA REPRESENTADA RITTER
+              p
+                | Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+        li
+          .col-xs-6
+            a(href='noticias.html')
+              .bwWrapper
+                img.bw-filter.img-responsive(src='/img/noticias/NOT3.jpg',  alt='')
+          .col-xs-6
+            .desc
+              h4 BIOSCOM ESTAMOS EN TODO CHILE
+              p
+                | Want to take a tour?  Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+
+
+
+
+
 
 
 
