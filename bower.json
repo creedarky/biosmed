@@ -23,6 +23,7 @@
     "viewport-units-buggyfill": "~0.4.1",
     "bootstrap": "~3.3.5",
     "bootstrap-material-design": "~0.3.0",
-    "bxslider-4": "~4.2.5"
+    "bxslider-4": "~4.2.5",
+    "slick-carousel": "~1.5.8"
   }
 }

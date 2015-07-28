@@ -9,7 +9,9 @@ block vars
 block extra-scripts
   //- build:js /scripts/home.js
   script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/bower_components/slick-carousel/slick/slick.min.js")
   script(src="/js/index.js")
+
   //- endbuild
 
 block page-content
@@ -25,7 +27,7 @@ block page-content
       li
         img(src="/img/sliders/SlidersHome3.jpg")
 
-  .container
+  .container.bottom-offset
     .row.brands
       .col-xs-4.col-md-2.col-md-offset-3.text-center
         a(href="#")
@@ -41,7 +43,7 @@ block page-content
           .section-logo.estetica(data-src="/img/secciones/S3.jpg")
           p Área Estética
 
-  .container
+  .container.bottom-offset
     .row.well
       h4 Recientes
       hr
@@ -76,6 +78,20 @@ block page-content
               h4 BIOSCOM ESTAMOS EN TODO CHILE
               p
                 | Want to take a tour?  Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+  .container.bottom-offset
+    .row.well
+      h4 Marcas representadas
+      hr
+      .slick-carousel
+        img.img-responsive(src="img/client_logos/logo_1.jpg")
+        img.img-responsive(src="img/client_logos/logo_2.jpg")
+        img.img-responsive(src="img/client_logos/logo_3.jpg")
+        img.img-responsive(src="img/client_logos/logo_4.jpg")
+        img.img-responsive(src="img/client_logos/logo_5.jpg")
+        img.img-responsive(src="img/client_logos/logo_6.jpg")
+        img.img-responsive(src="img/client_logos/logo_7.jpg")
+        img.img-responsive(src="img/client_logos/logo_8.jpg")
+
 
 
 
