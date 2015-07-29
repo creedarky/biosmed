@@ -1,57 +1,43 @@
-footer
-  .container-fluid.row.well
-    .container
+footer.hidden-sm.hidden-xs
+  .container-fluid
+    .row.well
+      .container
+        .col-md-4
+          p
+            img.img-responsivei(src="/img/logo.png")
+          p Slogan corporativo
+          p
+            ul.list-unstyled.social-network
+              li.pull-left
+                a
+                  i.fa.fa-facebook
+              li.pull-left
+                a
+                  i.fa.fa-twitter
+              li.pull-left
+                a
+                  i.fa.fa-linkedin
+              li.pull-left
+                a
+                  i.fa.fa-vine
+        .col-md-4
+          h3 Especialidades
+          ul.speciality.list-unstyled
+            li
+              a Biosmed
+            li
+              a Industrial
+            li
+              a Biostetic
+
+        .col-md-4
+          h3 Contactanos
+          .form-group
+            input.form-control(type="text", placeholder="Nombre")
+            input.form-control(type="email", placeholder="Correo")
+            textarea.form-control(placeholder="Mensaje")
+            button.btn-raised.btn.btn-primary Enviar
 
 
-
-   // bottom about
-   .bottom_about
-      p
-         img(src='images/logo.png', alt='')
-      p Slogan Corporativo.
-      .social_icons
-         ul.small
-            li
-               a.facebook(href='https://www.facebook.com', target='_blank') facebook
-            li
-               a.tweeter(href='https://twitter.com', target='_blank') tweeter
-            li
-               a.in(href='http://www.linkedin.com', target='_blank') in
-            li
-               a.baby(href='https://vimeo.com') baby
-   // /bottom about
-   // recent tweets
-   // /recent tweets
-   // recent posts
-   .recent_posts
-      h3
-         span Especialidades
-      ul
-         li
-            a(href='negocios/biosmed/aire-servicios.html') BiosMed
-         li
-            a(href='negocios/md-energia/energia-servicios.html') Industrial
-         li
-            a(href='negocios/biostetic/transmiciones-servicios.html') Biostetic
-   // /recent posts
-   // subscribe block
-   .subscribe_block
-      h3
-         span Contáctanos
-      form#contacto(name='contacto', action='enviarok.php', method='POST')
-         p
-            input#nombre(name='nombre', type='text', placeholder='Nombre', size='42')
-         p
-            input#mail(name='mail', type='text', placeholder='Correo', size='43')
-         p
-            input#mensaje(name='mensaje', type='text', placeholder='Mensaje')
-         p
-            input#enviarButton(type='button', value='Enviar', onclick='enviar();', style='cursor: pointer !important; ')
-      // /subscribe block
-// copyright
-.copyright
-   .wraper
-      p
-         span BIOSCOM CHILE Ltda. 2015
-         |  Todo los derechos reservados
-      a.top(href='index.html#') Ir arriba
+      .text-right.col-md-12
+        p BIOSCOM CHILE Ltda. 2015  Todo los derechos reservados
