@@ -18,6 +18,9 @@ a
 button
   font-family: font-sans
 
+img
+  width 100%
+
 
 
 .navbar
@@ -43,7 +46,11 @@ button
 
 .bottom-offset
   margin-bottom 20px
-  padding-bottom 50px
+  padding-bottom 30px
+
+.bottom-offset-half
+  margin-bottom 10px
+  padding-bottom 15px
 
 .bw-filter
   filter grayscale(100%)
@@ -90,3 +97,31 @@ footer
       display block
       width 5px
       height 5px
+
+.row-no-padding
+  [class*="col-"]
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+.row-no-left-padding
+  [class*="col-"]
+    padding-left: 0 !important;
+
+.row-no-right-padding
+  [class*="col-"]
+    padding-right: 0 !important;
+
+.no-padding
+  &[class*="col-"]
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+.no-left-padding
+  &[class*="col-"]
+    padding-left: 0 !important;
+
+.no-right-padding
+  &[class*="col-"]
+    padding-right: 0 !important;
+
+

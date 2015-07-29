@@ -7,8 +7,13 @@ var Routes = function(app) {
     res.render('index.jade', {});
   });
 
-  app.get('/*', function(req, res) {
-    res.render(req.params[0] + '.jade', {});
+  app.get('/*', function(req, res, next) {
+    var url = req.params[0];
+    if (url.indexOf('.') < 0) {
+      res.render(req.params[0] + '.jade', {});
+    } else {
+      next();
+    }
   });
 };
 
