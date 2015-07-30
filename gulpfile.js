@@ -156,7 +156,7 @@
   });
 
   gulp.task('default', function() { runSequence('clean', 'repo:setup', ['nodemon', 'watch']); });
-  gulp.task('prepare', function() { runSequence('clean', 'bower:install', 'images:copy', 'fonts:copy', 'stylus'); });
+  gulp.task('prepare', function() { runSequence('clean', 'bower:install', 'images:copy', 'fonts:copy', 'js', 'stylus'); });
   gulp.task('build', function() { runSequence('clean', ['usemin', 'images:build', 'fonts:build']); });
 
 })();
