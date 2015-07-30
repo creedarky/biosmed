@@ -11,7 +11,7 @@ var config = require('./src/config/config.js')();
 
 var app = express();
 var env = process.env.NODE_ENV || 'development';
-var viewsDir = (env === 'development' ? 'views' : 'built/views');
+var viewsDir = 'views'; // (env === 'development' ? 'views' : 'built/views');
 
 // Enable gzip
 app.use(compress());
