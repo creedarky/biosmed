@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "gulp install"
+    "postinstall": "gulp prepare"
   },
   "engines": {
     "node": "0.11.12",
