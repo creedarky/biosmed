@@ -7,7 +7,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var config = require('./src/config/config.js')();
-var jadeStatic = require('connect-jade-static');
 
 
 var app = express();
@@ -53,12 +52,7 @@ if (env === 'staging' || env === 'production') {
 */
 
 require('./src/routes')(app);
-app.use(jadeStatic({
-  baseDir: path.join(__dirname, '/views'),
-  baseUrl: '/',
-  maxAge: 86400,
-  jade: { pretty: true }
-}));
+
 
 /// Catch 404 and forward to error handler
 app.use(function(req, res, next) {
