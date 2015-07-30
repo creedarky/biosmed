@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "bower install && gulp build"
   },
   "engines": {
     "node": "0.11.12",
