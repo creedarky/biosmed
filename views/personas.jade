@@ -1,0 +1,40 @@
+
+extends partials/layout.jade
+
+block vars
+  - var title='Home'
+
+
+
+block extra-scripts
+  //- build:js /scripts/bioscom.js
+
+  //- endbuild
+
+block page-content
+  - var active = 'personas'
+  include partials/navbar
+  .container-fluid
+    .row.bottom-offset
+      img.img-responsive(src="/img/banners/BannersMDAreaPERS.jpg")
+  //section.jumbotron.header.text-center
+  .container.bottom-offset
+    .row
+      .col-md-6
+        img.bw-filter.img-responsive(src='/img/noticias/NOT1.jpg' , alt='')
+
+      .col-md-6
+        h4 Area personas
+        p Fugiat dapibus, tellus ac cursus commodo, mauesris uns condime ntum nibh, ut fermentum mas justo sitters sit amet risus. Cras mattis cosi sectetut amet fermens tum aecenas faucib sadips amets. Libero tempore, impedit quo minus id quodsir maxime placeat , omnis dolor repellendus sadips ipsums fugiats vitae voluptas dolores amets untras ochoc neuav. Fugiat dapibus, tellus ac cursus commodo, mauesris uns condime ntum nibh, ut fermentum mas justo sitters sit amet risus. Cras mattis cosi sectetut amet fermens tum aecenas faucib sadips amets. Libero tempore, impedit quo minus id quodsir maxime placeat , omnis dolor repellendus sadips ipsums fugiats vitae voluptas dolores amets untras ochoc neuav.
+        a.btn.btn-primary.btn-raised(href="#") Enviar CV
+
+
+
+
+
+
+
+
+
+
+
