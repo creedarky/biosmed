@@ -18,7 +18,7 @@ block page-content
     .row.bottom-offset
       img.img-responsive(src="/img/banners/BannersMDAreaPERS.jpg")
   //section.jumbotron.header.text-center
-  .row.bottom-offset
+  .row.bottom-offset-half
 
   .container
     form(role='form', action='', method='post')
@@ -27,26 +27,23 @@ block page-content
         .well.well-sm
           strong
             i.glyphicon.glyphicon-ok
-            |  Required Field
+            |  Campos requeridos
         .form-group
-          label(for='InputName') Your Name
           .input-group
-            input#InputName.form-control(type='text', name='InputName', placeholder='Enter Name', required='')
+            input#InputName.form-control(type='text', name='InputName', placeholder='Nombre', required='')
             span.input-group-addon
               i.glyphicon.glyphicon-ok.form-control-feedback
         .form-group
-          label(for='InputEmail') Your Email
           .input-group
-            input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Enter Email', required='')
+            input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email', required='')
             span.input-group-addon
               i.glyphicon.glyphicon-ok.form-control-feedback
         .form-group
-          label(for='InputMessage') Message
           .input-group
-            textarea#InputMessage.form-control(name='InputMessage', rows='5', required='')
+            textarea#InputMessage.form-control(name='InputMessage', rows='5', required='', placeholder="Mensaje")
             span.input-group-addon
               i.glyphicon.glyphicon-ok.form-control-feedback
-        input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Submit')
+        input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Enviar')
 
 
 

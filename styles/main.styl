@@ -1,6 +1,36 @@
 @import config
 @import normalize
 
+
+screen-xs = 320px
+screen-sm = 480px
+screen-md = 768px
+screen-lg = 992px
+screen-xl = 1200px
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
 /*
 ** Remove styles below; only here as a test
 ** This file should only contain @import files
@@ -100,30 +130,31 @@ footer
       width 5px
       height 5px
 
-.row-no-padding
-  [class*="col-"]
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+@media only screen and (min-width: screen-md)
+  .row-no-padding
+    [class*="col-"]
+      padding-left: 0 !important;
+      padding-right: 0 !important;
 
-.row-no-left-padding
-  [class*="col-"]
-    padding-left: 0 !important;
+  .row-no-left-padding
+    [class*="col-"]
+      padding-left: 0 !important;
 
-.row-no-right-padding
-  [class*="col-"]
-    padding-right: 0 !important;
+  .row-no-right-padding
+    [class*="col-"]
+      padding-right: 0 !important;
 
-.no-padding
-  &[class*="col-"]
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  .no-padding
+    &[class*="col-"]
+      padding-left: 0 !important;
+      padding-right: 0 !important;
 
-.no-left-padding
-  &[class*="col-"]
-    padding-left: 0 !important;
+  .no-left-padding
+    &[class*="col-"]
+      padding-left: 0 !important;
 
-.no-right-padding
-  &[class*="col-"]
-    padding-right: 0 !important;
+  .no-right-padding
+    &[class*="col-"]
+      padding-right: 0 !important;
 
 
