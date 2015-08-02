@@ -1,0 +1,15 @@
+
+.row.well
+  .col-xs-12
+    h3 #{menuTitle}
+  ul.list-unstyled.products-list
+    each item in data
+      if item
+        li.col-lg-3.col-md-4.col-sm-6.col-xs-12.bottom-offset-half
+          a(href="#{item.url}")
+            figure
+              img.img-responsive(src="#{item.img}")
+              figcaption.text-center
+                h4 #{item.title}
+
+
