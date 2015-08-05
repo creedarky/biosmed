@@ -1,84 +1,67 @@
 //
    Created by Kota on 04-08-2015.
 extends ../partials/layout.jade
+block vars
+  - var title='Home'
 
-body
+block page-content
+
    div.container
       header
       div.logo
          img(src="img/logo.png", alt="logo")
       nav.menu
-          a(href="a") Home
-          a(href="a") Bioscom Chile
-          a(href="a") Trabaja con nosotros
+        ul
+          li
+            a(href="a") Home
+          li
+            a(href="a") Bioscom Chile
+          li
+            a(href="a") Trabaja con nosotros
           a(href="a") Representaciones
-          a(href="a") Por qué Bioscom
+          a(href="a") Por quï¿½ Bioscom
           a(href="a") Contacto
 
     div.banner
        img(src="img/banner.png", alt="banner")
 
-    nav.breadcrumbs
-       a(href="a") Biosmed
-       a(href="a") Ginecología
-       a(href="a") Mesas de examen ginecológico
+    ol.breadcrumbs
+      li
+        a(href="a") Biosmed
+      li
+        a(href="a") Ginecologï¿½a
+      li
+        a(href="a") Mesas de examen ginecolï¿½gico
 
     div.tituloproductos
-      h1 Mesas de Examen Ginecológico
+      h3 Mesas de Examen Ginecolï¿½gico
 
-    nav.MesasdeExamenGinecológico
+    nav.MesasdeExamenGinecolÃ³gico
        a(href="a") Biosme
-       a(href="a") Ginecología
-       a(href="a") Mesas de examen ginecológico
+       a(href="a") GinecologÃ­a
+       a(href="a") Mesas de examen ginecolÃ³gico
+
+   aside.pull-left
+
 
    div.productoadefinir
-      h2 Mesa de Examen Ginecológico Ritter 204.
+      h2 Mesa de Examen Ginecolï¿½gico Ritter 204.
 
    div.caracteristicas
    #container.col
-       h2 Características del Producto:
+       h2 Caracterï¿½sticas del Producto:
        ul
-         li - Respaldo Hidráulico
-         li - Escabel incorporado y retráctil
-         li - Taqueras retráctiles y movimiento de abanico
-         li - Receptáculo de contaminados
+         li - Respaldo Hidrï¿½ulico
+         li - Escabel incorporado y retrï¿½ctil
+         li - Taqueras retrï¿½ctiles y movimiento de abanico
+         li - Receptï¿½culo de contaminados
          li - Cajones al frente y a un costado
          li - Con interruptores incorporados para enchufar equipos (220V)
-         li - Color a elección
-         li - Peso Máximo 225 Kg.
+         li - Color a elecciï¿½n
+         li - Peso Mï¿½ximo 225 Kg.
 
    div.infoadicional
-      h2 Información Adicional
-      p. Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud.
-
-footer
-    div.slogan
-        p. Servir con excelencia y contribuir
-            para un mundo mejor.
-
-        nav.redessociales
-            a(href="a") Facebook
-            a(href="a") Twitter
-            a(href="a") Linkedin
-            a(href="a") Vimeo
-
-    div.especialidades
-        h3 Especialidades
-
-        ul
-          li  a(href="a") Biosmed
-          li  a(href="a") Industrial
-          li  a(href="a") Biostetic
-
-    div.contactanos
-        h3 Contáctanos
-        label (for="Name") Nombre
-        input (type="text", id="Name", name="Nombre", placeholder="Nombre")
-        label (for="Mail") Correo
-        input (type="text", id="Mail", name="Correo", placeholder="Correo")
-        label (for="Message") Mensaje
-        input (type="text", id="Message", name="Mensaje", placeholder="Mensaje")
-
-
+      h2 InformaciÃ³n Adicional
+      p. Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada aï¿½o y a travï¿½s de cada generaciï¿½n, se mantiene comprometida hacia sus clientes, sus compaï¿½eros, su comunidad y hacia una eficaz asistencia mï¿½dica. Midmark es tambiï¿½n una de las empresas lï¿½deres en suministraciï¿½n de productos y servicios para los profesionales de la salud, integrando tecnologï¿½a con valor agregado y un apasionado deseo de entregar una diferencia positiva en la prï¿½ctica del cuidado de la salud.
 
 
