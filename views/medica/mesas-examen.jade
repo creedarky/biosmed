@@ -1,12 +1,7 @@
 //
    Created by Kota on 04-08-2015.
-doctype html
-html(leng="es")
-         head
-               title
-               link(rel="stylesheet",href="css/estilos.css")
+extends ../partials/layout.jade
 
-               meta(charset="utf-8")
 body
    div.container
       header
@@ -57,4 +52,31 @@ body
       p. Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud.
 
 footer
+    div.slogan
+        p. Servir con excelencia y contribuir
+            para un mundo mejor.
+
+        nav.redessociales
+            a(href="a") Facebook
+            a(href="a") Twitter
+            a(href="a") Linkedin
+            a(href="a") Vimeo
+
+    div.especialidades
+        h3 Especialidades
+
+        ul
+          li  a(href="a") Biosmed
+          li  a(href="a") Industrial
+          li  a(href="a") Biostetic
+
+    div.contactanos
+        h3 Contáctanos
+        label (for="Name") Nombre
+        input (type="text", id="Name", name="Nombre", placeholder="Nombre")
+        label (for="Mail") Correo
+        input (type="text", id="Mail", name="Correo", placeholder="Correo")
+        label (for="Message") Mensaje
+        input (type="text", id="Message", name="Mensaje", placeholder="Mensaje")
+
 
