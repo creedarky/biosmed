@@ -10,7 +10,12 @@ var Routes = function(app) {
   app.get('/*', function(req, res, next) {
     var url = req.params[0];
     if (url.indexOf('.') < 0) {
-      res.render(req.params[0] + '.jade', {});
+      if (url.slice(-1) === '/') {
+        res.render(req.params[0] +  'index.jade', {})
+      } else {
+        res.render(req.params[0] + '.jade', {});
+      }
+
     } else {
       next();
     }
