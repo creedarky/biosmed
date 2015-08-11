@@ -17,21 +17,27 @@
           li
             h4.product(class="#{index === 0 ? 'active' : ''}") #{product.name}
 
-  .col-md-8.col-lg-9()
+  .col-md-8.col-lg-9
     each product, index in products
-      .well(class="#{index !== 0 ? 'hidden' : ''}")
+      .well.product-info(class="#{index !== 0 ? 'hidden' : ''}" data-index="#{index}" data-name="#{product.fullname}")
         img.img-responsive(src='#{product.img}')
         h4.title #{product.fullname}
         if product.features
-          h5.subtitle Caracteristicas del producto
+          h5.subtitle
+            strong Caracteristicas del producto
           ul.list-unstyled
             each feature in product.features
               li - #{feature}
         if product.info
-          h5.subtitle Información adicional
+          h5.subtitle
+            strong Información adicional
           p #{product.info}
 
         a.btn.btn-primary.btn-raised(href="#") Descargar Informacion
 
 
 
+  block extra-scripts
+    //- build:js /scripts/products.js
+
+    //- endbuild

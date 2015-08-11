@@ -11,7 +11,7 @@ var Routes = function(app) {
     var url = req.params[0];
     if (url.indexOf('.') < 0) {
       if (url.slice(-1) === '/') {
-        res.render(req.params[0] +  'index.jade', {})
+        res.render(req.params[0] +  'index.jade', {});
       } else {
         res.render(req.params[0] + '.jade', {});
       }
