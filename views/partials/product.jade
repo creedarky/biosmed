@@ -1,43 +1,66 @@
-.row
-  .col-xs-12
-    if breadcrumbs
-      ol.breadcrumb
-        each crumb, index in breadcrumbs
-          li(class="#{index === (breadcrumbs.length -1) ? 'active' : ''}")
-            a(href="#{crumb.url}") #{crumb.text}
-    h3 #{title}
-    hr
-
-
-.row
-  aside.col-md-4.col-lg-3
-    ul.list-unstyled.product-list
-      each product, index in products
-        if product
-          li
-            h4.product(class="#{index === 0 ? 'active' : ''}") #{product.name}
-
-  .col-md-8.col-lg-9
-    each product, index in products
-      .well.product-info(class="#{index !== 0 ? 'hidden' : ''}" data-index="#{index}" data-name="#{product.fullname}")
-        img.img-responsive(src='#{product.img}')
-        h4.title #{product.fullname}
-        if product.features
-          h5.subtitle
-            strong Caracteristicas del producto
-          ul.list-unstyled
-            each feature in product.features
-              li - #{feature}
-        if product.info
-          h5.subtitle
-            strong Información adicional
-          p #{product.info}
-
-        a.btn.btn-primary.btn-raised(href="#") Descargar Informacion
+extends layout
 
 
 
-  block extra-scripts
-    //- build:js /scripts/products.js
+block extra-scripts
+  //- build:js /scripts/home.js
+  //- endbuild
+block page-content
 
-    //- endbuild
+  block product-vars
+  include navbar
+  //section.jumbotron.header.text-center
+
+  .container-fluid
+    .row
+      if !bannerImage
+        img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+      else
+        img.img-responsive(src="#{bannerImage}")
+
+  .container.bottom-offset
+
+
+    .row
+      .col-xs-12
+        if breadcrumbs
+          ol.breadcrumb
+            each crumb, index in breadcrumbs
+              li(class="#{index === (breadcrumbs.length -1) ? 'active' : ''}")
+                a(href="#{crumb.url}") #{crumb.text}
+        h3 #{title}
+        hr
+
+    if products
+      .row
+        aside.col-md-4.col-lg-3
+          ul.list-unstyled.product-list
+            each product, index in products
+              if product
+                li
+                  h4.product(class="#{index === 0 ? 'active' : ''}") #{product.name}
+
+        .col-md-8.col-lg-9
+          each product, index in products
+            .well.product-info(class="#{index !== 0 ? 'hidden' : ''}" data-index="#{index}" data-name="#{product.fullname}")
+              img.img-responsive(src='#{product.img}')
+              h4.title #{product.fullname}
+              if product.features
+                h5.subtitle
+                  strong Caracteristicas del producto
+                ul.list-unstyled
+                  each feature in product.features
+                    li - #{feature}
+              if product.info
+                h5.subtitle
+                  strong Información adicional
+                p #{product.info}
+
+              a.btn.btn-primary.btn-raised(href="#") Descargar Informacion
+
+
+
+block extra-scripts
+  //- build:js /scripts/products.js
+
+  //- endbuild
