@@ -2,9 +2,6 @@ extends layout
 
 
 
-block extra-scripts
-  //- build:js /scripts/home.js
-  //- endbuild
 block page-content
 
   block product-vars
@@ -38,7 +35,7 @@ block page-content
             each product, index in products
               if product
                 li
-                  h4.product(class="#{index === 0 ? 'active' : ''}") #{product.name}
+                  h4.product(data-index="#{index}", class="#{index === 0 ? 'active' : ''}") #{product.name}
 
         .col-md-8.col-lg-9
           each product, index in products
@@ -56,11 +53,12 @@ block page-content
                   strong Información adicional
                 p #{product.info}
 
-              a.btn.btn-primary.btn-raised(href="#") Descargar Informacion
+              if product.downloadLink
+                a.btn.btn-primary.btn-raised(href="#{product.downloadLink}") Descargar Informacion
 
 
 
 block extra-scripts
   //- build:js /scripts/products.js
-
+  script(src="/js/products.js")
   //- endbuild

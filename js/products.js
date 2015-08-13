@@ -10,8 +10,10 @@
     var $productsList = $('.product');
     $document.on('click', '.product', function() {
       var $this = $(this);
-      console.log($this);
-
+      $productsList.removeClass('active');
+      $this.addClass('active');
+      $('.product-info').addClass('hidden');
+      $productsInfo.filter('[data-index="' +  $this.data('index') + '"]').removeClass('hidden');
     });
   });
 })();
