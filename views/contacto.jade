@@ -7,18 +7,32 @@ block vars
 
 
 block extra-scripts
-  //- build:js /scripts/bioscom.js
-
+  script(src="https://maps.googleapis.com/maps/api/js")
+  //- build:js /scripts/contacto.js
+  script(src="/bower_components/gmaps/gmaps.min.js")
+  script(src="/js/contacto.js")
   //- endbuild
 
 block page-content
   - var active = 'contacto'
   include partials/navbar
-  .container-fluid
-    .row.bottom-offset
-      img.img-responsive(src="/img/banners/BannersMDAreaPERS.jpg")
-  //section.jumbotron.header.text-center
-  .row.bottom-offset-half
+  .container
+    .row
+      img.img-responsive(src="/img/contacto/oficina.jpg")
+
+    .row.bottom-offset-half
+      .col-xs-12
+        h4 Dirección
+        p Edificio corporativo Alférez Real 1380 - Providencia - Santiago Chile
+        h4 Teléfonos
+        p (+56-2) 22473570 - (+56-2) 22473580
+        h4 Mail
+        p
+          a(href="mailto:ventas@bioscom.cl") ventas@bioscom.cl
+    #map.row
+
+
+
 
   .container
     form(role='form', action='', method='post')

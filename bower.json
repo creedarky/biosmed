@@ -24,6 +24,7 @@
     "bootstrap": "~3.3.5",
     "bootstrap-material-design": "~0.3.0",
     "bxslider-4": "~4.2.5",
-    "slick-carousel": "~1.5.8"
+    "slick-carousel": "~1.5.8",
+    "gmaps": "~0.4.19"
   }
 }

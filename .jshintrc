@@ -4,7 +4,8 @@
     "define": false,
     "self": true,
     "$": true,
-    "alert": true
+    "alert": true,
+    "GMaps": true
   },
   "browser": true,
   "camelcase": false,
