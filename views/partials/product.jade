@@ -5,7 +5,12 @@ extends layout
 block page-content
 
   block product-vars
-  include navbar
+  if type === 'medica'
+    include navbar-medica
+  else if type === 'industrial'
+    include navbar
+  else
+    include navbar
   //section.jumbotron.header.text-center
 
   .container-fluid

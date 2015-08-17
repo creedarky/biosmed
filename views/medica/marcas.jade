@@ -1,0 +1,114 @@
+extends ../partials/layout.jade
+
+block vars
+  - var title='Home'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../partials/navbar-medica
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+
+
+  .container.bottom-offset
+    .row
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_1.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 Pentatek
+        p PentaTek nació en Noviembre de 1999 impulsado por jovenes entusiastas dedicados a la IT. Hoy está conformado por un equipo de visionarios: analistas, asesores tecnológicos, ingenieros, diseñadores y desarrolladores. Así logramos construir día a día, aplicaciones embebidas para equipos médicos de alta complejidad hasta sistemas distribuidos para grandes corporaciones. Cada proceso involucrado es llevado con profesionalismo, lo cual nos permite obtener sistemas de excelente calidad.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_2.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 Bovie Medical
+        p Bovie Medical inció sus actividades a fines de los años setenta, como manufacturador de linternas desechables para la industria médica. Excelente diseño y elaboración, combinado con marketing inteligente y excelente servicio al cliente, significaron un gran avance para la compañía. Actualmente Bovie Medical está asentando los estándares para centros quirúrgicos y hospitales que utilizan generadores electroquirúrgicos y accesorios de último modelo.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_3.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 BIONET
+        p Bionet es una empresa preparada para entregar excelentes dispositivos en medición de bio-señales. El continuo desarrollo basado en las necesidades de sus clientes y en el centro de investigación, permiten mantener una gran calidad en todos sus productos. Con el electrocardiógrafo CardioCare 2000, Bionet se introdujo en el mercado mundial, posteriormente presentó nuevos productos, tales como: monitores fetales y monitores de signos vitales. También ha diversificado el campo de negocio con sistemas de monitoreo remoto de embarazo y servicios de tele-medicina para el hogar.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_4.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 CHISON MEDICAL IMAGING Co. Ltd.
+        p Chison Medical Imaging Co., Ltd. es uno de los líderes mundiales en elaboración de sistemas de ultrasonido. Con sus conocimientos en diseño de transducción, fortaleza técnica en ingenería biomédica, electrónica y software, Chison se ha especializado en el desarrollo y elaboración de sistemas de ultrasonido de alta calidad por más de diez años. Gracias a su avanzada tecnología, su diseño fácil de utilizar, estrictos controles de calidad y servicios post-venta de por vida, se ha hecho popular en 95 países.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_6.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 SIBEL S.A
+        p SIBEL S.A. es una empresa europea ubicada en Barcelona, España, dedicada a la fabricación y comercialización de productos médicos desde 1980 con la marca SIBELMED.
+        |La gama de productos que fabrica se centra fundamentalmente en Función Pulmonar, ORL Y Patología del Sueño.
+        |SIBEL S.A. lidera el mercado español en las áreas de Audiometría y Espirometría. En plena fase de expansión internacional, la empresa tiene actualmente referencia en mercados europeos, latinoamericanos y asiáticos.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_7.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 MIDMARK RITTER
+        p Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_8.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 MIDMARK RITTER
+        p Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_8.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 SONICAID
+        p Sonicaid es una exitosa empresa en la que las necesidades de los pacientes y los usuarios constituyen la principal preocupación de la compañía. La colaboración con los usuarios y las madres en el diseño de los productos garantiza que el producto final fabricado se ajuste a las variables necesidades actuales y del futuro.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-responsive(src="/img/client_logos/logo_8.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 VITALOGRAPH Ltd.
+        p Vitalograph Ltd. fue fundado en 1963, construyéndola a partir de un exitoso negocio iniciado en 1951 en el diagnóstico respiratorio y productos terapéuticos. Vitalograph consiguió su temprano éxito convirtiendo la espirometría de una compleja prueba de laboratorio en un simple y efectivo proceso de medición siendo clave para la detección temprana y por consiguiente un tratamiento más efectivo.
+        |Vitalograph ahora es mundialmente reconocida por realizar espirometrías simples y equipamiento para pruebas de función pulmonar efectivo.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-response(src="/img/client_logos/logo_8.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 WALLACH
+        p Wallach es una empresa proveedora de innovativos productos quirúrgicos, diseñados para enfrentar los demandantes diagnósticos y requerimientos terapéuticos de hoy en día, basados en obstetricia, ginecología y prácticas en infertilidad. La filosofía corporativa de Wallach es establecerse en los principios de calidad, dependabilidad, innovación, asequibilidad y servicio al cliente. En el campo de la salud femenina, Wallach es el nombre en el que los médicos confían.
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-4
+        img.img-response(src="/img/client_logos/logo_8.jpg")
+      .col-md-9.col-sm-8.col-xs-8
+        h3 PROMOTAL
+        p Midmark Europa diseña, fabrica y comercializa una gama completa de camillas de examinación, mesas ginecológicas y carro camillas, entre otros productos. Promotal exporta en más de 70 países exclusivamente a través de una red de distribuidores especializados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
