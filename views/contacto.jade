@@ -36,7 +36,7 @@ block page-content
       #map.col-xs-12.col-md-6
 
       .col-md-6.col-xs-12
-        form(role='form', action='', method='post')
+        form#contact(role='form',  method='post')
           h3(style='margin-top:0px;') Contáctenos
           .well.well-sm
             strong
@@ -44,17 +44,17 @@ block page-content
               |  Campos requeridos
           .form-group
             .input-group
-              input#InputName.form-control(type='text', name='InputName', placeholder='Nombre', required='')
+              input#InputName.form-control(type='text', name='name', placeholder='Nombre', required)
               span.input-group-addon
                 i.glyphicon.glyphicon-ok.form-control-feedback
           .form-group
             .input-group
-              input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email', required='')
+              input#InputEmail.form-control(type='email', name='mail', placeholder='Email', required)
               span.input-group-addon
                 i.glyphicon.glyphicon-ok.form-control-feedback
           .form-group
             .input-group
-              textarea#InputMessage.form-control(name='InputMessage', rows='5', required='', placeholder="Mensaje")
+              textarea#InputMessage.form-control(name='message', rows='5', required, placeholder="Mensaje")
               span.input-group-addon
                 i.glyphicon.glyphicon-ok.form-control-feedback
           input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Enviar')

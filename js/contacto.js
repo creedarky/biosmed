@@ -22,6 +22,18 @@
         content: 'Edificio corporativo BIOSCOM'
       }
     });
+
+    $(document).on('submit', '#contact', function(e) {
+      e.preventDefault();
+
+
+      var $form = $(this);
+      $.post('/contact-mail', $form.serialize() , function(data) {
+        console.log(data);
+        $form.trigger('reset');
+      });
+
+    });
   });
 
 
