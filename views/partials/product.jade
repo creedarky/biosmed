@@ -8,7 +8,7 @@ block page-content
   if type === 'medica'
     include navbar-medica
   else if type === 'industrial'
-    include navbar
+    include navbar-industrial
   else
     include navbar
   //section.jumbotron.header.text-center
@@ -58,8 +58,8 @@ block page-content
                   strong Información adicional
                 p #{product.info}
 
-              if product.downloadLink
-                a.btn.btn-primary.btn-raised(href="#{product.downloadLink}") Descargar Informacion
+              //if product.downloadLink
+              //  a.btn.btn-primary.btn-raised(href="#{product.downloadLink}") Descargar Informacion
               .text-center
                 button.btn.btn-primpary.btn-raised.cotizar Cotizar
             if index === 0

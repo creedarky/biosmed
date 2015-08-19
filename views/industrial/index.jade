@@ -1,0 +1,65 @@
+
+extends ../partials/layout.jade
+
+block vars
+  - var title='Home'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../partials/navbar-industrial
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      ul.bxslider
+        li
+          img(src="/img/sliders/SlidersHome1.jpg")
+
+
+  .container.bottom-offset
+    .row.well
+      h4 Recientes
+      hr
+      ul.intro_slider.list-unstyled
+        li
+          .col-xs-12.col-md-6
+            a(href='noticias.html')
+              .bwWrapper
+                img.bw-filter.img-responsive(src='/img/noticias/NOT2.jpg', alt='')
+          .col-xs-12.col-md-6
+            .desc
+              h4 NUEVA MARCA REPRESENTADA RITTER
+              p
+                | Check out the numerous options and features that Construct includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odios un  dig nissimos ducimus qui blan ditiis prasix esentium voluptatum deleniti atque si corrupti quos dolores et quas molestias excep turi int occaecati cupiditate non provident, simi lique sunt in culpa qui officia deserunt mol distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae includes, we knoesir you’ll love them! At vero eos et accusamus et iusto odio dignissimos duc imus qui blan ditiis prasix eseent ntium voluptatum deleniti atques.
+  .container.bottom-offset
+    .row.well
+      h4 Marcas representadas
+      hr
+      .slick-carousel
+        img.img-responsive(src="img/client_logos/logo_1.jpg")
+        img.img-responsive(src="img/client_logos/logo_2.jpg")
+        img.img-responsive(src="img/client_logos/logo_3.jpg")
+        img.img-responsive(src="img/client_logos/logo_4.jpg")
+        img.img-responsive(src="img/client_logos/logo_5.jpg")
+        img.img-responsive(src="img/client_logos/logo_6.jpg")
+        img.img-responsive(src="img/client_logos/logo_7.jpg")
+        img.img-responsive(src="img/client_logos/logo_8.jpg")
+
+
+
+
+
+
+
+
+
+
+

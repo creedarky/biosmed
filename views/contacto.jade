@@ -21,51 +21,41 @@ block page-content
       img.img-responsive(src="/img/contacto/oficina.jpg")
 
     .row.bottom-offset-half
-      .col-xs-12
+      .col-md-4.col-xs-6
         h4 Dirección
         p Edificio corporativo Alférez Real 1380 - Providencia - Santiago Chile
+      .col-md-4.col-xs-6
         h4 Teléfonos
         p (+56-2) 22473570 - (+56-2) 22473580
+      .col-md-4.col-xs-6
         h4 Mail
         p
           a(href="mailto:ventas@bioscom.cl") ventas@bioscom.cl
-    #map.row
 
+    .row
+      #map.col-xs-12.col-md-6
 
-
-
-  .container
-    form(role='form', action='', method='post')
-      .col-md-offset-3.col-md-6.col-sm-10.col-sm-offset-1.col-xs-12
-        h3 Contáctenos
-        .well.well-sm
-          strong
-            i.glyphicon.glyphicon-ok
-            |  Campos requeridos
-        .form-group
-          .input-group
-            input#InputName.form-control(type='text', name='InputName', placeholder='Nombre', required='')
-            span.input-group-addon
-              i.glyphicon.glyphicon-ok.form-control-feedback
-        .form-group
-          .input-group
-            input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email', required='')
-            span.input-group-addon
-              i.glyphicon.glyphicon-ok.form-control-feedback
-        .form-group
-          .input-group
-            textarea#InputMessage.form-control(name='InputMessage', rows='5', required='', placeholder="Mensaje")
-            span.input-group-addon
-              i.glyphicon.glyphicon-ok.form-control-feedback
-        input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Enviar')
-
-
-
-
-
-
-
-
-
-
+      .col-md-6.col-xs-12
+        form(role='form', action='', method='post')
+          h3(style='margin-top:0px;') Contáctenos
+          .well.well-sm
+            strong
+              i.glyphicon.glyphicon-ok
+              |  Campos requeridos
+          .form-group
+            .input-group
+              input#InputName.form-control(type='text', name='InputName', placeholder='Nombre', required='')
+              span.input-group-addon
+                i.glyphicon.glyphicon-ok.form-control-feedback
+          .form-group
+            .input-group
+              input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email', required='')
+              span.input-group-addon
+                i.glyphicon.glyphicon-ok.form-control-feedback
+          .form-group
+            .input-group
+              textarea#InputMessage.form-control(name='InputMessage', rows='5', required='', placeholder="Mensaje")
+              span.input-group-addon
+                i.glyphicon.glyphicon-ok.form-control-feedback
+          input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Enviar')
 
