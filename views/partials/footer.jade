@@ -44,14 +44,15 @@ footer.hidden-sm.hidden-xs
               a Industrial
             li
               a Biostetic
-
-        .col-md-4
-          h3 Contactanos
-          .form-group
-            input.form-control(type="text", placeholder="Nombre")
-            input.form-control(type="email", placeholder="Correo")
-            textarea.form-control(placeholder="Mensaje")
-            button.btn-raised.btn.btn-primary Enviar
+        if !hideContact
+          .col-md-4
+            form#footer-form
+              h3 Contactanos
+              .form-group
+                input.form-control(type="text", placeholder="Nombre", name="name")
+                input.form-control(type="email", placeholder="Correo", , name="mail")
+                textarea.form-control(placeholder="Mensaje", , name="message")
+                input.btn-raised.btn.btn-primary(type='submit', name='submit', value='Enviar')
 
 
       .text-right.col-md-12

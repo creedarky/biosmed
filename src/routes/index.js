@@ -1,11 +1,14 @@
 'use strict';
 
 var Config = require('../config/config.js')();
+var email = require('../mail');
 
 var Routes = function(app) {
   app.get('/', function(req, res) {
     res.render('index.jade', {});
   });
+
+
 
   app.get('/*', function(req, res, next) {
     var url = req.params[0];
@@ -19,6 +22,13 @@ var Routes = function(app) {
     } else {
       next();
     }
+  });
+
+  app.post('/contact-mail', function(req, res, next) {
+    console.log(req.body);
+    email.sendMail(req, function() {
+      res.send(200);
+    });
   });
 };
 
