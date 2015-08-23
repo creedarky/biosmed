@@ -1,5 +1,5 @@
 
-extends ../partials/layout.jade
+extends ../../partials/layout.jade
 
 block vars
   - var title='Ecografía'
@@ -10,7 +10,7 @@ block extra-scripts
   //- endbuild
 block page-content
   - var active = 'home'
-  include ../partials/navbar-medica
+  include ../../partials/navbar-medica
   //section.jumbotron.header.text-center
   .container-fluid
     .row
@@ -18,10 +18,10 @@ block page-content
   .container.bottom-offset
     - var menuTitle = "Ecografía"
     - var data = []
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Ecográfos blanco y negro', url: './ginecologia/ecografia/bn' })
-    - data.push({img: '/img/producto/ImgPRODUCTO2.jpg', title: 'Ecógrafos doppler color', url: './ginecologia/ecografia/dc' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Ecográfos blanco y negro', url: './ecografia/bn' })
+    - data.push({img: '/img/producto/ImgPRODUCTO2.jpg', title: 'Ecógrafos doppler color', url: './ecografia/dc' })
 
-    include ../partials/menubox
+    include ../../partials/menubox
 
 
 
