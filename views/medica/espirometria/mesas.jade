@@ -1,0 +1,82 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Mesas ginecologicas'
+
+block product-vars
+  - var title = 'Mesas de examen ginecológico'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecologia'})
+  - breadcrumbs.push({url:'/medica/ginecologia/ecogafria', text:'Mesas ginecologicas'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "Ritter 204", "fullname": "Mesa de Examen Ginecológico Ritter 204.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Respaldo Hidráulico")
+  - product.features.push("Escabel incorporado y retráctil")
+  - product.features.push("Taqueras retráctiles y movimiento de abanico")
+  - product.features.push("Receptáculo de contaminados")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Color a elección")
+  - product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "Ritter 222 / Midmark 622", "fullname": "Mesa de Examen Ginecológico Ritter 222 / Midmark 622.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Respaldo Hidráulico")
+  - product.features.push("Escabel incorporado y retráctil")
+  - product.features.push("Taqueras retráctiles y movimiento de abanico")
+  - product.features.push("Receptáculo de contaminados")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Color a elección")
+  - product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "Ritter 223 / Midmark 623", "fullname": "Mesa de Examen Ginecológico Ritter 223 / Midmark 623.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Respaldo Hidráulico")
+  - product.features.push("Escabel incorporado y retráctil")
+  - product.features.push("Taqueras retráctiles y movimiento de abanico")
+  - product.features.push("Receptáculo de contaminados")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Color a elección")
+  - product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "Iluminación", "fullname": "Iluminación", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Respaldo Hidráulico")
+  - product.features.push("Escabel incorporado y retráctil")
+  - product.features.push("Taqueras retráctiles y movimiento de abanico")
+  - product.features.push("Receptáculo de contaminados")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Color a elección")
+  - product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "Pisos ritter", "fullname": "Pisos ritter", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Respaldo Hidráulico")
+  - product.features.push("Escabel incorporado y retráctil")
+  - product.features.push("Taqueras retráctiles y movimiento de abanico")
+  - product.features.push("Receptáculo de contaminados")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Color a elección")
+  - product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
+
+
