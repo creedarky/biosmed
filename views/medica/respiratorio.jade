@@ -1,27 +1,36 @@
 
-extends ../../partials/layout.jade
+extends ../partials/layout.jade
 
 block vars
-  - var title='Ecografía'
+  - var title='Home'
+
+
+
 block extra-scripts
   //- build:js /scripts/home.js
   script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
   script(src="/js/index.js")
+
   //- endbuild
+
 block page-content
   - var active = 'home'
-  include ../../partials/navbar-medica
+  include ../partials/navbar-medica
   //section.jumbotron.header.text-center
   .container-fluid
     .row
       img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
-  .container.bottom-offset
-    - var menuTitle = "Ecografía"
-    - var data = []
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Ecográfos blanco y negro', url: './ecografia/bn' })
-    - data.push({img: '/img/producto/ImgPRODUCTO2.jpg', title: 'Ecógrafos doppler color', url: './ecografia/dc' })
 
-    include ../../partials/menubox
+
+  .container.bottom-offset
+    - var menuTitle = "Productos"
+    - var data = []
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Espirometros', url: './espirometrias/espirometros' })
+    - data.push({img: '/img/producto/ImgPRODUCTO2.jpg', title: 'Monitores', url: './espirometrias/monitores' })
+    include ../partials/menubox
+
+
+
 
 
 
