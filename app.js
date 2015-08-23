@@ -19,7 +19,7 @@ app.use(compress());
 // view engine setup
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, viewsDir));
-
+app.locals.basedir = app.get('views');
 app.set('port', process.env.PORT || 3000);
 app.use(favicon());
 app.use(env === 'development' ? logger('dev') : logger('default'));
