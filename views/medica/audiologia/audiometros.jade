@@ -1,0 +1,98 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Audiómetros'
+
+block product-vars
+  - var title = 'Audiómetros'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/audiologia', text:'Audiología'})
+  - breadcrumbs.push({url:'/medica/audiologia/audiometros', text:'Audiómetros'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "Sibelsound 400 AOM", "fullname": "Audiómetro Sibelmed Sibelsound 400 AOM", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "El audiómetro clínico SIBELSOUND 400 AOM es un equipo compacto que permite de manera fiable, rápida y sencilla efectuar una exploración audiométrica en umbrales de audición (tono liminar vía aérea como ósea) y pruebas de screening. "
+  - product.features.push("Dos canales")
+  - product.features.push("Audiometría tonal liminar vía aérea")
+  - product.features.push("Audiometría tonal liminar vía ósea")
+  - product.features.push("Enmascaramiento con ruido banda estrecha")
+  - product.features.push("Enmascaramiento con ruido blanco")
+  - product.features.push("Enmascaramiento sincronizado")
+  - product.features.push("Selección de las frecuencias de exploración")
+  - product.features.push("Tono continuo y pulsante")
+  - product.features.push("Cálculo de la pérdida auditiva")
+  - product.features.push("Diagnóstico seleccionable entre diferentes algoritmos")
+  - product.features.push("Conexión a impresora externa por USB y paralelo")
+  - product.features.push("Conexión a ordenador por USB")
+  - product.features.push("Software de audiometría (Demo)")
+  - products.push(product)
+  - var product = {"name": "Sibelsound 400 AOM+", "fullname": "Audiómetro Sibelmed Sibelsound 400 AOM SUPRA", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "El audiómetro clínico SIBELSOUND 400 AOM es un equipo compacto que permite de manera fiable, rápida y sencilla efectuar una exploración audiométrica en umbrales de audición (tono liminar vía aérea como ósea) y pruebas de screening. "
+  - product.features.push("Clínico, Vía Aérea, Ósea, Enmascaramientos, SISI y Logoaudiometría.")
+  - product.features.push("Tecnología digital avanzada mediante DSP.")
+  - product.features.push("Cálculo de pérdida auditiva y diagnósticos.")
+  - product.features.push("Base de datos interna > 1000 pruebas.")
+  - product.features.push("Pruebas supraliminares.")
+  - product.features.push("Alta frecuencia (≤ 20000Hz).")
+  - product.features.push("Frecuencias Musicales.")
+  - product.features.push("Enmascaramiento automático.")
+  - product.features.push("Conectividad con otros sistemas de gestión.")
+  - product.features.push("Personalizable.")
+  - product.features.push("Accesorios standard: - PC USB")
+  - product.features.push("- Conexión aviso paciente")
+  - product.features.push("- Auriculares via aérea TDH39")
+  - product.features.push("- Auriculares vía ósea")
+  - product.features.push("- Software audiometría W50 versión demo")
+  - product.features.push("- Guía rápida del manual de uso")
+  - product.features.push("- Tono invertido")
+  - product.features.push("Accesorios opcionales: - Conexión impresora externa USB")
+  - product.features.push("- Base de datos ≥1000.")
+  - product.features.push("- Firmware logoaudiometría.")
+  - product.features.push("- Sisigrama.")
+  - product.features.push("- Frecuencias intermedias.")
+  - product.features.push("- Licencia software audimetría W50")
+  - product.features.push("- Pruebas supraliminares")
+  - product.features.push("- Juego altavoces campo abierto")
+  - product.features.push("- Auriculares alta frecuencia (<20.000Hz)")
+  - products.push(product)
+  - var product = {"name": "Sibelsound 400 AOM SUPRA", "fullname": "Audiómetro Sibelmed Sibelsound 400 AOM+", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "(Software W50 incluido) Clínico, Vía Aérea, Ósea, Enmascaramientos, SISI, Logoaudiometría y pruebas Supraliminares."
+  - product.features.push("Tecnología digital avanzada mediante DSP.")
+  - product.features.push("Cálculo de pérdida auditiva y diagnósticos.")
+  - product.features.push("Base de datos interna > 1000 pruebas.")
+  - product.features.push("Pruebas supraliminares.")
+  - product.features.push("Alta frecuencia (≤ 20000Hz).")
+  - product.features.push("Frecuencias Musicales.")
+  - product.features.push("Enmascaramiento automático.")
+  - product.features.push("Conectividad con otros sistemas de gestión.")
+  - product.features.push("Personalizable.")
+  - product.features.push("Accesorios standard: - PC USB")
+  - product.features.push("- Conexión aviso paciente")
+  - product.features.push("- Auriculares via aérea TDH39")
+  - product.features.push("- Auriculares vía ósea")
+  - product.features.push("- Software audiometría W50 versión demo")
+  - product.features.push("- Guía rápida del manual de uso")
+  - product.features.push("- Tono invertido")
+  - product.features.push("Accesorios opcionales: - Conexión impresora externa USB")
+  - product.features.push("- Base de datos ≥1000.")
+  - product.features.push("- Firmware logoaudiometría.")
+  - product.features.push("- Sisigrama.")
+  - product.features.push("- Frecuencias intermedias.")
+  - product.features.push("- Licencia software audimetría W50")
+  - product.features.push("- Pruebas supraliminares")
+  - product.features.push("- Juego altavoces campo abierto")
+  - product.features.push("- Auriculares alta frecuencia (<20.000Hz)")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
