@@ -1,0 +1,91 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Polisomnógrafo'
+
+block product-vars
+
+  - var title = 'Polisomnógrafo'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/neurofisiologia', text:'Neurofisiología'})
+  - breadcrumbs.push({url:'/medica/neurofisiologia/polisomnografos', text:'Polisomnógrafo'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "BIONET CARDIO 7", "fullname": "BIONET CARDIO 7", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Sistema de PSG modular de alta performance")
+  - product.features.push("Hasta 4 módulos de PSG y EEG combinables")
+  - product.features.push("Visualizador de estudios entregable a pacientes sin costo adicional.")
+  - product.features.push("Digital, telemétrico y opto-aislado.")
+  - product.features.push("PSG")
+  - product.features.push("15 canales, ampliable con 128 canales de EEG adicionales o hasta 60 canales de PSG.")
+  - product.features.push("Oxímetro y pulsómetros incorporados.")
+  - product.features.push("Acepta sensor de flujo por presión")
+  - product.features.push("Entradas auxiliares para C-pap, capnografía y pH.")
+  - product.features.push("Análisis y marcación automática de eventos respiratorios.")
+  - product.features.push("Módulo opcional de análisis automático de fases de sueño.")
+  - product.features.push("Reportes Microsoft Word / Open Office / HTML")
+  - product.features.push("EEG De 2 hasta 128 canales 320 hz de frecuencia de sampleo de EEG")
+  - products.push(product)
+  - product = {"name": "BIONET CARDIO XP", "fullname": "BIONET CARDIO XP", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud."  - product.features.push("Respaldo manual, con asistencia de aire para levantar")
+  - product.features.push("Capacidad de peso del paciente de 180 Kg")
+  - product.features.push("45 a 94 cm de ajuste de altura del asiento")
+  - product.features.push("Control con el pie")
+  - product.features.push("Altura de 45 cm")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "COMEN CM 300", "fullname": "COMEN CM 300.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
+  - product.features.push("Baja altura de 48 cms")
+  //- product.features.push("Escabel incorporado y retráctil")
+  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
+  //- product.features.push("Receptáculo de contaminados")
+  //- product.features.push("Cajones al frente y a un costado")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "COMEN CM 600", "fullname": "COMEN CM 600", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "El Bulbo está equipado con un filtro especial para una luminosidad exenta de sombras, por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación, está plenamente iluminado.Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural."
+  - product.features.push("Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural")
+  - product.features.push("1 bulbo Halógeno de 100 W-")
+  - product.features.push("Filtro de calor para proveer luz fría 4.200ºk. Lámpara de pedestal rodable.")
+  - product.features.push("Rotación 180 grados.")
+  - product.features.push("Mango esterilizable para los movimientos y ajustes de altura.")
+  - products.push(product)
+- product = {"name": "COMEN 1200A", "fullname": "COMEN 1200A", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ritter, prestigiosa compañía norteamericana dedicada a la fabricación de mobiliario clínico de calidad superior, dispone de un catálogo completo de taburetes y pisos clínicos."  - product.features.push("Respaldo Hidráulico")
+  //- product.features.push("Escabel incorporado y retráctil")
+  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
+  //- product.features.push("Receptáculo de contaminados")
+  //- product.features.push("Cajones al frente y a un costado")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "COMEN 1200B", "fullname": "COMEN 1200B", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ritter, prestigiosa compañía norteamericana dedicada a la fabricación de mobiliario clínico de calidad superior, dispone de un catálogo completo de taburetes y pisos clínicos."  - product.features.push("Respaldo Hidráulico")
+  //- product.features.push("Escabel incorporado y retráctil")
+  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
+  //- product.features.push("Receptáculo de contaminados")
+  //- product.features.push("Cajones al frente y a un costado")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
