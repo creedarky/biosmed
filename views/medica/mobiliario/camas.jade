@@ -1,0 +1,67 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Camas hospitalarias'
+
+block product-vars
+  - var title = 'Camas hospitalarias'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/mobiliario', text:'Mobiliario Clínico'})
+  - breadcrumbs.push({url:'/medica/mobiliario/camas', text:'Camas hospitalarias'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "Apollo SCMC", "fullname": "Cama Amico Apollo SCMC", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "La Serie de Camillas de transporte de Pacientes de AMICO, ofrece un excelente control en el manejo en ambientes de emergencia. Las camillas se pueden ajustar en diferentes posiciones – levantar, bajar – accionando los pistones hidráulicos.La sección posterior es ajustable mediante el uso de muelles de gas y la rodilla Gatch se puede subir y bajar con una manivela manual (opcional)."
+  //- product.features.push("Magnificaciones de campo 12X 20mm")
+  //- product.features.push("Campo de visión de 18mm")
+  //- product.features.push("Sistema de iluminación halógeno")
+  - products.push(product)
+  - product = {"name": "Amico UCI.", "fullname": "Cama UCI Marca Amico Corporation modelo B-E-AC802, procedencia : CANADA ", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "La nueva Cama de AMICO para UCI se caracteriza por poseer un diseño versátil para los pacientes. Ésta cama UCI se diferencia por tener la posición de silla al igual que presenta un diseño ergonómico y robusto. Este producto realmente ayuda a proveer un nivel de cuidado al paciente mucho más significativo. Ésta cama posee una opción de batería de reserva para efectuar los movimientos aún y cuando la cama está desconectada o durante el transporte del paciente. Además de contar con actuadores DC LINAK los cuales ofrecen un movimiento silencioso al sistema electromecánico de la cama."
+  - product.features.push("Colchón de 8”")
+  - product.features.push("Ruedas de 6″(15 cm) con robustez y durabilidades probadas, antiestáticas o conductivas")
+  - product.features.push("Tabla radio lúcida para rayos X en la parte dorsal")
+  - product.features.push("Controles eléctricos interconstruídos en barandales con seguro de bloqueo para paciente")
+  - product.features.push("Cabecera y piecera desmontables de material de alta resistencia a golpes y solventes")
+  - product.features.push("Barandas laterales abatibles en un solo movimiento, permitiendo la transferencia segura del paciente, resistente al alto impacto.")
+  - product.features.push("Báscula digital que soporta hasta 250kg (550lbs)")
+  - product.features.push("Despliegue del peso digital en kg")
+  - product.features.push("Sensibilidad de 100 gramos")
+  - product.features.push("Con TARA (Ajuste a cero)")
+  - product.features.push("Actuadores LINAK DC")
+  - product.features.push("Batería modular de reserva")
+  - product.features.push("4 sócates para IV Pole")
+  - product.features.push("Lámpara Nocturna tipo LED")
+  - product.features.push("4 Rodillos de parachoques integrados")
+  - product.features.push("Cubierta de Metal para desperdicios")
+  - product.features.push("Sistema de liberación para CPR")
+  - product.features.push("Trendelenburg y Trendelenburg Inverso")
+  - product.features.push("Panel de control para el paciente en el interior de las barandas Laterales")
+  - product.features.push("Altura Ajustable de la Cama")
+  - product.features.push("Extensión Ajustable para los pies")
+  - product.features.push("Posición Ajustable de la Silla")
+  - product.features.push("Movimientos: Trendelenburg, Trendelenburg inverso, Movimiento Ascendente: 96,5 cm., Movimiento descendente: 52 Cm., Elevación de respaldo: 67°, Elevación de Rodilla: 39°")
+  - product.features.push("Longitud total 80″ (203 cm)")
+  - product.features.push("Ancho con rieles arriba 42″ (107 cm)")
+  - product.features.push("Ancho con rieles abajo 38″ (96.5 cm)")
+  - product.features.push("Superficie para el paciente 32″ x 72″ (81 cm x 183 cm)")
+  - product.features.push("Rango de Altura (desde la base hasta arriba)")
+  - product.features.push("4 sócates para IV Pole")
+  - product.features.push("Altura Máxima 38″ (96.5 cm)")
+  - product.features.push("Altura Mínima 20.5″ (52 cm)")
+  //- product.features.push("Cubierta de Metal para desperdicios")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
+

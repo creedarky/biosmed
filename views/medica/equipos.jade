@@ -1,0 +1,49 @@
+
+extends ../partials/layout.jade
+
+block vars
+  - var title='Home'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../partials/navbar-medica
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+
+
+  .container.bottom-offset
+    - var menuTitle = "Productos"
+    - var data = []
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Mesas ginecológicas', url: './ginecologia/mesas' })
+    - data.push({img: '/img/producto/ImgPRODUCTO2.jpg', title: 'Monitores de anteparto', url: './ginecologia/monitores' })
+    - data.push({img: '/img/producto/ImgPRODUCTO3.jpg', title: 'Detectores de latidos fetales', url: './ginecologia/detectores' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Ecografía', url: './ginecologia/ecografia' })
+    - data.push({img: '/img/producto/ImgPRODUCTO2.jpg', title: 'Colposcopia', url: './ginecologia/colposcopia' })
+    - data.push({img: '/img/producto/ImgPRODUCTO3.jpg', title: 'Oncología', url: './ginecologia/oncologia' })
+    include ../partials/menubox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
