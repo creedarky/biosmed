@@ -1,7 +1,7 @@
-extends ../partials/layout.jade
+extends ../../partials/layout.jade
 
 block vars
-  - var title='Home'
+  - var title='Laboratorio'
 
 
 
@@ -14,22 +14,22 @@ block extra-scripts
 
 block page-content
   - var active = 'home'
-  include ../partials/navbar-industrial
+  include ../../partials/navbar-industrial
   //section.jumbotron.header.text-center
   .container-fluid
     .row
-      img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+      img.img-responsive(src="/img/banners/industrial/reactivo.jpg")
 
 
   .container.bottom-offset
     - var menuTitle = "Productos"
     - var data = []
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Laboratorio', url: '/industrial/laboratorio' })
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Portatiles y Terreno', url: '/industrial/portatiles' })
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Proceso Industrial', url: '/industrial/proceso-industrial' })
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Electrodos', url: '/industrial/electrodos' })
-    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Reactivos', url: '/industrial/reactivo' })
-    include ../partials/menubox
+    - data.push({img: '/img/producto/reactivo/arsenico.jpg', title: 'Arsénico', url: './reactivo/arsenico' })
+    - data.push({img: '/img/producto/reactivo/cloro.jpg', title: 'Cloro', url: './reactivo/cloro' })
+    - data.push({img: '/img/producto/reactivo/turbiedad.jpg', title: 'Turbiedad', url: './reactivo/turbiedad' })
+    - data.push({img: '/img/producto/reactivo/ph.jpg', title: 'pH', url: './reactivo/ph' })
+
+    include ../../partials/menubox
 
 
 

@@ -1,0 +1,77 @@
+extends ../../partials/layout.jade
+
+block vars
+  - var title='Laboratorio'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../../partials/navbar-industrial
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+
+
+  .container.bottom-offset
+    - var menuTitle = "Productos"
+    - var data = []
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'pH', url: './laboratorio/ph' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Conductividad', url: './laboratorio/conductividad' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'DBO', url: './laboratorio/dbo' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'ORP', url: './laboratorio/orp' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Cianuro', url: './laboratorio/cianuro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Cloruro', url: './laboratorio/cloruro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Sulfuro', url: './laboratorio/sulfuro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Ioduro', url: './laboratorio/ioduro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Bromuro', url: './laboratorio/bromuro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Cobre', url: './laboratorio/cobre' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Cadmio', url: './laboratorio/cadmio' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Plomo', url: './laboratorio/plomo' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Tiocianato', url: './laboratorio/tiocianato' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Fluoruro', url: './laboratorio/fluoruro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Plata', url: './laboratorio/plata' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Amoniaco', url: './laboratorio/amoniaco' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Sodio', url: './laboratorio/sodio' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Nitrato', url: './laboratorio/nitrato' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Potasio', url: './laboratorio/potasio' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Calcio', url: './laboratorio/calcio' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Turbidímetros', url: './laboratorio/turbidimetro' })
+    - data.push({img: '/img/producto/imgProducto.jpg', title: 'Fotómetros', url: './laboratorio/fotometro' })
+
+    include ../../partials/menubox
+
+
+
+  .container.bottom-offset
+    .row.well
+      h4 Marcas representadas
+      hr
+      .slick-carousel
+        img.img-responsive(src="/img/client_logos/logo_1.jpg")
+        img.img-responsive(src="/img/client_logos/logo_2.jpg")
+        img.img-responsive(src="/img/client_logos/logo_3.jpg")
+        img.img-responsive(src="/img/client_logos/logo_4.jpg")
+        img.img-responsive(src="/img/client_logos/logo_5.jpg")
+        img.img-responsive(src="/img/client_logos/logo_6.jpg")
+        img.img-responsive(src="/img/client_logos/logo_7.jpg")
+        img.img-responsive(src="/img/client_logos/logo_8.jpg")
+
+
+
+
+
+
+
+
+
+
+

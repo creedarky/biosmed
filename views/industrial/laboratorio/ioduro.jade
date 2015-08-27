@@ -1,0 +1,42 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Ioduro'
+
+block product-vars
+  - var title = 'Ioduro'
+  - var type = 'industrial'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/industrial/productos', text:'Industrial'})
+  - breadcrumbs.push({url:'/industrial/laboratorio', text:'Laboratorio'})
+  - breadcrumbs.push({url:'/industrial/laboratorios/ioduro', text:'Ioduro'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "F-74", "fullname": "F-74", "features":[], "img": "/img/equipos/f74.jpg", "downloadLink": "#"}
+  - product.info = "Analizador de pH - ORP - ION Especifico (Canal 1) Conductividad - Resistividad - Salinidad - TDS (Canal 2) // Pantalla Touch Color."
+  - products.push(product)
+  - product = {"name": "F-73", "fullname": "F-73", "features":[], "img": "/img/equipos/f73.jpg", "downloadLink": "#"}
+  - product.info = "Analizador de pH - ORP - Ion Especifico // 2 Canales // Pantalla ColorTouch"
+  - products.push(product)
+  - product = {"name": "F-72", "fullname": "F-72", "features":[], "img": "/img/equipos/f72.jpg", "downloadLink": "#"}
+  - product.info = "Analizador de pH - ORP - Ion Especifico // 1 canal // Pantalla ColorTouch"
+  - products.push(product)
+  - product = {"name": "F-74BW", "fullname": "F-74BW", "features":[], "img": "/img/equipos/f74b.jpg", "downloadLink": "#"}
+  - product.info = "Analizador de pH - ORP - ION Especifico (Canal 1) Conductividad - Resistividad - Salinidad - TDS (Canal 2) // Pantalla B/N"
+  - products.push(product)
+  //- product.features.push("Receptáculo de contaminados")
+  //- product.features.push("Cajones al frente y a un costado")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+
+
+
+
+
+
+
+
+
+
