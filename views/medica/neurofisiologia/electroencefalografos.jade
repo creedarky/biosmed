@@ -2,75 +2,76 @@
 extends ../../partials/product
 
 block vars
-  - var title='Mesas ginecologicas'
+  - var title='Electroencefalógrafo'
 
 block product-vars
-  - var title = 'Mesas de examen ginecológico'
+  - var title = 'Electroencefalógrafo'
   - var type = 'medica'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
-  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecologia'})
-  - breadcrumbs.push({url:'/medica/ginecologia/ecogafria', text:'Mesas ginecologicas'})
+  - breadcrumbs.push({url:'/medica/neurofisiologia', text:'Neurofisiologia'})
+  - breadcrumbs.push({url:'/medica/neurofisiologia/electroencefalografos', text:'Electroencefalógrafo'})
   //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
   - var products = []
-  - var product = {"name": "Ritter 204", "fullname": "Mesa de Examen Ginecológico Ritter 204.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
-  - product.features.push("Respaldo Hidráulico")
-  - product.features.push("Escabel incorporado y retráctil")
-  - product.features.push("Taqueras retráctiles y movimiento de abanico")
-  - product.features.push("Receptáculo de contaminados")
-  - product.features.push("Cajones al frente y a un costado")
-  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  - product.features.push("Color a elección")
-  - product.features.push("Peso Máximo 225 Kg.")
+  - var product = {"name": "ATI Vertex EEG 20", "fullname": "Electroencefalógrafo ATI Vertex EEG 20.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Exclusiva entrada adicional multicanal para uso de casco de electrodos, grilla de corticografía o calibrador externo.Exclusivo puerto serial incorporado para manejo de estimuladores externos con marcación sincronizada.Adquisición simultánea de alta velocidad y alta resolución.Expansión instantánea mediante acople rápido con el módulo respectivo (opcional).Software de 32 bits bajo Windows®, lo que garantiza alta velocidad de impresión, total compatibilidad con computadoras e impresoras de todo tipo, funcionamiento en red, acceso a Internet, etc."
+  - product.features.push("Los estudios pueden exportarse para ser leídos en cualquier computador remoto sin necesidad de licencias adicionales.")
+  - product.features.push("Alto aislamiento al ruido eléctrico ambiental, puede ser utilizado en pacientes de UCI y UTI")
+  - product.features.push("Funcionamiento continuo e ininterrumpido, sin necesidad de carga ni recambio de baterías. Conexión Full USB.")
+  - product.features.push("Amplia gama de filtros y resolución de toma, configurables por el usuario.Protocolos y montajes ilimitados (bipolares y monopolares).")
+  - product.features.push("50 Protocolos y Montajes (los más utilizados) programados de fábrica, más todos los protocolos y montajes que el usuario confeccione.")
+  - product.features.push("Alta definición en toma y revisión; monitoreo y toma continuos (no paginados); amplia selección de sensibilidades, montajes y formatos de pantalla; impresión en colores transversal y longitudinal.")
+  - product.features.push("Marcador, editor y buscador de eventos del estudio.")
+  - product.features.push("Toma y revisión simultanea del registro a contar del primer minuto.")
+  - product.features.push("Visualización simultanea de todos los pacientes y sus respectivos estudios, en base de datos interactiva que permite buscarlos por nombre, número de ficha, diagnóstico, medicación, etc.")
+  - product.features.push("SISTEMA ATI®-VERTEX®  EEG 20 DE EEG DIGITAL")
+  - product.features.push("Compuesto por 1 Interfase  optoaislada USB, modelo VXH (apta para cualquier preamplificador o cadena de preamplificadores ATI VerteX de EEG/PSG)")
+  - product.features.push("1 Preamplificador de 22 canales modelo VX20, con 22 canales de entrada: 20 activos monopolares (10-20) + 2 referenciales.Incluye exclusiva entrada adicional multicanal para uso de casco de electrodos, grilla de corticografía o calibrador externo..")
+  - product.features.push("1 Set de cables y electrodos.")
+  - product.features.push("PentaTek®  con llave de habilitación; conteniendo los siguientes módulos:")
+  - product.features.push("EEG bajo Windows®")
+  - product.features.push("DB: Base de datos para manejo de pacientes y estudios.")
+  - product.features.push("Fotoestimulador ATI full USB y Notebook o PC Estacionario a elección del usuario (requerido para su funcionamiento)")
   - products.push(product)
-  - product = {"name": "Ritter 222 / Midmark 622", "fullname": "Mesa de Examen Ginecológico Ritter 222 / Midmark 622.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud."  - product.features.push("Respaldo manual, con asistencia de aire para levantar")
-  - product.features.push("Capacidad de peso del paciente de 180 Kg")
-  - product.features.push("45 a 94 cm de ajuste de altura del asiento")
-  - product.features.push("Control con el pie")
-  - product.features.push("Altura de 45 cm")
-  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  //- product.features.push("Color a elección")
-  //- product.features.push("Peso Máximo 225 Kg.")
+  - product = {"name": "ATI Vertex EEG 36", "fullname": "Electroencefalógrafo ATI Vertex EEG 36.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Exclusiva entrada adicional multicanal para uso de casco de electrodos, grilla de corticografía o calibrador externo.Exclusivo puerto serial incorporado para manejo de estimuladores externos con marcación sincronizada.Adquisición simultánea de alta velocidad y alta resolución.Expansión instantánea mediante acople rápido con el módulo respectivo (opcional).Software de 32 bits bajo Windows®, lo que garantiza alta velocidad de impresión, total compatibilidad con computadoras e impresoras de todo tipo, funcionamiento en red, acceso a Internet, etc.Los estudios pueden exportarse para ser leídos en cualquier computador remoto sin necesidad de licencias adicionales.Alto aislamiento al ruido eléctrico ambiental, puede ser utilizado en pacientes de UCI y UTIFuncionamiento continuo e ininterrumpido, sin necesidad de carga ni recambio de baterías. Conexión Full USB.Amplia gama de filtros y resolución de toma, configurables por el usuario.Protocolos y montajes ilimitados (bipolares y monopolares). 50 Protocolos y Montajes (los más utilizados) programados de fábrica, más todos los protocolos y montajes que el usuario confeccione.Alta definición en toma y revisión; monitoreo y toma continuos (no paginados); amplia selección de sensibilidades, montajes y formatos de pantalla; impresión en colores transversal y longitudinal."
+  - product.features.push("Marcador, editor y buscador de eventos del estudio.")
+  - product.features.push("Toma y revisión simultanea del registro a contar del primer minuto.")
+  - product.features.push("Visualización simultanea de todos los pacientes y sus respectivos estudios, en base de datos interactiva que permite buscarlos por nombre, número de ficha, diagnóstico, medicación, etc.")
+  - product.features.push("SISTEMA ATI®-VERTEX®  EEG 36 DE EEG DIGITAL")
+  - product.features.push("Compuesto por 1 Interfase  optoaislada USB, modelo VXH (apta para cualquier preamplificador o cadena de preamplificadores ATI VerteX de EEG/PSG)")
+  - product.features.push("Preamplificador de 22 canales modelo VX20, con 22 canales de entrada: 20 activos monopolares (10-20) + 2 referenciales.")
+  - product.features.push("Incluye exclusiva entrada adicional multicanal para uso de casco de electrodos, grilla de corticografía o calibrador externo")
+  - product.features.push("Preamplificador de 16 canales modelo VX16, con 18 canales de entrada: 16 activos monopolares (u 8 diferenciales) + 2 referenciales.")
+  - product.features.push("Set de cables y electrodos.")
+  - product.features.push("Licencia de uso de software.")
+  - product.features.push("Visualización simultanea de todos los pacientes y sus respectivos estudios, en base de datos interactiva que permite buscarlos por nombre, número de ficha, diagnóstico, medicación, etc.")
+  - product.features.push("PentaTek®  con llave de habilitación; conteniendo los siguientes módulos:")
+  - product.features.push("EEG bajo Windows®")
+  - product.features.push("DB: Base de datos para manejo de pacientes y estudios.")
+  - product.features.push("Fotoestimulador ATI full USB")
+  - product.features.push("PC Estacionario tipo Pentium IV o Notebook de similares características a elección del usuario.")
   - products.push(product)
-  - product = {"name": "Ritter 223 / Midmark 623", "fullname": "Mesa de Examen Ginecológico Ritter 223 / Midmark 623.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
-  - product.features.push("Baja altura de 48 cms")
-  //- product.features.push("Escabel incorporado y retráctil")
-  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
-  //- product.features.push("Receptáculo de contaminados")
-  //- product.features.push("Cajones al frente y a un costado")
-  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  //- product.features.push("Color a elección")
-  //- product.features.push("Peso Máximo 225 Kg.")
+  - product = {"name": "ATI Vertex EEG 64", "fullname": "Electroencefalógrafo ATI Vertex EEG 64", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Sistema de corticografía (EEG) modular de alta performanceCombinable con módulos adicionales para polisomnografía (PSG) y poligrafía (PLG).Exclusivo puerto serial incorporado para manejo de estimuladores externos, como ser un Flash."
+  - product.features.push("64 canales configurables como 64 monopolares o 32 diferenciales")
+  - product.features.push("Ampliable hasta 256 canales 320 hz de frecuencia de sampleo")
+  - product.features.push("Filtros pasa bajo, pasa alto y de ranura configurables")
+  - product.features.push("Cuantificación, Mapeo cerebral, Video EEG.")
+  - product.features.push("Visualizador de estudios entregable a pacientes sin costo adicional.")
+  - product.features.push("Digital, telemétrico y opto-aislado.")
+  - product.features.push("Exclusiva entrada para casco de electrodos o grilla subdural")
+  - product.features.push("Reportes Microsoft Word / Open / Office / HTML")
   - products.push(product)
-  - product = {"name": "Iluminación Luces Ritter", "fullname": "Luces Ritter 355", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "El Bulbo está equipado con un filtro especial para una luminosidad exenta de sombras, por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación, está plenamente iluminado.Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural."
-  - product.features.push("Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural")
-  - product.features.push("1 bulbo Halógeno de 100 W-")
-  - product.features.push("Filtro de calor para proveer luz fría 4.200ºk. Lámpara de pedestal rodable.")
-  - product.features.push("Rotación 180 grados.")
-  - product.features.push("Mango esterilizable para los movimientos y ajustes de altura.")
+  - product = {"name": "ATI Vertex EEG 128.", "fullname": "Electroencefalógrafo ATI Vertex EEG 128.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Sistema de corticografía (EEG) modular de alta performance. Combinable con módulos adicionales para polisomnografía (PSG) y poligrafía (PLG).."
+  - product.features.push("Exclusivo puerto serial incorporado para manejo de estimuladores externos, como ser un Flash.")
+  - product.features.push("128 canales configurables como 128 monopolares o 64 diferenciales o combinaciones de ambos tipos")
+  - product.features.push("Ampliable hasta 256 canales 320hz de frecuencia de sampleo")
+  - product.features.push("Filtros pasa bajo, pasa alto y de ranura configurables")
+  - product.features.push("Cuantificación, Mapeo cerebral, Video EEG.")
+  - product.features.push("Visualizador de estudios entregable a pacientes sin costo adicional.")
+  - product.features.push("Digital, telemétrico y opto-aislado.")
+  - product.features.push("Exclusiva entrada para casco de electrodos o grilla subdural")
+  - product.features.push("Reportes Microsoft Word / Open / Office / HTML")
   - products.push(product)
-  - product = {"name": "Pisos ritter", "fullname": "Pisos ritter", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Ritter, prestigiosa compañía norteamericana dedicada a la fabricación de mobiliario clínico de calidad superior, dispone de un catálogo completo de taburetes y pisos clínicos."  - product.features.push("Respaldo Hidráulico")
-  //- product.features.push("Escabel incorporado y retráctil")
-  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
-  //- product.features.push("Receptáculo de contaminados")
-  //- product.features.push("Cajones al frente y a un costado")
-  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  //- product.features.push("Color a elección")
-  //- product.features.push("Peso Máximo 225 Kg.")
-  - products.push(product)
-
-
-
-
-
-
-
-
-
-
-

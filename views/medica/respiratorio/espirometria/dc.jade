@@ -1,50 +1,38 @@
 
-extends ../../partials/product
+extends ../../../partials/product
 
 block vars
-  - var title='Electromiografos'
+  - var title='Mesas ginecologicas'
 
 block product-vars
-  - var title = 'Electromiógrafos'
+  - var title = 'Mesas de examen ginecológico'
   - var type = 'medica'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
-  - breadcrumbs.push({url:'/medica/neurofisiologia', text:'Neurofisiología'})
-  - breadcrumbs.push({url:'/medica/neurofisiologia/polisomnografos', text:'Electromiógrafos'})
+  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecologia'})
+  - breadcrumbs.push({url:'/medica/ginecologia/ecogafria', text:'Mesas ginecologicas'})
   //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
   - var products = []
-  - var product = {"name": "Amati EMG Piccolo", "fullname": "Electromiógrafo Amati EMG Piccolo.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "La descripción no se encuentra disponible aún. Para solicitar detalles técnicos para Electromiógrafo Amati EMG Piccolo, o si desea que uno de nuestros vendedores se comunique con usted telefónicamente, contáctenos a través del siguiente formulario:"
-  //- product.features.push("Sistema de PSG modular de alta performance")
-  //- product.features.push("Hasta 4 módulos de PSG y EEG combinables")
-  //- product.features.push("Visualizador de estudios entregable a pacientes sin costo adicional.")
-  //- product.features.push("Digital, telemétrico y opto-aislado.")
-  //- product.features.push("PSG")
-  //- product.features.push("15 canales, ampliable con 128 canales de EEG adicionales o hasta 60 canales de PSG.")
-  //- product.features.push("Oxímetro y pulsómetros incorporados.")
-  //- product.features.push("Acepta sensor de flujo por presión")
-  //- product.features.push("Entradas auxiliares para C-pap, capnografía y pH.")
-  //- product.features.push("Análisis y marcación automática de eventos respiratorios.")
-  //- product.features.push("Módulo opcional de análisis automático de fases de sueño.")
-  //- product.features.push("Reportes Microsoft Word / Open Office / HTML")
-  //- product.features.push("EEG De 2 hasta 128 canales 320 hz de frecuencia de sampleo de EEG")
-  //- products.push(product)
-  - product = {"name": "Amati EMG-PE 4 Canales", "fullname": "Electromiógrafo Amati EMG-PE 4 Canales", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Equipo de POTENCIALES EVOCADOS y ELECTROMIOGRAFIA marca ATI, modelo  AMATI/PE/EMG, industria argentina.Potente y flexible sistema modular, totalmente  portable,  configurado para realizar estudios de PE y/o EMG en 4 canales. Apto para potenciales evocados auditivos (de tronco, media, larga latencia y cocleografía); potenciales evocados visuales (por damero; flash y electroretinografía); potenciales evocados somatosensoriales (con estimulación por corriente constante o tensión constante); potenciales evocados cognitivos de onda P300 (con estimulación auditiva o visual) y electromiografía (con una amplia variedad de test incluidos: electromiografía, velocidad de conducción motora y sensitiva, onda F, reflejo H, reflejo de parpadeo, Estimulación Repetitiva, etc.).Permite trabajar en modo manual y por secuencias de test predeterminadas."
-  - product.features.push("Informes en Word con plantillas")
-  - product.features.push("Conversor analógico-digital de 20 bits.")
-  - product.features.push("(Jamás se satura el amplificador)")
-  - product.features.push("Estimulador somatosensorial de 2 canales. Permite conectar Estimulador Somatosensorial y Estimulador Motor Transcraneal")
-  - product.features.push("Estimulación por corriente constante o tensión constante.")
-  - product.features.push("Equipo mide la corriente real a la cual se estimula al paciente (feedback)")
-  - product.features.push("EMG con función de Zoom, permite revisar las unidades motoras contenidas es un trazado tomado a Esfuerzo Máximo.")
-  - product.features.push("Equipo con conexión full USB, todo el equipo se alimenta desde el PC o Notebook, no requiere fuentes de poder externas.")
-  - product.features.push("Comando manual (control remoto) o pedalera a elección.")
-  - product.features.push("El control remoto manual permite:Subir o bajar el volumen,Aumentar o disminuir intensidad de estimulación, Interrumpir volumen, Interrumpir estimulación, Estimular, Adquirir, Estimular y Adquirir")
-  - product.features.push("Estimulador somatosensorial de 2 canales. Permite conectar Estimulador Somatosensorial y Estimulador Motor Transcraneal")
-  - product.features.push("Opcionales: Estimulador Motor, se conecta al equipo EMG, siendo controlado por éste. Módulo de Monitoreo Intra Operatorio")
-  - product.features.push("Compuesto por:, Preamplificador de 4 canales, Host, Software de Base de Datos, Software de Potenciales Evocados, Software EMG, Software Estimulador Auditivo Tonal, Software Estimulador Somatosensorial, Software Estimulador por Flash, Software Estimulador por Pattern, Estimulador Auditivo, Auriculares Ear Tone o Ethimotycs,Estimulador Somatosensorial, Estimulador por Flash, Estimulador por Pattern, Monitor de 15” para Pattern, Módulo de Comando Manual (control remoto) o pedalera, Set de Electrodos PE,Set de Electrodos EMG")
-  - product.features.push("Computador tipo Pentium IV con pantalla plana de 19” e impresora inyección de tinta o Notebook de similares características a elección del usuario.")
+  - var product = {"name": "Ritter 204", "fullname": "Mesa de Examen Ginecológico Ritter 204.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
+  - product.features.push("Respaldo Hidráulico")
+  - product.features.push("Escabel incorporado y retráctil")
+  - product.features.push("Taqueras retráctiles y movimiento de abanico")
+  - product.features.push("Receptáculo de contaminados")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Color a elección")
+  - product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+  - product = {"name": "Ritter 222 / Midmark 622", "fullname": "Mesa de Examen Ginecológico Ritter 222 / Midmark 622.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud."  - product.features.push("Respaldo manual, con asistencia de aire para levantar")
+  - product.features.push("Capacidad de peso del paciente de 180 Kg")
+  - product.features.push("45 a 94 cm de ajuste de altura del asiento")
+  - product.features.push("Control con el pie")
+  - product.features.push("Altura de 45 cm")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
   - products.push(product)
   - product = {"name": "Ritter 223 / Midmark 623", "fullname": "Mesa de Examen Ginecológico Ritter 223 / Midmark 623.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
   - product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."

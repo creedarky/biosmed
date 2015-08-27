@@ -2,50 +2,51 @@
 extends ../../partials/product
 
 block vars
-  - var title='Oncología'
+  - var title='Cámaras Silentes'
 
 block product-vars
-  - var title = 'Oncología'
+  - var title = 'Cámaras Silentes'
   - var type = 'medica'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/medica', text:'Biosmed'})
-  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecología'})
-  - breadcrumbs.push({url:'/medica/ginecologia/monitores', text:'Oncología'})
+  - breadcrumbs.push({url:'/medica/audiologia', text:'Audiologia'})
+  - breadcrumbs.push({url:'/medica/audiologia/camaras', text:'Cámaras Silentes'})
   //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
   - var products = []
-  - var product = {"name": "Pistola de Criocirugía Wallach", "fullname": "Pistola de Criocirugía Wallach", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "El exclusivo diseño de dos gatillos del sistema de criocirugia LL100 de Wallach le permite al médico controlar con precisión tanto la congelación como la descongelación. Con el doble poder de congelación de otros sistemas, el LL100 desempeña ambas funciones con mayor efectividad en menos tiempo eliminando las fallas en el tratamiento. La congelación y la descongelación sólo ocurren cuando son activadas. El congelador, liviano, bien equilibrado y maniobrable, proporciona una visión completa del tejido a tratar. La manguera del gas permite el libre movimiento quirúrgico. Las criopuntas se pueden cambiar en cualquier momento sin que haya salida de gas. Hay disponibles una amplia selección de criopuntas reutilizables, esterilizables y altamente conductivas; y protectores plásticos desechables."
-  //- product.features.push("Detección de FCF por doppler por pulsos")
-  //- product.features.push("Transductor ultrasónico de 1 MHz de 9 cristales resistentes al agua")
-  //- product.features.push("Alarmas por alta/ baja FCF")
-  //- product.features.push("Impresora Térmica, Velocidad de impresión seleccionable a 1, 2, 3  y 12,5 cm/min")
-  //- product.features.push("Función impresión rápida")
-  //- product.features.push("Interface RS-232")
-  //- product.features.push("Peso: 3.2 Kgs")
-  //- product.features.push("Profundidad 296 mm x Ancho 305.5 mm x Alto 97.5 mm")
+  - var product = {"name": "Sibelmed S40", "fullname": "Cámara Silente Sibelmed S40.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Las cabinas insonorizadas S40, han sido diseñadas por el departamento de I+D+i de Sibel S.A. utilizando materiales en aislamiento acústico. Ello ha permitido reducir su peso obteniendo un elevado índice de aislamiento y una gran funcionalidad y belleza estética. La cabina S40 dispone de una puerta de acceso con cierre, una ventana con doble acristalamiento que permite la mutua visualización entre paciente y operador, iluminación agradable y las conexiones necesarias para conectar un audiómetro con todos sus accesorios. Adaptable a todos los audiómetros del mercado, incluidos computerizados. El acabado exterior es de paneles lavables y el interior iluminado de aspecto elegante y muy confortable. Su elaborado diseño, permite un montaje rápido y sencillo por personal no especializado."
+  - product.features.push("Gran funcionalidad y belleza estética")
+  - product.features.push("Montaje rápido y sencillo por personal no especializado.")
+  - product.features.push("Gran aislamiento acústico.")
+  - product.features.push("Atenuación máxima 46dB SPL.")
+  - product.features.push("Cabinas de medidas especiales mediante el ensamblaje de módulos.")
+  - product.features.push("Modelo S40D homologado para vehículos a motor.")
+  - product.features.push("Ventilación libre por laberinto.")
+  - product.features.push("Ventana de doble acristalamiento.")
+  - product.features.push("Adaptable a todos los audiómetros del mercado.")
+  - product.features.push("Dimensiones: 90 x 90 x 215 cm (otras bajo demanda)")
+  - product.features.push("Atenuación global: 33.5 dB “250 – 8000 Hz (certificados) / 32 dB “100 – 10000 Hz (certificados).")
+  - product.features.push("Peso: 265 kg aproximadamente.")
+  - product.features.push("Normas: CEI 601.1, ANSI S3.1, ISO 8253-.1")
+  - product.features.push("Alimentación: 220 V 50-60 Hz (otras bajo demanda)")
+  - product.features.push("Potencia: 50 VA.")
+  - product.features.push("Adaptable a todos los audiómetros.")
+  - product.features.push("Cabina certificada por LGAI (Nº 95.007.927)")
+  - product.features.push("Adaptable a todos los audiómetros Del mercado.")
+  - product.features.push("Accesorios opcionales:")
+  - product.features.push("- Rampa de acceso silla de ruedas.")
+  - product.features.push("- Panel de conexiones USB-RS232.")
+  - product.features.push("- Recubrimiento interior lavable microperforado (Deluxe")
+  - product.features.push("- Ruedas.")
+  - product.features.push("- Luz de LEDS.")
+  - product.features.push("- Preinstalación para campo libre.")
+  - product.features.push("- Mesa abatible")
+  - product.features.push("- Situación apertura puerta.")
+  - product.features.push("- Personalizable.")
+  - product.features.push("- Ventanas adicionales.")
+  - product.features.push("Dispone de una ventilación libre por laberinto. Este sistema se basa en un laberinto en el techo de la cabina, está recubierto de material aislante y permite ventilar la cabina, al mismo tiempo atenúa la transmisión sonora.")
   - products.push(product)
-  - product = {"name": "Bionet FC700", "fullname": "Monitor de Anteparto Bionet FC700", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "La descripción no se encuentra disponible aún. Para solicitar detalles técnicos para Sistema de Electrocirugía por Asas, o si desea que uno de nuestros vendedores se comunique con usted telefónicamente, contáctenos a través del siguiente formulario:"
-  //- product.features.push("Diagnosis automática")
-  //- product.features.push("Alta sensibilidad (1 Mhz)")
-  //- product.features.push("Conexión RS232C")
-  //- product.features.push("Receptáculo de contaminados")
-  //- product.features.push("Cajones al frente y a un costado")
-  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  //- product.features.push("Color a elección")
-  //- product.features.push("Peso Máximo 225 Kg.")
-  - products.push(product)
-  - product = {"name": "Instrumental", "fullname": "Instrumental", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  //- product.info = "El monitor BIONET FC700, combina la alta funcionalidad y el uso fácil, permitiendo una comprensión rápida del status fetal. La impresora A4 térmica incorporada entrega un rapport con información detallada acerca del FHR y la tendencia de la UC, con diagnosis automática. La sencilla actualización mediante conexión RS232C, le permite tener el equipo siempre al día. Una altísima sensibilidad ( 1 Mhz ) y una gran exactitud completan las elevadas prestaciones que aporta este equipo, que con junto a un precio extraordinario conforman una elección inteligente."
-  //- product.features.push("Diagnosis automática")
-  //- product.features.push("Alta sensibilidad (1 Mhz)")
-  //- product.features.push("Conexión RS232C")
-  //- product.features.push("Receptáculo de contaminados")
-  //- product.features.push("Cajones al frente y a un costado")
-  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  //- product.features.push("Color a elección")
-  //- product.features.push("Peso Máximo 225 Kg.")
-  - products.push(product)
+
 
 
 

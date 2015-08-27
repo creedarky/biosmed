@@ -1,0 +1,36 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Pisos'
+
+block product-vars
+  - var title = 'Pisos'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/mobiliario', text:'Mobiliario'})
+  - breadcrumbs.push({url:'/medica/mobiliario/pisos', text:'Pisos'})
+
+  - var products = []
+  - var product = {"name": "Pisos ritter", "fullname": "Pisos ritter", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ritter, prestigiosa compañía norteamericana dedicada a la fabricación de mobiliario clínico de calidad superior, dispone de un catálogo completo de taburetes y pisos clínicos."
+  //- product.features.push("Escabel incorporado y retráctil")
+  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
+  //- product.features.push("Receptáculo de contaminados")
+  //- product.features.push("Cajones al frente y a un costado")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
+
