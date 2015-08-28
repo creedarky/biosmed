@@ -1,0 +1,92 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Monitoreo de signos vitales'
+
+block product-vars
+  - var title = 'Monitoreo de signos vitales'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/cardiologia', text:'cardiologia'})
+  - breadcrumbs.push({url:'/medica/cardiologia/signosvitales', text:'Monitoreo de signos vitales'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "Bionet BM1", "fullname": "Bionet BM1", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "USO: Adulto, Pediátrico y Neonatal  Parámetros: SPO2, PANI, FC"
+  - product.features.push("Monitor Multiparámetro a color.")
+  - product.features.push("Delgado y Liviano diseñado para  montaje en Porta Suero o transporte")
+  - product.features.push("Pantalla de 4.3” TFT LCD")
+  - product.features.push("Alarmas visuales para identificación clara")
+  - product.features.push("Navegación de un toque para un simple y fácil control")
+  - product.features.push("Interface USB para  comunicación con PC")
+  - product.features.push("Interface LAN para comunicación con Central de Monitoreo")
+  - product.features.push("Entrada DC para conectar a Vehículo")
+  - product.features.push("Análisis de Arritmias: VTAC – VFIB- ASISTOLIA")
+  - product.features.push("Alarmas de alta y baja para todos los parámetros")
+  - product.features.push("Batería recargable  Autonomía 5 horas con funcionamiento full")
+  - product.features.push("Memoria para 120 horas")
+  - product.features.push("Para 220V/50Hz")
+  - product.features.push("Incluye:")
+  - product.features.push("Cable de poder")
+  - product.features.push("Batería Recargable")
+  - product.features.push("1 Cuff de Presión Arterial Adulto")
+  - product.features.push("1 Sensor de saturación  tipo Clip adulto")
+  - product.features.push("Manual de uso")
+  - products.push(product)
+  - var product = {"name": "Bionet BM3", "fullname": "Monitor de Signos Vitales Bionet BM 3", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "USO: Adulto, Pediátrico y Neonatal  Parámetros: SPO2, PANI, FC"
+  //- product.features.push("Monitor Multiparámetro a color.")
+  //- product.features.push("Delgado y Liviano diseñado para  montaje en Porta Suero o transporte")
+  //- product.features.push("Pantalla de 4.3” TFT LCD")
+  //- product.features.push("Alarmas visuales para identificación clara")
+  //- product.features.push("Navegación de un toque para un simple y fácil control")
+  //- product.features.push("Interface USB para  comunicación con PC")
+  //- product.features.push("Interface LAN para comunicación con Central de Monitoreo")
+  //- product.features.push("Entrada DC para conectar a Vehículo")
+  //- product.features.push("Análisis de Arritmias: VTAC – VFIB- ASISTOLIA")
+  //- product.features.push("Alarmas de alta y baja para todos los parámetros")
+  //- product.features.push("Batería recargable  Autonomía 5 horas con funcionamiento full")
+  //- product.features.push("Memoria para 120 horas")
+  //- product.features.push("Para 220V/50Hz")
+  //- product.features.push("Incluye:")
+  //- product.features.push("Cable de poder")
+  //- product.features.push("Batería Recargable")
+  //- product.features.push("1 Cuff de Presión Arterial Adulto")
+  //- product.features.push("1 Sensor de saturación  tipo Clip adulto")
+  //- product.features.push("Manual de uso")
+  - products.push(product)
+  - product = {"name": "Bionet BM 5", "fullname": "Monitor de Signos Vitales Bionet BM 5", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Sistema de corticografía (EEG) modular de alta performanceCombinable con módulos adicionales para polisomnografía (PSG) y poligrafía (PLG).Exclusivo puerto serial incorporado para manejo de estimuladores externos, como ser un Flash."
+  //- product.features.push("64 canales configurables como 64 monopolares o 32 diferenciales")
+  //- product.features.push("Ampliable hasta 256 canales 320 hz de frecuencia de sampleo")
+  //- product.features.push("Filtros pasa bajo, pasa alto y de ranura configurables")
+  //- product.features.push("Cuantificación, Mapeo cerebral, Video EEG.")
+  //- product.features.push("Visualizador de estudios entregable a pacientes sin costo adicional.")
+  //- product.features.push("Digital, telemétrico y opto-aislado.")
+  //- product.features.push("Exclusiva entrada para casco de electrodos o grilla subdural")
+  //- product.features.push("Reportes Microsoft Word / Open / Office / HTML")
+  - products.push(product)
+  - var product = {"name": "Bionet BM 7", "fullname": "Bionet BM 7", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "USO: Adulto, Pediátrico y Neonatal  Parámetros: SPO2, PANI, FC"
+  - product.features.push("Monitor Multiparámetro a color.")
+  - product.features.push("Certificado FDA-CE- ISO- IEC60601 – DIN")
+  - product.features.push("Parámetros estándar: ECG, SPO2, NIBP, FC, Resp., Temp, 2 IBP")
+  - product.features.push("Pantalla de 12,1 “ TFT, Touchscreen.")
+  - product.features.push("Protección contra desfibrilador y electrobisturí")
+  - product.features.push("Interface USB para  comunicación con PC")
+  - product.features.push("Interface LAN para comunicación con Central de Monitoreo")
+  - product.features.push("13 tipos de Análisis de Arritmias")
+  - product.features.push("Proceso de alto performance, detección de marcapaso")
+  - product.features.push("Alarmas de alta y baja para todos los parámetros")
+  - product.features.push("Batería recargable  Autonomía 3 horas con funcionamiento full")
+  - product.features.push("Memoria para 168 horas de tendencias")
+  - product.features.push("Para 220V/50Hz")
+  - product.features.push("Incluye: 1 Cable ECG de 5 leads.")
+  - product.features.push("Cable de poder")
+  - product.features.push("Batería Recargable")
+  - product.features.push("1 Cuff de Presión Arterial Adulto")
+  - product.features.push("1 Sensor de saturación  tipo Clip adulto")
+  - product.features.push("Manual de uso")
+  - products.push(product)
