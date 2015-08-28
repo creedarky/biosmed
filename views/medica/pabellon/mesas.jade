@@ -1,0 +1,144 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Mesas quirurgicas'
+
+block product-vars
+  - var title = 'Mesas de examen ginecológico'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecologia'})
+  - breadcrumbs.push({url:'/medica/ginecologia/ecogafria', text:'Mesas ginecologicas'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "Pax DS II F", "fullname": "Mesa de Partos Eléctrica  marca Pax Modelo DS II F", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Electro -  hidráulica. Control de movimientos en pedalera  y control manual. Mesa diseñada para partos, abortos y examen ginecológico. Se caracteriza por su fácil y segura operación. Incluye suaves colchonetas para la secciones cabeza, espalda, asiento y piernas. Los movimientos de la mesa son eléctricos y comandados por control remoto manual y la elevación se realiza con el pedal. "
+  - product.features.push("Largo 178 cms,  Ancho 60 cms")
+  - product.features.push("Altura regulable entre 60 y 90 cms")
+  - product.features.push("Elevación de la superficie de la mesa: 20 cms.")
+  - product.features.push("Respaldo: Angulo hacia arriba 0 a 45º, Ángulo hacia abajo 0 a 10º")
+  - product.features.push("Cajones al frente y a un costado")
+  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  - product.features.push("Altura mínima: 68 cm")
+  - product.features.push("Arco de narcosis 1 pieza")
+  - product.features.push("2 mesas de brazos ajustables hasta 90°")
+  - product.features.push("2 Pierneras")
+  - product.features.push("2 manillas estáticas de cintura")
+  - product.features.push("Colchonetas lavables para todas las secciones.")
+  //- product.features.push("Arco de narcosis 1 pieza")
+  - products.push(product)
+  - product = {"name": "Pax DS II S", "fullname": "Mesa Quirúrgica Eléctrica  marca Pax Modelo DS II S, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Características: Electro - hidráulica. Radiolúcida. Control de movimientos en panel lateral y control manual. Parte superior de la mesa permite rotación en 180º. Motor eléctrico de 24 V alimenta la mesa con la energía para los deplazamientos."
+  - product.features.push("Largo 195 cms, Ancho 50 cms")
+  - product.features.push("Altura regulable entre 66 y 96 cms")
+  - product.features.push("Tilt Lateral Izq. Der. 25º a ambos lados")
+  - product.features.push("Reversa Trendelenburg  15º")
+  - product.features.push("Trendelemburg 20°")
+  - product.features.push("Tilt Izquierda 15°")
+  - product.features.push("Tilt Derecha 15°")
+  - product.features.push("Arco de narcosis 1 pieza")
+  - product.features.push("Sección espalda: angulación hacia arriba 80º, angulación hacia abajo 30º")
+  - product.features.push("Sección piernas: Angulación hacia abajo 90°  Angulación lateral 90º")
+  - product.features.push("Sección cabezal: angulación hacia arriba 40°, angulación hacia abajo 90º")
+  - product.features.push("Peso aprox. 170 Kgs.")
+  - product.features.push("Arco de narcosis 1 pieza")
+  - product.features.push("2 mesas de brazos ajustables hasta 90°")
+  - product.features.push("2 Pierneras")
+  - product.features.push("2 manillas estáticas de cintura")
+  - product.features.push("Colchonetas lavables para todas las secciones.")
+  //- product.features.push("Arco de narcosis 1 pieza")
+  - products.push(product)
+  - product = {"name": "Pax DS II M", "fullname": "Mesa Quirúrgica Eléctrica  marca Pax Modelo DS II M, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Electro -  hidráulica. Control de movimientos en panel lateral y control manual. Permite la realización de todo tipo de cirugías.Movimiento horizontal de la mesa permite la fácil colocación de un arco en C. La bomba electro hidraúlica y las válvulas son resistentes seguras y libres de ruido. Sistema de auto carga permite contar con energía de emergencia en caso de corte de energía eléctrica."
+  - product.features.push("Largo 205 cms, Ancho 54 cms")
+  - product.features.push("Altura regulable entre 61 y 96 cms")
+  - product.features.push("Reversa Trendelenburg  20º, Trendelemburg 25°")
+  - product.features.push("Tilt Izquierda 15°, Tilt Derecha 15°")
+  - product.features.push("Sección espalda: angulación hacia arriba 75º, angulación hacia abajo 15º")
+  - product.features.push("Sección piernas: Angulación hacia abajo 90°  Angulación lateral 90º")
+  - product.features.push("Sección cabezal: angulación hacia arriba 40°, angulación hacia abajo 50º")
+  - product.features.push("Máximo movimiento horizontal 20 cm")
+  - product.features.push("Peso aprox. 170 Kgs.")
+  - product.features.push("Arco de narcosis 1 pieza")
+  - product.features.push("2 mesas de brazos ajustables hasta 90°")
+  - product.features.push("2 Pierneras")
+  - product.features.push("2 manillas estáticas de cintura")
+  - product.features.push("Colchonetas lavables para todas las secciones.")
+  //- product.features.push("Arco de narcosis 1 pieza")
+  - products.push(product)
+  - product = {"name": "Pax ST 3004", "fullname": "Mesa Obstétrica Multipropósito, marca PAX, modelo ST 3004.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Mesa diseñada para partos, exámenes y procedimientos ginecológicos. Se caracteriza por su fácil y segura operación. Incluye suaves colchonetas para la secciones cabeza, espalda, asiento y piernas. Todos los movimientos de la mesa son comandados manualmente y la elevación se realiza con el pedal."
+  - product.features.push("Hidráulica, acero inxidable, para trabajo obstétrico con anclaje al piso.")
+  - product.features.push("Mea de 4 secciones: Cabeza, espalda, Asiento y Piernas")
+  - product.features.push("Trendelemburg 25º")
+  - product.features.push("Contra Terndelemburg 10º")
+  - product.features.push("Altura ajustable entre 65 y 89,5 cm. Freno de Pedal")
+  - product.features.push("Largo 180 cms, ancho 60 cms")
+  - product.features.push("Sección espalda ángulo hacia arriba 75º, ángulo hacia abajo 6º")
+  - product.features.push("2 mesas de brazos ajustables en ángulo hasta los 90º")
+  - product.features.push("2 pierneras")
+  - product.features.push("2 manillas estáticas de cintura")
+  - product.features.push("Manilla estática de cabecera")
+  - product.features.push("Mástil porta suero")
+  - product.features.push("Receptáculo de contaminados de acero inoxidable")
+  - products.push(product)
+  - product = {"name": "Pax ST 3004", "fullname": "Mesa Quirúrgica Mecánica  marca Pax Modelo ST B procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Mesa diseñada para partos, exámenes y procedimientos ginecológicos. Se caracteriza por su fácil y segura operación. Incluye suaves colchonetas para la secciones cabeza, espalda, asiento y piernas. Todos los movimientos de la mesa son comandados manualmente y la elevación se realiza con el pedal."
+  - product.features.push("Hidráulica, Radiolúcida")
+  - product.features.push("Control de movimientos en cabezal")
+  - product.features.push("Mesa de 4 secciones: cabeza, espalda, asiento, piernas.")
+  - product.features.push("Trendelemburg 15°")
+  - product.features.push("Contra Trendelenburg 20º")
+  - product.features.push("Tilt Izquierda 17°")
+  - product.features.push("Tilt Derecha 17°")
+  - product.features.push("Altura regulable entre 71 y 91 cms")
+  - product.features.push("Ancho 50 cms")
+  - product.features.push("Largo 191 cms")
+  - product.features.push("Sección espalda ángulo 75°")
+  - product.features.push("Sección piernas ángulo 90°")
+  - product.features.push("Sección Cabeza ángulo hacia arriba 40°, ángulo hacia abajo 35°")
+  - product.features.push("Peso aprox. 135 Kgs.")
+  - product.features.push("Rotación de superficie de la mesa en 360°")
+  - product.features.push("Arco de narcosis 1 pieza")
+  - product.features.push("2 mesas de brazos ajustables hasta 90°")
+  - product.features.push("2 Pierneras")
+  - product.features.push("2 manillas estáticas de cintura")
+  - product.features.push("Colchonetas lavables para todas las secciones, suaves, confortables, con presión necesaria para evitar úlceras")
+  - products.push(product)
+  - product = {"name": "Pax ST 3004", "fullname": "Mesa Quirúrgica Mecánica  marca Pax Modelo ST D y ST 3008, procedencia China, "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Mesa diseñada para partos, exámenes y procedimientos ginecológicos. Se caracteriza por su fácil y segura operación. Incluye suaves colchonetas para la secciones cabeza, espalda, asiento y piernas. Todos los movimientos de la mesa son comandados manualmente y la elevación se realiza con el pedal."
+  - product.features.push("Hidráulica, Radiolúcida")
+  - product.features.push("Control de movimientos en cabezal")
+  - product.features.push("Mesa de 4 secciones: cabeza, espalda, asiento, piernas.")
+  - product.features.push("Trendelemburg 15°")
+  - product.features.push("Contra Trendelenburg 20º")
+  - product.features.push("Tilt Izquierda 17°")
+  - product.features.push("Tilt Derecha 17°")
+  - product.features.push("Altura regulable entre 71 y 91 cms")
+  - product.features.push("Ancho 50 cms")
+  - product.features.push("Largo 191 cms")
+  - product.features.push("Sección espalda ángulo 75°")
+  - product.features.push("Sección piernas ángulo 90°")
+  - product.features.push("Sección Cabeza ángulo hacia arriba 40°, ángulo hacia abajo 35°")
+  - product.features.push("Peso aprox. 135 Kgs.")
+  - product.features.push("Rotación de superficie de la mesa en 360°")
+  - product.features.push("Arco de narcosis 1 pieza")
+  - product.features.push("2 mesas de brazos ajustables hasta 90°")
+  - product.features.push("2 Pierneras")
+  - product.features.push("2 manillas estáticas de cintura")
+  - product.features.push("Colchonetas lavables para todas las secciones, suaves, confortables, con presión necesaria para evitar úlceras")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
+
+

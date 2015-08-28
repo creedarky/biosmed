@@ -1,0 +1,58 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Bombas de aspiración'
+
+block product-vars
+  - var title = 'Bombas de aspiración'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/pabellon', text:'Pabellón quirurgico'})
+  - breadcrumbs.push({url:'/medica/pabellon/bombas', text:'Bombas de Aspiración'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "CA-MI 350", "fullname": "Bomba de Aspiración Quirúrgica Modelo NEW HOSPIVAC 350, Marca CA-MI. Procedencia Italia.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Las NEW HOSPIVAC 350 han sido diseñadas para la aspiración profesional de fluidos corporales, gases, tejidos o huesos del paciente durante o después de la cirugía. La bomba de última generación sin lubricación garantiza alto rendimiento con excelente capacidad de succión y máxima capacidad de vacío alcanzable en unos pocos segundos, sin necesidad de mantención. Un cuadro de mandos frontal junto a un completo rango de accesorios lo hacen el dispositivo ideal para la aspiración quirúrgica y liposucción. Montada en mueble rodable, de bajo peso y fácil mantención. Dispone de 2 Depósitos de secreciones de PVC, que resiste altas temperaturas, presiones para desinfección.  Graduados con capacidad para 2.000 cc cada uno o 4.000 cc cada uno."
+  - product.features.push("Motor Bomba de pistón libre de mantenimiento y lubricación.")
+  - product.features.push("Tensión de alimentación 230V-50Hz.")
+  - product.features.push("Vacío máximo (ajustable) -0.90 Bar -90 kPa -675 mmHg.")
+  - product.features.push("Flujo de Aire Libre 60 l/min (máxima velocidad).")
+  - product.features.push("Nivel de Ruido 51,7 dBA.")
+  - product.features.push("Ciclo de Trabajo Servicio permanente.")
+  - product.features.push("Dimensiones 46 x 85 x 42cms.")
+  - product.features.push("Peso 13 Kg.")
+  - product.features.push("Certificaciones: IEC, ISO, CE.")
+  - product.features.push("Configuraciones: Hospivac 350 Basic 2: con 2 Frascos de 2000 ml en Policarbonato, Hospivac 350 FS 2: con 2 Frascos de 2000 ml en Policarbonato + Mando pedal, Hospivac 350 FULL 2: con 2 Frascos de 2000 ml en Policarbonato + Mando pedal + Sist. De Intercambio de Succión de un Frasco a otro (Change-Over Sistem), Hospivac 350 Basic 4: con 2 Frascos de 4000 ml en Policarbonato, Hospivac 350 FS 4: con 2 Frascos de 4000 ml en Policarbonato + Mando pedal, Hospivac 350 FULL 4: con 2 Frascos de 4000 ml en Policarbonato + Mando pedal + Sist. De Intercambio de Succión de un Frasco a otro (Change-Over Sistem)")
+  - products.push(product)
+  - product = {"name": "CA-MI 400", "fullname": "Bomba de Aspiración Quirúrgica Modelo Hospivac  400, Marca CA-MI. Procedencia Italia.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "NEW HOSPIVAC 400 han sido diseñadas para la aspiración profesional de fluidos corporales, gases, tejidos o huesos del paciente durante o después de la cirugía. La bomba de última generación sin lubricación garantiza alto rendimiento con excelente capacidad de succión y máxima capacidad de vacío alcanzable dentro de unos pocos segundos, sin necesidad de mantención. Un cuadro de mandos frontal junto a un completo rango de accesorios lo hacen el dispositivo ideal para la aspiración quirúrgica y liposucción."
+  - product.features.push("Montada en mueble rodable, de bajo peso y fácil mantención.")
+  - product.features.push("Equipada con sistema automático de anti rebalse.")
+  - product.features.push("Graduados con capacidad para  4.000 cc cada uno.")
+  - product.features.push("Motor Bomba de pistón libre de mantenimiento y lubricación.")
+  - product.features.push("Tensión de alimentación 230V-50Hz.")
+  - product.features.push("Vacío máximo (ajustable) -0.90 Bar -90 kPa -675 mmHg.")
+  - product.features.push("Flujo de Aire Libre 90 l/min (máxima velocidad).")
+  - product.features.push("Nivel de Ruido 46,4 dBA.")
+  - product.features.push("Ciclo de Trabajo Servicio permanente.")
+  - product.features.push("Dimensiones 50 x 96 x 31 cms.")
+  - product.features.push("Peso 20 Kg.")
+  - product.features.push("Certificaciones: IEC, ISO, CE.")
+  - product.features.push("Configuraciones: Hospivac 350 Basic 2: con 2 Frascos de 2000 ml en Policarbonato, Hospivac 350 FS 2: con 2 Frascos de 2000 ml en Policarbonato + Mando pedal, Hospivac 350 FULL 2: con 2 Frascos de 2000 ml en Policarbonato + Mando pedal + Sist. De Intercambio de Succión de un Frasco a otro (Change-Over Sistem), Hospivac 350 Basic 4: con 2 Frascos de 4000 ml en Policarbonato, Hospivac 350 FS 4: con 2 Frascos de 4000 ml en Policarbonato + Mando pedal, Hospivac 350 FULL 4: con 2 Frascos de 4000 ml en Policarbonato + Mando pedal + Sist. De Intercambio de Succión de un Frasco a otro (Change-Over Sistem)")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
