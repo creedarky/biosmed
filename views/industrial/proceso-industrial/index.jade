@@ -1,0 +1,115 @@
+extends ../../partials/layout.jade
+
+block vars
+  - var title='Laboratorio'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../../partials/navbar-industrial
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/industrial/reactivo.jpg")
+
+
+  .container.bottom-offset
+    - var menuTitle = "Productos"
+    - var data = []
+    - data.push({img: '/img/producto/proceso-industrial/alcalinidad.jpg', title: 'Alcalinidad', url: './proceso-industrial/alcalinidad' })
+    - data.push({img: '/img/producto/proceso-industrial/aluminio.jpg', title: 'Aluminio', url: './proceso-industrial/aluminio' })
+    - data.push({img: '/img/producto/proceso-industrial/amoniaco.jpg', title: 'Amoniaco (Colorimetrico)', url: './proceso-industrial/amoniaco-c' })
+    - data.push({img: '/img/producto/proceso-industrial/amoniaco.jpg', title: 'Amoniaco (Fluorimetrico)', url: './proceso-industrial/amoniaco-f' })
+    - data.push({img: '/img/producto/proceso-industrial/arsenico-total.jpg', title: 'Arsenico Total', url: './proceso-industrial/arsenico-total' })
+    - data.push({img: '/img/producto/proceso-industrial/dbo.jpg', title: 'DBO (triptofano)', url: './proceso-industrial/dbo' })
+    - data.push({img: '/img/producto/proceso-industrial/boro.jpg', title: 'Boro', url: './proceso-industrial/boro' })
+    - data.push({img: '/img/producto/proceso-industrial/cadmio.jpg', title: 'Cadmio Disuelto', url: './proceso-industrial/cadmio-disuelto' })
+    - data.push({img: '/img/producto/proceso-industrial/cadmio.jpg', title: 'Cadmio total', url: './proceso-industrial/cadmio-total' })
+    - data.push({img: '/img/producto/proceso-industrial/calcio.jpg', title: 'Calcio', url: './proceso-industrial/calcio' })
+    - data.push({img: '/img/producto/proceso-industrial/cloruro.jpg', title: 'Cloruro', url: './proceso-industrial/cloruro' })
+    - data.push({img: '/img/producto/proceso-industrial/cloro.jpg', title: 'Cloro', url: './proceso-industrial/cloro' })
+    - data.push({img: '/img/producto/proceso-industrial/cloro.jpg', title: 'Cloro libre y total', url: './proceso-industrial/cloro-libre' })
+    - data.push({img: '/img/producto/proceso-industrial/cromo.jpg', title: 'Cromo +6', url: './proceso-industrial/cromo' })
+    - data.push({img: '/img/producto/proceso-industrial/cromo-total.jpg', title: 'Cromo total', url: './proceso-industrial/cromo-total' })
+    - data.push({img: '/img/producto/proceso-industrial/dqo.jpg', title: 'DQO (Permanganato)', url: './proceso-industrial/dqo' })
+    - data.push({img: '/img/producto/proceso-industrial/dqo-dicromato.jpg', title: 'DQO (Dicromato)', url: './proceso-industrial/dqo-dicromato' })
+    - data.push({img: '/img/producto/proceso-industrial/dqo-uv.jpg', title: 'DQO (UV Directo)', url: './proceso-industrial/dqo-uv' })
+    - data.push({img: '/img/producto/proceso-industrial/color.jpg', title: 'Color', url: './proceso-industrial/color' })
+    - data.push({img: '/img/producto/proceso-industrial/cobre.jpg', title: 'Cobre', url: './proceso-industrial/cobre' })
+    - data.push({img: '/img/producto/proceso-industrial/indice-cianuro.jpg', title: ' Indice de cianuro ', url: './proceso-industrial/indice-cianuro' })
+    - data.push({img: '/img/producto/proceso-industrial/cianuro-libre.jpg', title: 'Indice de cianuro libre', url: './proceso-industrial/cianuro-libre' })
+    - data.push({img: '/img/producto/proceso-industrial/cianuro-libre-destilacion.jpg', title: 'Cianuro Libre (Destilacion)', url: './proceso-industrial/cianuro-libre-destilacion' })
+    - data.push({img: '/img/producto/proceso-industrial/cianuro-total.jpg', title: 'Cianuro Total', url: './proceso-industrial/cianuro-total' })
+    - data.push({img: '/img/producto/proceso-industrial/etilenglicol.jpg', title: 'Etilenglicol', url: './proceso-industrial/etilenglicol' })
+    - data.push({img: '/img/producto/proceso-industrial/fluor.jpg', title: 'Fluor (método ISE)', url: './proceso-industrial/fluor' })
+    - data.push({img: '/img/producto/proceso-industrial/dureza.jpg', title: 'Dureza', url: './proceso-industrial/dureza' })
+    - data.push({img: '/img/producto/proceso-industrial/hidracina.jpg', title: 'Hidracina', url: './proceso-industrial/hidracina' })
+    - data.push({img: '/img/producto/proceso-industrial/hierro-total-disuelto.jpg', title: 'Hierro total disuelto', url: './proceso-industrial/hierro-total-disuelto' })
+    - data.push({img: '/img/producto/proceso-industrial/hierro-total.jpg', title: 'Hierro total', url: './proceso-industrial/hierro-total' })
+    - data.push({img: '/img/producto/proceso-industrial/plomo-disuelto.jpg', title: 'Plomo disuelto', url: './proceso-industrial/plomo-disuelto' })
+    - data.push({img: '/img/producto/proceso-industrial/manganeso.jpg', title: 'Manganeso', url: './proceso-industrial/manganeso' })
+    - data.push({img: '/img/producto/proceso-industrial/manganeso-total.jpg', title: 'Manganeso total', url: './proceso-industrial/manganeso-total' })
+    - data.push({img: '/img/producto/proceso-industrial/mbas.jpg', title: 'MBAS', url: './proceso-industrial/mbas' })
+    - data.push({img: '/img/producto/proceso-industrial/monocloraminas.jpg', title: 'Monocloraminas', url: './proceso-industrial/monocloraminas' })
+    - data.push({img: '/img/producto/proceso-industrial/niquel.jpg', title: 'Niquel', url: './proceso-industrial/niquel' })
+    - data.push({img: '/img/producto/proceso-industrial/niguel-total.jpg', title: 'Niguel total', url: './proceso-industrial/niquel-total' })
+    - data.push({img: '/img/producto/proceso-industrial/nitrato.jpg', title: 'Nitrato (Reduccion hidracina)', url: './proceso-industrial/nitrato-hidracina' })
+    - data.push({img: '/img/producto/proceso-industrial/nitrato.jpg', title: 'Nitrato Nitrato (Reducción UV)', url: './proceso-industrial/nitrato-uv' })
+    - data.push({img: '/img/producto/proceso-industrial/nitrito.jpg', title: 'Nitrito', url: './proceso-industrial/nitrito' })
+    - data.push({img: '/img/producto/proceso-industrial/nitrogeno-total.jpg', title: 'Nitrogeno total', url: './proceso-industrial/nitrogeno-total' })
+    - data.push({img: '/img/producto/proceso-industrial/nitrogeno-fosforo.jpg', title: 'Nitrogeno y Fosforo Total', url: './proceso-industrial/nitrogeno-fosforo' })
+    - data.push({img: '/img/producto/proceso-industrial/ph.jpg', title: 'pH', url: './proceso-industrial/ph' })
+    - data.push({img: '/img/producto/proceso-industrial/fenol.jpg', title: 'Indice Fenol', url: './proceso-industrial/fenol' })
+    - data.push({img: '/img/producto/proceso-industrial/fenol-volatil.jpg', title: 'Indice Fenol Volatil', url: './proceso-industrial/fenol-volatil' })
+    - data.push({img: '/img/producto/proceso-industrial/fosfato.jpg', title: 'Fosfato', url: './proceso-industrial/fosfato' })
+    - data.push({img: '/img/producto/proceso-industrial/fosforo-total.jpg', title: 'Fosforo total', url: './proceso-industrial/fosforo-total' })
+    - data.push({img: '/img/producto/proceso-industrial/silicatos.jpg', title: 'Silicatos', url: './proceso-industrial/silicatos' })
+    - data.push({img: '/img/producto/proceso-industrial/sucrosa.jpg', title: 'Sucrosa', url: './proceso-industrial/sucrosa' })
+    - data.push({img: '/img/producto/proceso-industrial/sulfatos.jpg', title: 'Sulfatos', url: './proceso-industrial/sulfatos' })
+    - data.push({img: '/img/producto/proceso-industrial/sulfuro.jpg', title: 'Sulfuro', url: './proceso-industrial/sulfuro' })
+    - data.push({img: '/img/producto/proceso-industrial/toc.jpg', title: 'TOC', url: './proceso-industrial/toc' })
+    - data.push({img: '/img/producto/proceso-industrial/turbiedad.jpg', title: 'Turbiedad', url: './proceso-industrial/turbiedad' })
+    - data.push({img: '/img/producto/proceso-industrial/tss.jpg', title: 'TSS', url: './proceso-industrial/tss' })
+    - data.push({img: '/img/producto/proceso-industrial/zinc.jpg', title: 'TOC', url: './proceso-industrial/zinc' })
+    - data.push({img: '/img/producto/proceso-industrial/zinc-total.jpg', title: 'Zinc total', url: './proceso-industrial/zinc-total' })
+    - data.push({img: '/img/producto/proceso-industrial/orp.jpg', title: 'ORP', url: './proceso-industrial/orp' })
+    - data.push({img: '/img/producto/proceso-industrial/conductivity.jpg', title: 'Conductivity', url: './proceso-industrial/conductivity' })
+    - data.push({img: '/img/producto/proceso-industrial/oxigeno.jpg', title: 'Oxigeno disuelto', url: './proceso-industrial/oxigeno' })
+    - data.push({img: '/img/producto/proceso-industrial/ozono.jpg', title: 'Ozono disuelto', url: './proceso-industrial/ozono' })
+
+    include ../../partials/menubox
+
+
+
+  .container.bottom-offset
+    .row.well
+      h4 Marcas representadas
+      hr
+      .slick-carousel
+        img.img-responsive(src="/img/client_logos/logo_1.jpg")
+        img.img-responsive(src="/img/client_logos/logo_2.jpg")
+        img.img-responsive(src="/img/client_logos/logo_3.jpg")
+        img.img-responsive(src="/img/client_logos/logo_4.jpg")
+        img.img-responsive(src="/img/client_logos/logo_5.jpg")
+        img.img-responsive(src="/img/client_logos/logo_6.jpg")
+        img.img-responsive(src="/img/client_logos/logo_7.jpg")
+        img.img-responsive(src="/img/client_logos/logo_8.jpg")
+
+
+
+
+
+
+
+
+
+
+
