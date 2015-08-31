@@ -1,0 +1,75 @@
+extends ../../partials/layout.jade
+
+block vars
+  - var title='Laboratorio'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../../partials/navbar-industrial
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/industrial/electrodos.jpg")
+
+
+  .container.bottom-offset
+    - var menuTitle = "Productos"
+    - var data = []
+    - data.push({img: '/img/producto/electrodos/ph.jpg', title: 'pH', url: './electrodos/ph' })
+    - data.push({img: '/img/producto/electrodos/referencia.jpg', title: 'Referencia', url: './electrodos/referencia' })
+    - data.push({img: '/img/producto/electrodos/temperatura.jpg', title: 'Temperatura', url: './electrodos/temperatura' })
+    - data.push({img: '/img/producto/electrodos/orp.jpg', title: 'ORP', url: './electrodos/orp' })
+    - data.push({img: '/img/producto/electrodos/conductividad.jpg', title: 'Conductividad', url: './electrodos/conductividad' })
+    - data.push({img: '/img/producto/electrodos/oxigeno-disuelto.jpg', title: 'Oxígeno disuelto', url: './electrodos/oxigeno-disuelto' })
+    - data.push({img: '/img/producto/electrodos/cianuro.jpg', title: 'Cianuro', url: './electrodos/cianuro' })
+    - data.push({img: '/img/producto/electrodos/cloruro.jpg', title: 'Cloruro', url: './electrodos/cloruro' })
+    - data.push({img: '/img/producto/electrodos/sulfuro.jpg', title: 'Sulfuro', url: './electrodos/sulfuro' })
+    - data.push({img: '/img/producto/electrodos/ioduro.jpg', title: 'Ioduro', url: './electrodos/ioduro' })
+    - data.push({img: '/img/producto/electrodos/bromuro.jpg', title: 'Bromuro', url: './electrodos/bromuro' })
+    - data.push({img: '/img/producto/electrodos/cobre.jpg', title: 'Cobre', url: './electrodos/cobre' })
+    - data.push({img: '/img/producto/electrodos/cadmio.jpg', title: 'Cadmio', url: './electrodos/cadmio' })
+    - data.push({img: '/img/producto/electrodos/plomo.jpg', title: 'Plomo', url: './electrodos/plomo' })
+    - data.push({img: '/img/producto/electrodos/tiocianato.jpg', title: 'Tiocianato', url: './electrodos/tiocianato' })
+    - data.push({img: '/img/producto/electrodos/fluoruro.jpg', title: 'Fluoruro', url: './electrodos/fluoruro' })
+    - data.push({img: '/img/producto/electrodos/plata.jpg', title: 'Plata', url: './electrodos/plata' })
+    - data.push({img: '/img/producto/electrodos/amoniaco.jpg', title: 'Amoniaco', url: './electrodos/amoniaco' })
+    - data.push({img: '/img/producto/electrodos/sodio.jpg', title: 'Sodio', url: './electrodos/sodio' })
+    - data.push({img: '/img/producto/electrodos/nitrato.jpg', title: 'Nitrato', url: './electrodos/nitrato' })
+    - data.push({img: '/img/producto/electrodos/potasio.jpg', title: 'Potasio', url: './electrodos/potasio' })
+    - data.push({img: '/img/producto/electrodos/calcio.jpg', title: 'Calcio', url: './electrodos/calcio' })
+    - data.push({img: '/img/producto/electrodos/isfet.jpg', title: 'ISFET - Ph', url: './electrodos/isfet' })
+
+    include ../../partials/menubox
+
+
+
+  .container.bottom-offset
+    .row.well
+      h4 Marcas representadas
+      hr
+      .slick-carousel
+        img.img-responsive(src="img/client_logos/horiba.gif")
+        img.img-responsive(src="/img/client_logos/systea.gif")
+        img.img-responsive(src="/img/client_logos/palintest.gif")
+        img.img-responsive(src="/img/client_logos/hf.gif")
+        img.img-responsive(src="/img/client_logos/wagtech.gif")
+
+
+
+
+
+
+
+
+
+
+

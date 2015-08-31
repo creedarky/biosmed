@@ -1,0 +1,35 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Turbiedad'
+
+block product-vars
+  - var title = 'Turbiedad'
+  - var type = 'industrial'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/industrial/productos', text:'Industrial'})
+  - breadcrumbs.push({url:'/industrial/reactivo', text:'Reactivo'})
+  - breadcrumbs.push({url:'/industrial/reactivo/turbiedad', text:'Turbiedad'})
+  - var products = []
+  - var product = {"name": "ProCal", "fullname": "ProCal", "features":[], "img": "/img/equipos/procal.jpg", "downloadLink": "#"}
+  - product.info = "Estándares de turbiedad compatibles con equipos Hach, para calibración de turbidimetros"
+  - products.push(product)
+  - product = {"name": "ProCheck", "fullname": "ProCheck", "features":[], "img": "/img/equipos/procheck.jpg", "downloadLink": "#"}
+  - product.info = "Set de estándares secundarios para verificación de turbidimetros. Compatible con equipos Hach"
+  - products.push(product)
+  //- product.features.push("Receptáculo de contaminados")
+  //- product.features.push("Cajones al frente y a un costado")
+  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
+  //- product.features.push("Color a elección")
+  //- product.features.push("Peso Máximo 225 Kg.")
+
+
+
+
+
+
+
+
+
+

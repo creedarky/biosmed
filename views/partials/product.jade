@@ -45,9 +45,9 @@ block page-content
         .col-md-8.col-lg-9
           each product, index in products
             .well.product-info.bottom-offset-half(class="#{index !== 0 ? 'hidden' : ''}" data-index="#{index}" data-name="#{product.fullname}")
-              img.img-responsive(src='#{product.img}')
+              img.img-responsive(src='#{product.img}', onerror="imgError(this)")
               h4.title #{product.fullname}
-              if product.features
+              if product.features && product.features.length
                 h5.subtitle
                   strong Caracteristicas del producto
                 ul.list-unstyled
