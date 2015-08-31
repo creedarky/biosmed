@@ -1,0 +1,128 @@
+
+extends ../../partials/product
+
+block vars
+  - var title='Ecógafos'
+
+block product-vars
+  - var title = 'Ecógrafos'
+  - var type = 'medica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/medica/veterinaria', text:'Veterinaria'})
+  - breadcrumbs.push({url:'/medica/veterinaria/ecografos', text:'Ecográfos'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "Chison D600 Vet", "fullname": "Ecógrafo Chison D600 Vet", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ecógrafo en Blanco y Negro modelo D600 Vet, para aplicaciones veterinarias."
+  - product.features.push("Aplicaciones diagnósticas: Abdominal, Partes pequeñas,Ginecológica, Obstétrico, Cardíaco, Reproducción")
+  - product.features.push("Pantalla SVGA 10” de alta resolución")
+  - product.features.push("Memoria para almacenamiento de imágenes")
+  - product.features.push("Almacenamiento masivo de imágenes vía  dispositivo USB")
+  - product.features.push("Navegación de un toque para un simple y fácil control")
+  - product.features.push("2 puertos USB")
+  - product.features.push("Panel de control iluminado")
+  - product.features.push("Teclado alfanumérico")
+  - product.features.push("Modos de imagen, B, B/B, M, B/M, 4B, Real time Dynamic Imaging: RDF, RDA, DFS, DRA.")
+  - product.features.push("Procesamiento de imagen: Procesamiento de imagen congelada, Cine Loop 256 cuadros, Zoom Inteligente de 4 pasos.")
+  - product.features.push("Transductores: Banda ancha, multi frecuencia, Transductor MicroConvexo (3.5./5.0/6.0/7.0 Mhz.), Transductor Transrectal (3.5./5.0/6.0/7.0 Mhz.), Transductor Lineal (5.0 /6.0 /7.5/ 9.0 Mhz.)")
+  - product.features.push("Configuración Incluye 600M Main Unit con monitor SVGA 10” de alta resolución, Transductor multifrecuencia a elección.")
+  - product.features.push("Software: Canino (GS, CRL, HD, BD), Felino (HD, BD), Equino (GS), Bovino (BPD, CRL, Trunk Diameter), Ovino (BPD, CRL, Trunk Diameter)")
+  - product.features.push("1 sensor de Sp02")
+  - product.features.push("1 brazalete PNI")
+  //- product.features.push("1 Cuff de Presión Arterial Adulto")
+  //- product.features.push("1 Sensor de saturación  tipo Clip adulto")
+  //- product.features.push("Manual de uso")
+  - products.push(product)
+  - product = {"name": "Chison Eco 1 Vet.", "fullname": "Ecógrafo Chison Eco 1 Vet", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ecógrafo para usos Veterinarios modelo ECO 1 Vet"
+  - product.features.push("Aplicaciones: Reproducción y Tendón en animales de grandes. Abdomen, partes pequeñas, cardiología básica en animales pequeños.")
+  - product.features.push("Modos: B, B/B, 4B, M, B/M")
+  - product.features.push("Escala de grises: 256 niveles")
+  - product.features.push("Profundidad de escaneo: 240 mm Máx. (Dependiendo del transductor).")
+  - product.features.push("Frecuencia de los transductores: 2,5 a 11 MHz (dependiendo del transductor)")
+  - product.features.push("Cine Loop: 256 cuadros")
+  - product.features.push("Zoom: 4 pasos")
+  - product.features.push("Paquetes de software: Canino: GS, CRL, HD, BD, Felino: HD, BD, Equino: GS, Bovino: BPD, CRL, diámetro del tronco, Ovino: BPD, CRL, diámetro del tronco")
+  //- product.features.push("Análisis de Arritmias: VTAC – VFIB- ASISTOLIA")
+  - product.features.push("Configuración Standard: Unidad Principal + Transductor Lineal L7M-A (5,3 a 10 MHz) + 1 conector para transductor + 3 Puertos USB + Puerto VGA + Puerto de Video + Puerto LAN")
+  - product.features.push("Opcionales: 2 conectores para transductor, DICOM 3.0, Cubierta antiderrames para teclado, Bolsa de transporte, Impresora, Carro de transporte")
+  - products.push(product)
+  - product = {"name": "Chison Eco 3 Vet.", "fullname": "Ecógrafo Chison Eco 3 Vet", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ecógrafo para usos Veterinarios modelo ECO 3 Vet"
+  - product.features.push("Aplicaciones: Animales grandes: Reproducción. Animales Pequeños: Abdomen, partes pequeñas, Cardiología Básica")
+  - product.features.push("Modos: B, B/B, 4B, M, B/M")
+  - product.features.push("Tecnología de imagen: Imagen Compuesta, Imagen trapezoidal, Chroma, i-image, Imagen armónica THI, Algoritmo de reducción de ruido SRA")
+  - product.features.push("Profundidad de escaneo: 240 mm Máx. (Dependiendo del transductor).")
+  - product.features.push("Frecuencia de los transductores: 2,5 a 11 MHz (dependiendo del transductor)")
+  - product.features.push("Cine Loop: 256 cuadros")
+  - product.features.push("Zoom: 4 pasos")
+  - product.features.push("Paquetes de medición: Mediciones generales, Caninos: GS, CRL, HD, BD, Felinos: HD, BD, Equinos: GS, Bovinos: BPD, CRL, Diámetro del tronco, Ovinos: BPD, CRL, Diámetro del tronco")
+  - product.features.push("Reporte de exámenes")
+  - product.features.push("Manejo de la información de paciente")
+  - product.features.push("Almacenamiento de imágenes del paciente")
+  - products.push(product)
+  - product = {"name": "Chison 9300 VET", "fullname": "Ecógrafo Chison 9300 Vet", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ecógrafo para usos Veterinarios modelo 9300 Vet"
+  - product.features.push("Aplicaciones: Abdomen, OB & GYN, Partes pequeñas, Reproducción, Cardiología, etc.")
+  - product.features.push("Modos: B, B/B, 4B, M, B/M")
+  - product.features.push("Escala de grises: 256 niveles")
+  - product.features.push("Técnicas de escaneo: Imágen dinámica en tiempo real (RDF, RDA, DFS, DRA), Imágen Armónica")
+  - product.features.push("Profundidad de escaneo: 240 mm Máx. (Dependiendo del transductor).")
+  - product.features.push("Frecuencia de los transductores: 2,5 a 10 MHz (dependiendo del transductor)")
+  - product.features.push("Cine Loop: 256 cuadros")
+  - product.features.push("Zoom: 4 pasos")
+  - product.features.push("Paquetes de Software: Canino: GS, CRL, HD, BD, Felino: HD, BD, Equino: GS, Bovino: BPD, CRL, Diámetro del tronco, Ovino: BPD, CRL, Diámetro del tronco")
+  - product.features.push("Número de conectores de transductor: 1 standard, 2 opcional")
+  - product.features.push("Monitor: 10″")
+  - product.features.push("Almacenamiento de imágenes del paciente")
+  - product.features.push("Configuración Estándar: Unidad Principal + Transductor micro convexo 6,0 MHz + 1 conector para transductor + 2 puertos USB + 1 Puerto VGA + DICOM 3.0")
+  - products.push(product)
+  - product = {"name": "Chison 9300 VET", "fullname": "Ecógrafo Chison 9300 Vet", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Ecógrafo para usos Veterinarios modelo 9300 Vet"
+  - product.features.push("Aplicaciones: Abdomen, OB & GYN, Partes pequeñas, Reproducción, Cardiología, etc.")
+  - product.features.push("Modos: B, B/B, 4B, M, B/M")
+  - product.features.push("Escala de grises: 256 niveles")
+  - product.features.push("Técnicas de escaneo: Imágen dinámica en tiempo real (RDF, RDA, DFS, DRA), Imágen Armónica")
+  - product.features.push("Profundidad de escaneo: 240 mm Máx. (Dependiendo del transductor).")
+  - product.features.push("Frecuencia de los transductores: 2,5 a 10 MHz (dependiendo del transductor)")
+  - product.features.push("Cine Loop: 256 cuadros")
+  - product.features.push("Zoom: 4 pasos")
+  - product.features.push("Paquetes de Software: Canino: GS, CRL, HD, BD, Felino: HD, BD, Equino: GS, Bovino: BPD, CRL, Diámetro del tronco, Ovino: BPD, CRL, Diámetro del tronco")
+  - product.features.push("Número de conectores de transductor: 1 standard, 2 opcional")
+  - product.features.push("Monitor: 10″")
+  - product.features.push("Almacenamiento de imágenes del paciente")
+  - product.features.push("Configuración Estándar: Unidad Principal + Transductor micro convexo 6,0 MHz + 1 conector para transductor + 2 puertos USB + 1 Puerto VGA + DICOM 3.0")
+  - products.push(product)
+  - product = {"name": "Chison Q5 VET", "fullname": "Ecógrafo Doppler Color Chison Q5 Vet.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Este equipo cuenta con la más alta tecnología y calidad de imagen para especies grandes y pequeñas a un precio muy accesible"
+  - product.features.push("Incluye:")
+  - product.features.push("Unidad principal")
+  - product.features.push("Software para mediciones veterinarias")
+  - product.features.push("Dos conectores para transductor")
+  - product.features.push("Un transductor a elegir – convexo, lineal, rectal")
+  - products.push(product)
+  - product = {"name": "Chison Q6 Vet.", "fullname": "Ecógrafo Doppler Color Chison Q6 Vet.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Chison Q6 es un sistema de ultrasonido para ecografía doppler color de tamaño compacto y portátil. Un flujo de trabajo orientado a la interfaz de usuario para que el manejo del equipo sea fácil dado permite el el análisis con un mínimo de datos de entrada. Diseño ergonómico del teclado, pantalla LCD de gran tamaño de 15 pulgadas, posee conectores de doble sonda, USB y conectividad DICOM hacer el escaneo rápido y fácil, y le permitirá centrarse más en sus pacientes."
+  - product.features.push("Incluye:")
+  - product.features.push("Unidad unidad principal Q6")
+  - product.features.push("Transductor a elección")
+  - products.push(product)
+  - product = {"name": "Chison Q9 Vet.", "fullname": "Ecógrafo Doppler Color Chison Q9 Vet.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Chison Q6 es un sistema de ultrasonido para ecografía doppler color de tamaño compacto y portátil. Un flujo de trabajo orientado a la interfaz de usuario para que el manejo del equipo sea fácil dado permite el el análisis con un mínimo de datos de entrada. Diseño ergonómico del teclado, pantalla LCD de gran tamaño de 15 pulgadas, posee conectores de doble sonda, USB y conectividad DICOM hacer el escaneo rápido y fácil, y le permitirá centrarse más en sus pacientes."
+  //- product.features.push("Incluye:")
+  //- product.features.push("Unidad unidad principal Q6")
+  //- product.features.push("Transductor a elección")
+  - products.push(product)
+  - product = {"name": "Chison Sonotouch 10 Vet..", "fullname": "Chison Sonotouch 10 Vet.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Chison Q6 es un sistema de ultrasonido para ecografía doppler color de tamaño compacto y portátil. Un flujo de trabajo orientado a la interfaz de usuario para que el manejo del equipo sea fácil dado permite el el análisis con un mínimo de datos de entrada. Diseño ergonómico del teclado, pantalla LCD de gran tamaño de 15 pulgadas, posee conectores de doble sonda, USB y conectividad DICOM hacer el escaneo rápido y fácil, y le permitirá centrarse más en sus pacientes."
+  //- product.features.push("Incluye:")
+  //- product.features.push("Unidad unidad principal Q6")
+  //- product.features.push("Transductor a elección")
+  - products.push(product)
+  - product = {"name": "Chison Sonotouch 20 Vet.", "fullname": "Chison Sonotouch 200 Vet.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  //- product.info = "Chison Q6 es un sistema de ultrasonido para ecografía doppler color de tamaño compacto y portátil. Un flujo de trabajo orientado a la interfaz de usuario para que el manejo del equipo sea fácil dado permite el el análisis con un mínimo de datos de entrada. Diseño ergonómico del teclado, pantalla LCD de gran tamaño de 15 pulgadas, posee conectores de doble sonda, USB y conectividad DICOM hacer el escaneo rápido y fácil, y le permitirá centrarse más en sus pacientes."
+  //- product.features.push("Incluye:")
+  //- product.features.push("Unidad unidad principal Q6")
+  //- product.features.push("Transductor a elección")
+  - products.push(product)
