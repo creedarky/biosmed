@@ -9,9 +9,9 @@
   $.material.init();
   var $document = $(document);
 
-  $document.on('error', 'img', function () {
-    $(this).attr('src', '/img/placeholder.png' );
-  });
+  //$document.on('error', 'img', function () {
+  //  $(this).attr('src', '/img/placeholder.png' );
+  //});
   $document.ready(function() {
     $('.slick-carousel').slick({
       dots: true,
@@ -71,3 +71,4 @@
   }
 
 })();
+

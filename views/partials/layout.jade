@@ -55,6 +55,13 @@ html.wf-loading
     link(rel="stylesheet", href="/css/main.css")
     //- endbuild
 
+    // img error function
+    script.
+      function imgError(image) {
+        image.onerror = "";
+        image.src = "/img/placeholder.png";
+        return true;
+      }
     block extra-styles
 
   body
