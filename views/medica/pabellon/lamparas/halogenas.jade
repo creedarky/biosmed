@@ -2,67 +2,58 @@
 extends ../../../partials/product
 
 block vars
-  - var title='Mesas ginecologicas'
+  - var title='Lámparas quirúrgicas halógenas'
 
 block product-vars
-  - var title = 'Mesas de examen ginecológico'
+  - var title = 'Lámparas quirúrgicas halógenas'
   - var type = 'medica'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
-  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecologia'})
-  - breadcrumbs.push({url:'/medica/ginecologia/ecogafria', text:'Mesas ginecologicas'})
+  - breadcrumbs.push({url:'/medica/pabellon', text:'Pabellón Quirúrgico'})
+  - breadcrumbs.push({url:'/medica/pabellon/lamparas', text:'Lámparas Quirúrgicas'})
+  - breadcrumbs.push({url:'/medica/pabellon/lamparas/halogenas', text:'Lámparas quirúrgicas halógenas'})
   //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
   - var products = []
-  - var product = {"name": "Ritter 204", "fullname": "Mesa de Examen Ginecológico Ritter 204.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
-  - product.features.push("Respaldo Hidráulico")
-  - product.features.push("Escabel incorporado y retráctil")
-  - product.features.push("Taqueras retráctiles y movimiento de abanico")
-  - product.features.push("Receptáculo de contaminados")
-  - product.features.push("Cajones al frente y a un costado")
-  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  - product.features.push("Color a elección")
-  - product.features.push("Peso Máximo 225 Kg.")
+  - var product = {"name": "PAX F700", "fullname": "LÁMPARA QUIRÚRGICA DE TECHO MARCA SHANGHAI FOSHION MEDICAL INSTRUMENT,MODELO PAX F700, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Lámpara de cielo Monofocal Halógena de  150W, intensidad de luz a 1 metro 50.000 a 140.000 Lux regulable desde el mango posicionador. Equipada con un filtro especial para luminosidad exenta de sombras por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación está plenamente iluminado. Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural.  Con filtro de calor Con regulación de intensidad Movimientos libres gracias al sistema “Balance o Matic Suspension” que permite mover la lámpara en cualquier dirección y giro con un solo toque de dedo.Rotación 360 grados."
+  - product.features.push("Temperatura Color 4.000 °K")
+  - product.features.push("Para 220V")
+  - product.features.push("Bulbo de 150W")
+  - product.features.push("Duración 1.000 horas")
+  - product.features.push("Diámetro de lámpara 700 mm")
+  - product.features.push("Alturas para instalación: 2.90 mts o 2.40 Mts. Especificar en Orden de Compra")
   - products.push(product)
-  - product = {"name": "Ritter 222 / Midmark 622", "fullname": "Mesa de Examen Ginecológico Ritter 222 / Midmark 622.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud."  - product.features.push("Respaldo manual, con asistencia de aire para levantar")
-  - product.features.push("Capacidad de peso del paciente de 180 Kg")
-  - product.features.push("45 a 94 cm de ajuste de altura del asiento")
-  - product.features.push("Control con el pie")
-  - product.features.push("Altura de 45 cm")
+  - product = {"name": "PAX F 500 Rodable", "fullname": "LÁMPARA QUIRÚRGICA RODABLE DE PEDESTAL MARCA SHANGHAI FOSHION MEDICAL INSTRUMENT, MODELO F 500, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Lámpara móvil Monofocal Halógena de  150W, modelo F500 con intensidad de luz a 1 metro, regulable de 40.000 a 120.000 Lux. Equipada con un filtro especial para luminosidad exenta de sombras por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación está plenamente iluminado.  Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural."
+  - product.features.push("Con filtro de calor y regulación de intensidad")
+  - product.features.push("Requerimientos Técnicos: Toma corriente 220 V/ 50 Hz")
+  //- product.features.push("Control con el pie")
+  //- product.features.push("Altura de 45 cm")
   //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
   //- product.features.push("Color a elección")
   //- product.features.push("Peso Máximo 225 Kg.")
   - products.push(product)
-  - product = {"name": "Ritter 223 / Midmark 623", "fullname": "Mesa de Examen Ginecológico Ritter 223 / Midmark 623.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
-  - product.features.push("Baja altura de 48 cms")
-  //- product.features.push("Escabel incorporado y retráctil")
-  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
-  //- product.features.push("Receptáculo de contaminados")
+  - product = {"name": "PAX F 500 Cielítica", "fullname": "LAMPARA QUIRURGICA CIELITICA, MARCA SHANGHAI FOSHION MEDICAL INSTRUMENT, MODELO F 500, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Lámpara Monofocal Halógena de  150W, modelo F500 con intensidad de luz a 1 metro, regulable de 40.000 a 120.000 Lux. Equipada con un filtro especial para luminosidad exenta de sombras por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación está plenamente iluminado. Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural.  Con filtro de calor y regulación de intensidad"
+  - product.features.push("Requerimientos Técnicos: Alimentación eléctrica de 220 V/ 50 Hz")
+  - product.features.push("Cielo debe ser Loza de Concreto")
+  - product.features.push("Anclaje requiere pernos de expansión.")
+  - product.features.push("Este modelo está disponible para pabellones de 3,2 mts y 2,4 mts. Se debe especificar al momento de la Orden")
   //- product.features.push("Cajones al frente y a un costado")
   //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
   //- product.features.push("Color a elección")
   //- product.features.push("Peso Máximo 225 Kg.")
   - products.push(product)
-  - product = {"name": "Iluminación Luces Ritter", "fullname": "Luces Ritter 355", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "El Bulbo está equipado con un filtro especial para una luminosidad exenta de sombras, por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación, está plenamente iluminado.Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural."
-  - product.features.push("Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural")
-  - product.features.push("1 bulbo Halógeno de 100 W-")
-  - product.features.push("Filtro de calor para proveer luz fría 4.200ºk. Lámpara de pedestal rodable.")
-  - product.features.push("Rotación 180 grados.")
-  - product.features.push("Mango esterilizable para los movimientos y ajustes de altura.")
+  - product = {"name": "PAX F700-F500 Cielítica", "fullname": "LAMPARA QUIRURGICA DE TECHO MARCA SHANGHAI FOSHION MEDICAL INSTRUMENT, MODELO PAX F700-F500, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Lámpara de cielo Monofocal Halógena de  150W, intensidad de luz a 1 metro 50.000 a 150.000 Lux más Satélite F500 con intensidad de luz de 40.000 a 120.000 Lux, ambas regulables desde el mango posicionador. Intensidad total de luz a 1 metro, 270.000 Lux. Equipada con un filtro especial para luminosidad exenta de sombras por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación está plenamente iluminado.  Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural. Con filtro de calor y regulación de intensidad. Movimientos libres gracias al ingenioso sistema “Balance o Matic Suspension” que permite mover la lámpara en cualquier dirección y giro con un solo toque de dedo."
+  - product.features.push("Rotación 360 grados")
+  - product.features.push("Para 220V")
+  - product.features.push("Bulbo de 150W.")
+  - product.features.push("Duración 1.000 horas.")
+  - product.features.push("Diámetro de lámpara 700 mm, diámetro del satélite 500 mm")
+  - product.features.push("Alturas para instalación: 2.90 mts o 2.40 Mts. Especificar en Orden de Compra")
   - products.push(product)
-  - product = {"name": "Pisos ritter", "fullname": "Pisos ritter", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Ritter, prestigiosa compañía norteamericana dedicada a la fabricación de mobiliario clínico de calidad superior, dispone de un catálogo completo de taburetes y pisos clínicos."  - product.features.push("Respaldo Hidráulico")
-  //- product.features.push("Escabel incorporado y retráctil")
-  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
-  //- product.features.push("Receptáculo de contaminados")
-  //- product.features.push("Cajones al frente y a un costado")
-  //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  //- product.features.push("Color a elección")
-  //- product.features.push("Peso Máximo 225 Kg.")
-  - products.push(product)
+
 
 
 
