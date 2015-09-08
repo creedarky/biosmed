@@ -2,151 +2,42 @@
 extends ../../../partials/product
 
 block vars
-  - var title='Ecógrafos Blanco y Negro'
+  - var title='Lámparas quirúrgicas LED'
 
 block product-vars
-  - var title = 'Ecógrafos Blanco y Negro'
+  - var title = 'Lámparas quirúrgicas LED'
   - var type = 'medica'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/medica/productos', text:'Biosmed'})
-  - breadcrumbs.push({url:'/medica/ginecologia', text:'Ginecologia'})
-  - breadcrumbs.push({url:'/medica/ginecologia/ecografia', text:'Ecografía'})
-  - breadcrumbs.push({url:'/medica/ginecologia/ecogafria/bn', text:'Ecógrafos Blanco y Negro'})
+  - breadcrumbs.push({url:'/medica/pabellon', text:'Pabellón Quirúrgico'})
+  - breadcrumbs.push({url:'/medica/pabellon/lamparas', text:'Lámparas Quirúrgicas'})
+  - breadcrumbs.push({url:'/medica/pabellon/lamparas/led', text:'Lámparas quirúrgicas LED'})
   //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
   - var products = []
-  - var product = {"name": "Chison ECO 1", "fullname": "Chison ECO 1", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "
-  - product.features.push("Respaldo Hidráulico")
-  - product.features.push("Escabel incorporado y retráctil")
-  - product.features.push("Taqueras retráctiles y movimiento de abanico")
-  - product.features.push("Receptáculo de contaminados")
-  - product.features.push("Cajones al frente y a un costado")
-  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  - product.features.push("Color a elección")
-  - product.features.push("Peso Máximo 225 Kg.")
+  - var product = {"name": "PANA LEX", "fullname": "LAMPARA QUIRURGICA DE PEDESTAL RODABLE CON BATERIA MARCA SHANGHAI FOSHION MEDICAL INSTRUMENT, MODELO PANA LEX,  procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Lámpara de cielo Led intensidad de luz a 1 metro 60.000 a 160.000 Lux regulable desde el panel de control. Equipada con un filtro espectral óptico asegura  la visión real de cualquier tipo de tejido o fluido exenta de sombras por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación está plenamente iluminado.  Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural. Con filtro de calor. Con regulación de intensidad. Movimientos libres gracias al sistema “Balance o Matic. Suspension” que permite mover la lámpara en cualquier dirección y giro con un solo toque de dedo."
+  - product.features.push("Color Rending Index (RA)  >_ 94")
+  - product.features.push("Temperatura de Color 4.300K°")
+  - product.features.push("Modo de ajuste de luz: Continuo sin pasos preestablecidos")
+  - product.features.push("Temperatura sobre cirujano: < 2° Celcios")
+  - product.features.push("Tamaño de luminosidad de campo: 160 – 250Vida")
+  - product.features.push("Vida útil de cada LED: 30.000 horas")
+  - product.features.push("Control digital para funciones tales como: Regulación de intensidad continua,  Memoria de brillo, autochequeo,  etc.")
+  - product.features.push("Sistema y Brazo de Suspensión Ondal de Alemania")
   - products.push(product)
-  - product = {"name": "Chison ECO 3", "fullname": "Ecógrafo Blanco y Negro Chison ECO 3", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - //product.info = "Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud."  - product.features.push("Respaldo manual, con asistencia de aire para levantar")
-  - product.features.push("Pantalla de 12” LED, Rodable")
-  - product.features.push("2 Conectores para Transductor")
-  - product.features.push("Duración de la batería: 2 horas")
-  - product.features.push("Hasta 320 GB de memoria")
-  - product.features.push("9 Tipos de transductores")
-  - product.features.push("DICOM 3.0( opcional )")
-  - product.features.push("USB")
-  - products.push(product)
-  - product = {"name": "Chison 600M", "fullname": "Ecógrafo en Blanco y Negro Chison 600 M", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  //- product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
-  - product.features.push("Monitor de 10 pulgadas SVGA, no entrelazado")
-  - product.features.push("Modo de visualización: B, B/B, B/M y 4B (4 pasos de barrido, selección de velocidad)")
-  - product.features.push("Profundidad de exanimación: 252mm Máx")
-  - product.features.push("Imagen dinámica en tiempo Real: CDA, CDF, DFS")
-  - product.features.push("Frecuencia del transductor: 2.5Mhz-9Mhz")
-  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  - product.features.push("Escala de grises 256 Niveles")
-  - product.features.push("Cine Loop.")
-  - product.features.push("Métodos de enfoque: 4 etapas de transmisión y recepción, control dinámico de apertura.")
-  - product.features.push("Imágenes izq. /derecha, arriba/abajo, Positivo-Negativo.")
-  - product.features.push("Acercamiento (ZOOM): por 1.0 x 1.2 x 1.5 x 2.0 con control de ajuste de profundidad.")
-  - product.features.push("Medidas: Distancias Circunstancias, área, volumen (por trazo ó por elipse).")
-  - product.features.push("Área del cuerpo: 15 marcas corporales.")
-  - product.features.push("Documentación a pantalla completa, nombre, reportes del hospital y del paciente, fecha y hora.")
-  - product.features.push("Grabación de imágenes normales y CINE mediante puerto USB, puerto DICOM.")
-  - product.features.push("Peso: 7Kg (neto)")
-  - product.features.push("Dimensión: 420mm x270mm x 250mm.")
-  - product.features.push("Incluye: 01 Unidad Principal, Transductor convexo multifrecuencia 2.5/3.5/4.0/5.0Mhz., 02 Conector para transductor, Paquete de software completo: Abdominal, Obstétrico/Ginecológico, Partes pequeñas, Urología, Cardiología, Proctología, Garantía 24 Meses")
-  - product.features.push("Opcional: • Transductor transvaginal multifrecuencial 4.5/6.0/7.0/8.0Mhz, Transductor lineal multifrecuencial 5.0/6.0/7.5/9.0Mhz, Video Impresora B/N, Kit de biopsia, DICOM, Carro de transporte, Grabador de imagen")
-  - products.push(product)
-  - product = {"name": "Chison 8500", "fullname": "Ecógrafo en Blanco y Negro Chison 8500", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  //- product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
-  - product.features.push("Métodos de escaneo : electrónico convexo / electrónico lineal / electrónico micro-convexo")
-  - product.features.push("Aplicaciones : Abdomen, OB / GYN, piezas pequeñas, Urología, Cardiología, Pediatría, etc")
-  - product.features.push("Los modos de visualización : B, B / B, 4B, M, B / M")
-  - product.features.push("Escala de grises : 256 niveles")
-  - product.features.push("Técnicas de exploración : en tiempo real de imágenes dinámica: RDF, RDA, DFS, DRA")
-  - product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
-  - product.features.push("Imagen armónica")
-  - product.features.push("Profundidad de exploración : 240 mm Max (depende del tipo de sonda)")
-  - product.features.push("Sonda de frecuencia : 10.0MHz ~ 2.0MHz (depende del tipo de sonda)")
-  - product.features.push("N º de conectores de las sondas : 2.")
-  - product.features.push("Monitor : SVGA de 14 pulgadas de alta resolución del monitor.")
-  - product.features.push("Medidas: Distancias Circunstancias, área, volumen (por trazo ó por elipse).")
-  - product.features.push("CINE loop : 256 cuadros, seleccionar la reproducción, se pueden guardar en el disco ")
-  - product.features.push("USB y recordó para el análisis")
-  - product.features.push("Grabación de imágenes normales y CINE mediante puerto USB, puerto DICOM.")
-  - product.features.push("Almacenamiento de imágenes : Memoria, almacenamiento a través de disco USB, imagen guardada se puede recuperar para la medición")
-  - product.features.push("Procesamiento de imágenes :Pre-procesamiento: selección de IP, dynamicrange, realce de bordes, suave, con un promedio marco, la exploración selección de ángulo, densidad de líneas de selección, etc")
-  - product.features.push("Post-tratamiento: γ corrección, transformación gris, rechazo, etc")
-  - product.features.push("STC: 8 diapositivas de cerca, lejos y control de ganancia general")
-  - product.features.push("Los paquetes de software generales para Abdomen, OB / GYN, piezas pequeñas, Urología, Cardiología, etc")
-  - product.features.push("Paquete especial de cardiología: LV, de la válvula mitral, la válvula aórtica, CO, TEVI, MVCF, índice cardíaco, SV, EF, etc")
-  - product.features.push("Crecimiento fetal especial el análisis de paquetes de software: LMP, BBT, curva de crecimiento fetal, peso fetal, etc")
-  - product.features.push("Medidas generales: Modo B: distancia, circunferencia, área, volumen, proporción, el ángulo, la estenosis%, histograma, perfil, etc")
-  - product.features.push("Técnicas de exploración : en tiempo real de imágenes dinámica: RDF, RDA, DFS, DRA, modo M: distancia, tiempo, velocidad, ritmo cardíaco, etc, mesas EDD: BPD, GS, CRL, FL, HC, AC (definidos por el usuario están disponibles las tablas EDD)")
-  - product.features.push("Las plantillas de informes : Informe normal, OB informe, el informe de Ginecología, Urología y el informe informe cardíaco, etc")
-  - product.features.push("Gestión de archivos comprimidos: Gestión de la información del paciente")
-  - product.features.push("Documentación : documentación a pantalla completa, el nombre del hospital, nombre del paciente, fecha / hora, base de datos disponible de anotación, frases pre-guardados se pueden recuperar")
-  - product.features.push("Fuente de alimentación : AC 230 V ± 10%, 50Hz (estándar) / AC110V ± 10%, 60 Hz (A petición del cliente)")
-  - product.features.push("Configuración estándar : la unidad principal + 3.5MHz sonda convexa + puertos USB + Internet + 2 conectores de puerto de la sonda + Armónica.")
-  - product.features.push("Opciones : 7.5MHz sonda lineal, 6.0MHz sonda transvaginal, 3.0MHz sonda cardiaca,")
-  - product.features.push("7.5MHz sonda transrectal, la impresora de video, disco flash USB, DICOM")
-  - products.push(product)
-  - product = {"name": "Chison 9300", "fullname": "Ecógrafo en Blanco y Negro Chison 9300.", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  - product.info = "El Chison 9300 es un sistema de ultrasonido para diagnóstico de alta gama, en blanco y negro, que ofrece mayor rendimiento de imagen que otros sistemas del mismo valor. Es una herramienta efectiva para una amplia variedad de especialidades clínicas, incluidas la del sistema músculo-esquelético, anestesia, ginecología/obstetricia, urología y otras más. Fácil de operar, el 9300 ofrece soluciones innovadoras de flujo de trabajo, como la disminución de datos de entrada, el almacenamiento de imágenes con una sola tecla, el control TGC de 8 campos y un disco duro interno para almacenamiento de datos. Además, la batería interna y un adaptador de energía permiten utilizar el sistema de manera continua."
-  //- product.features.push("Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural")
-  //- product.features.push("1 bulbo Halógeno de 100 W-")
-  //- product.features.push("Filtro de calor para proveer luz fría 4.200ºk. Lámpara de pedestal rodable.")
-  //- product.features.push("Rotación 180 grados.")
-  //- product.features.push("Mango esterilizable para los movimientos y ajustes de altura.")
-  //- products.push(product)
-  - product = {"name": "Chison Ivis 20", "fullname": "Chison Ivis 20", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  //- product.info = "Ritter, prestigiosa compañía norteamericana dedicada a la fabricación de mobiliario clínico de calidad superior, dispone de un catálogo completo de taburetes y pisos clínicos."
-  //- product.features.push("Respaldo Hidráulico")
-  //- product.features.push("Escabel incorporado y retráctil")
-  //- product.features.push("Taqueras retráctiles y movimiento de abanico")
-  //- product.features.push("Receptáculo de contaminados")
-  //- product.features.push("Cajones al frente y a un costado")
+  - product = {"name": "PANA LEX DOBLE", "fullname": "LÁMPARA QUIRÚRGICA RODABLE DE PEDESTAL MARCA SHANGHAI FOSHION MEDICAL INSTRUMENT, MODELO F 500, procedencia China", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "LLámpara de cielo con tecnología LED. Intensidad de luz de la lámpara  a 1 metro  de  60.000 a 160.000 Lux regulable desde el panel de control. Equipada con un filtro espectral óptico asegura  la visión real de cualquier tipo de tejido o fluido exenta de sombras por lo que todas las cavidades corporales y cualquier corte o hendidura en el área de operación está plenamente iluminado.  Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural.  Con filtro de calor. Con regulación de intensidad. Movimientos libres gracias al sistema “Balance o Matic Suspension” que permite mover la lámpara en cualquier dirección y giro con un solo toque de dedo."
+  - product.features.push("Con filtro de calor y regulación de intensidad")
+  - product.features.push("Requerimientos Técnicos: Toma corriente 220 V/ 50 Hz")
+  //- product.features.push("Control con el pie")
+  //- product.features.push("Altura de 45 cm")
   //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
   //- product.features.push("Color a elección")
   //- product.features.push("Peso Máximo 225 Kg.")
   - products.push(product)
-  - product = {"name": "Carewell CUS 2018", "fullname": "Ecógrafo en Blanco y Negro Carewell CUS 2018", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  //- product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
-  - product.features.push("Totalmente digital con las ultimas técnicas de imágenes de ultrasonido")
-  - product.features.push("Diseño Notebook, fácil de transportar")
-  - product.features.push("Aplicable para abdomen, GYN, OB, cardiología, urología y partes pequeñas")
-  - product.features.push("Monitor LCD medico de 10.4”")
-  - product.features.push("5 modos de trabajo: B, B/B, B/M, M and 4B")
-  - product.features.push("Almacenamiento permanente de 128 cuadros de imagen de ultrasonido")
-  - product.features.push("Puertos periféricos de CC14V, VGA, USB y video")
-  - product.features.push("Configuración Estándar")
-  - product.features.push("CUS-2018 unidad principal")
-  - product.features.push("Gel de acoplamiento")
-  - product.features.push("Batería recargable de Litio")
-  - product.features.push("Cable de carga")
-  - product.features.push("Adaptador CA y cable")
-  - product.features.push("Caja metalica")
-  - product.features.push("Cable y disco driver para USB")
-  - products.push(product)
-  - product = {"name": "Carewell CUS 9618F Plus", "fullname": "Ecógrafo en Blanco y Negro Carewell CUS 9618F Plus", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
-  //- product.info = "Con una población cada vez más envejecida, los pacientes pueden necesitar asistencia para el acceso a la mesa de examen. Con una increíble baja altura de 48 cm, la mesa Ritter 223 sin Barreras ® Power Exam, da mayor cabida a las personas mayores, mujeres embarazadas o pacientes con discapacidades."
-  - product.features.push("Totalmente digital con las ultimas técnicas de imágenes de ultrasonido y PC embebido")
-  - product.features.push("Diseño portátil, fácil de transportar")
-  - product.features.push("Teclado alfanumérico con teclas de gel de silicona retro iluminadas")
-  - product.features.push("Aplicable para abdomen, GYN, OB, cardiología, urología y partes pequeñas")
-  - product.features.push("Soporta video ó impresora laser")
-  - product.features.push("5 modos de trabajo: B, B/B, B/M, M and 4B")
-  - product.features.push("Monitor de 10”")
-  - product.features.push("2 conectores para sondas")
-  - product.features.push("8 segmentos TGC")
-  - product.features.push("Almacenamiento permanente de 5,000 cuadros de imágenes de ultrasonido, ilimitado en memorias SD")
-  - product.features.push("Puertos periféricos de USB, VGA, video, DICOM3.0 y tierra")
-  - product.features.push("Configuración Estándar:")
-  - product.features.push("CUS-9618F Plus unidad principal")
-  - product.features.push("Sonda convex de 3.5MHz con THI")
-  - product.features.push("Soporte sonda")
-  - product.features.push("Gel de acoplamiento")
-  - products.push(product)
+
+  
+
 
 
 
