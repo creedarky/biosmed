@@ -1,0 +1,28 @@
+nav.navbar.container.shadow-z-3.navbar-material-white(role="navigation")
+  .navbar-header
+    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar")
+      span.sr-only Activar/Desactivar Navegación
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.navbar-brand(src="/estetica")
+      img.default-size(src="/img/logo.png")
+  #navbar.collapse.navbar-collapse
+    ul.nav.navbar-nav
+
+    ul.nav.navbar-nav.navbar-right
+
+      li(class="#{active === 'home' ? 'active' : '' }")
+        a(href="/estetica") Inicio
+      li(class="#{active === 'personas' ? 'active' : '' }")
+        a(href="/estetica/productos") Productos
+      li(class="#{active === 'qsomos' ? 'active' : '' }")
+        a(href="/estetica/biosmed") Starbene Chile
+      li(class="#{active === 'qsomos' ? 'active' : '' }")
+        a(href="/estetica/marcas") Marcas representadas
+
+      li(class="#{active === 'contacto' ? 'active' : '' }")
+        a(href="/contacto") Contacto
+
+
+

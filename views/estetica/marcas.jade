@@ -1,0 +1,92 @@
+extends ../partials/layout.jade
+
+block vars
+  - var title='Home'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../partials/navbar-estetica
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+
+
+  .container.bottom-offset
+    .row
+      .col-md-3.col-sm-4.col-xs-12
+        img.img-responsive(src="/img/client_logos/horiba.gif")
+      .col-md-9.col-sm-8.col-xs-12
+        h3 Horiba - Japón
+        p "La necesidad de mantener un medio ambiente limpio, tanto en el aire, el agua y el suelo, es la actual preocupación de todo el mundo. HORIBA, al ser el líder mundial en el campo del análisis del medio ambiente y el proceso, se dedica a ofrecer soluciones nuevas y avanzadas para fomentar un mundo sano para las generaciones actuales y futuras.
+        p Las tecnologías avanzadas de HORIBA proporcionan los instrumentos para las grandes industrias que requieren la medición de contaminación del agua, atmósfera y otros aspectos de la contaminación ambiental. Desde el diseño hasta la instalación, incluyendo el inicio, formación y certificación, HORIBA no es sólo un fabricante, sino también proveedor de soluciones para todo tipo de monitoreo ambiental y de procesos."
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-12
+        img.img-responsive(src="/img/client_logos/systea.gif")
+      .col-md-9.col-sm-8.col-xs-12
+        h3 Systea – Italia
+        p "Systea SpA es una empresa italiana fundada en 1988 con el objetivo de desarrollar, fabricar y vender analizadores automáticos para distintos parámetros en los mercados ambientales e industriales.
+        p Los productos varían en función del sector industrial, y puede cubrir de manera eficiente muchos campos diferentes del mercado, con especial dedicación en el control de parámetros del medio ambiente y de los mercados agroalimentarios. Nuestros equipos están desarrollados para distintos mercados, siendo las principales aplicaciones las siguientes:
+          ol
+            li Agua superficial
+            li Agua potable
+            li Aguas residuales
+            li Agua de mar"
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-12
+        img.img-responsive(src="/img/client_logos/palintest.gif")
+      .col-md-9.col-sm-8.col-xs-12
+        h3 Palintest – Inglaterra
+        p "Palintest es un líder mundial en tecnología de análisis del agua. Diseñamos, fabricamos y suministramos una gama completa de productos de alto rendimiento para supervisar la calidad del agua en una gran variedad de usos. Los productos de Palintest son aplicables en agua potable, aguas servidas y agua de piscina con una gran gama de instrumentos de exactitud y reactivos fáciles de usar, desarrollados específicamente para lo anterior. También suministramos productos para los sectores industriales y de agua procesada, agua de suelo y desinfección del agua. Desde nuestra oficina central en el Reino Unido, suministramos al mundo a través de nuestra red mundial con oficinas de ventas en Estados Unidos, Asia y China y con nuestra extensa red de distribuidores.
+        p Cualquiera su aplicación, los instrumentos de Palintest ofrecen los métodos más confiables disponibles en metros portátiles que utilizan la ultima tecnología."
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-12
+        img.img-responsive(src="/img/client_logos/wagtech.gif")
+      .col-md-9.col-sm-8.col-xs-12
+        h3 Wagtech – Inglaterra
+        p "Como una división de Palintest Ltd, y miembro del grupo HLAM plc, la División de Tecnología del Agua Wagtech (DMT) es especialista en la fabricación de instrumentos de laboratorio y terreno, para uso en pruebas de calidad del agua.
+        p WAGTECH (antes conocido como Wagtech International Ltd) es líder mundial como proveedor de equipos de análisis de agua para las Naciones Unidas y la comunidad de desarrollo. Los principales clientes son: UNICEF, OMS, UNESCO, el PNUD, la FAO y el ACNUR. Tenemos acuerdos de largo plazo con UNICEF y nuestros kits son de uso generalizado en todo el mundo. A partir de 2011, con el apoyo de Palintest y del grupo Halma plc, Wagtech WTD mejoró aun más toda la suite de productos, incrementando su red de distribución, y la adición a la gama de productos mediante la combinación de sus actividades de investigación y desarrollo con la sociedad matriz y líderes del mercado mundial de la tecnología de monitoreo de la calidad del agua, Palintest Ltd."
+      .clearfix
+      .col-md-3.col-sm-4.col-xs-12
+        img.img-responsive(src="/img/client_logos/hf.gif")
+      .col-md-9.col-sm-8.col-xs-12
+        h3 HF Scientific – Estados Unidos
+        p "HF Scientific se preocupa del medio ambiente en el proceso de desarrollo y fabricación.
+        p Fabricamos instrumentación, kits de prueba y reactivos químicos utilizados para el seguimiento de la calidad del agua en una variedad de aplicaciones. Nuestro mercado principal es el área de Ingeniería Industrial y de tratamiento de aguas municipales; sin embargo, nuestros productos también se encuentran en aplicaciones tan variadas como los sistemas de control de procesos industriales y sistemas de aguas marinas que ayudan a eliminar los efectos dañinos de las especies invasoras en el medio ambiente.
+        p HF Scientific es miembro de:
+          ol
+            li AWWA: www.awwa.org
+            li NRWA: www.nrwa.org
+            li WEF: www.wef.org"
+      .clearfix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
