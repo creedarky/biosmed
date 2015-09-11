@@ -3,6 +3,8 @@
 
   var gulp = require('gulp'),
     runSequence = require('run-sequence'),
+    gulpJade = require('gulp-jade'),
+    jade = require('jade'),
     plugin = require('gulp-load-plugins')(),
     env = process.env.NODE_ENV || 'development';
 
@@ -138,22 +140,31 @@
   });
 
   gulp.task('usemin', ['js:build', 'stylus:build', 'bower:build'], function() {
-    gulp.src(['./views/**/*.jade'])
-      .pipe(plugin.plumber())
-      .pipe(plugin.jadeUsemin({
-        assetsDir: './built',
-        path: './built',
-        outputRelativePath: '../../public/',
-        js: [
-          plugin.uglify({
-            mangle: true
-          }),
-          plugin.revAll()
-        ],
-        css: [plugin.revAll()]
+    //gulp.src(['./views/**/*.jade'])
+    //  .pipe(plugin.plumber())
+    //  .pipe(plugin.jadeUsemin({
+    //    assetsDir: './built',
+    //    path: './built',
+    //    outputRelativePath: '../../public/',
+    //    js: [
+    //      plugin.uglify({
+    //        mangle: true
+    //      }),
+    //      plugin.revAll()
+    //    ],
+    //    css: [plugin.revAll()]
+    //  }))
+    //  .pipe(gulp.dest('./built/views'));
+
+    gulp.src('./views/**/*.jade')
+      .pipe(gulpJade({
+        jade: jade,
+        pretty: true
       }))
-      .pipe(gulp.dest('./built/views'));
+      .pipe(gulp.dest('./built'));
+
   });
+
 
   gulp.task('default', function() { runSequence('clean', 'bower:install', ['nodemon', 'watch']); });
   gulp.task('prepare', function() { runSequence('clean', 'bower:install', 'images:copy', 'fonts:copy', 'js', 'stylus'); });

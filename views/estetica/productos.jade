@@ -1,0 +1,64 @@
+extends ../partials/layout.jade
+
+block vars
+  - var title='Home'
+
+
+
+block extra-scripts
+  //- build:js /scripts/home.js
+  script(src="/bower_components/bxslider-4/dist/jquery.bxslider.min.js")
+  script(src="/js/index.js")
+
+  //- endbuild
+
+block page-content
+  - var active = 'home'
+  include ../partials/navbar-estetica
+  //section.jumbotron.header.text-center
+  .container-fluid
+    .row
+      img.img-responsive(src="/img/banners/BannersMDTyE.jpg")
+
+
+  .container.bottom-offset
+    - var menuTitle = "Productos"
+    - var data = []
+    - data.push({img: '/img/producto/zephyr.jpg', title: 'Zephyr MDC', url: '/estetica/zephyr' })
+    - data.push({img: '/img/producto/heatmodel.jpg', title: 'Heat Model', url: '/estetica/heatmodel' })
+    - data.push({img: '/img/producto/lipocellcrio.jpg', title: 'LIPOCELLCRIO SMART', url: '/estetica/lipocellcrio' })
+    - data.push({img: '/img/producto/forever.jpg', title: 'Forever', url: '/estetica/forever' })
+    - data.push({img: '/img/producto/starlight.jpg', title: 'Starlight TR', url: '/estetica/starlight' })
+    - data.push({img: '/img/producto/rcsix.jpg', title: 'RC SIX POWER BASIC R', url: '/estetica/rcsix' })
+    - data.push({img: '/img/producto/cavistar.jpg', title: 'CAVISTAR RF (6) R', url: '/estetica/cavistar' })
+    - data.push({img: '/img/producto/cavistar-r.jpg', title: 'CAVISTAR R', url: '/estetica/cavistar-r' })
+    - data.push({img: '/img/producto/excellence.jpg', title: 'EXCELLENCE VDM', url: '/estetica/excellence' })
+    - data.push({img: '/img/producto/starpress.jpg', title: 'STARPRESS', url: '/estetica/starpress' })
+    - data.push({img: '/img/producto/diamond9.jpg', title: 'DIAMOND 9', url: '/estetica/diamond9' })
+    - data.push({img: '/img/producto/cooling.jpg', title: 'COOLING AIRFLOW', url: '/estetica/cooling' })
+    - data.push({img: '/img/producto/accesorios.jpg', title: 'ACCESORIOS', url: '/estetica/accesorios' })
+    include ../partials/menubox
+
+
+
+  .container.bottom-offset
+    .row.well
+      h4 Marcas representadas
+      hr
+      .slick-carousel
+        img.img-responsive(src="img/client_logos/horiba.gif")
+        img.img-responsive(src="/img/client_logos/systea.gif")
+        img.img-responsive(src="/img/client_logos/palintest.gif")
+        img.img-responsive(src="/img/client_logos/hf.gif")
+        img.img-responsive(src="/img/client_logos/wagtech.gif")
+
+
+
+
+
+
+
+
+
+
+
