@@ -2,18 +2,21 @@
 extends ../../partials/product
 
 block vars
-  - var title='Arsenico'
+  - var title='Calcio'
 
 block product-vars
-  - var title = 'Arsenico'
+  - var title = 'Calcio'
   - var type = 'industrial'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/industrial/productos', text:'Industrial'})
   - breadcrumbs.push({url:'/industrial/portatiles', text:'portatiles'})
-  - breadcrumbs.push({url:'/industrial/portatiles/arsenico', text:'Arsenico'})
+  - breadcrumbs.push({url:'/industrial/portatiles/calcio', text:'Calcio'})
   - var products = []
-  - var product = {"name": "Arsenator", "fullname": "Arsenator", "features":[], "img": "/img/equipos/arsenator.jpg", "downloadLink": "#"}
-  - product.info = "Analizador de Arsénico Portatil modelo ARSENATOR"
+  - var product = {"name": "D-73", "fullname": "D-73", "features":[], "img": "/img/equipos/d73.jpg", "downloadLink": "#"}
+  - product.info = "Analizador portátil de pH - ORP - Ión Especifico (2 Canales)"
+  - products.push(product)
+  - var product = {"name": "B-751", "fullname": "B-751", "features":[], "img": "/img/equipos/b751.jpg", "downloadLink": "#"}
+  - product.info = "Analizador de Calcio portátil, tipo lápiz, modelo Laquatwin"
   - products.push(product)
   //- product.features.push("Receptáculo de contaminados")
   //- product.features.push("Cajones al frente y a un costado")

@@ -2,20 +2,22 @@
 extends ../../partials/product
 
 block vars
-  - var title='Arsenico'
+  - var title='Cianuro'
 
 block product-vars
-  - var title = 'Arsenico'
+  - var title = 'Cianuro'
   - var type = 'industrial'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/industrial/productos', text:'Industrial'})
-  - breadcrumbs.push({url:'/industrial/portatiles', text:'portatiles'})
-  - breadcrumbs.push({url:'/industrial/portatiles/arsenico', text:'Arsenico'})
+  - breadcrumbs.push({url:'/industrial/electrodos', text:'Electrodos'})
+  - breadcrumbs.push({url:'/industrial/electrodos/cianuro', text:'Cianuro'})
   - var products = []
-  - var product = {"name": "Arsenator", "fullname": "Arsenator", "features":[], "img": "/img/equipos/arsenator.jpg", "downloadLink": "#"}
-  - product.info = "Analizador de Arsénico Portatil modelo ARSENATOR"
+  - var product = {"name": "8001-10C", "fullname": "8001-10C", "features":[], "img": "/img/equipos/8001-10c.jpg", "downloadLink": "#"}
+  - product.info = "Electrodo con conector universal BNC para análisis de Cianuro"
   - products.push(product)
-  //- product.features.push("Receptáculo de contaminados")
+
+
+//- product.features.push("Receptáculo de contaminados")
   //- product.features.push("Cajones al frente y a un costado")
   //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
   //- product.features.push("Color a elección")

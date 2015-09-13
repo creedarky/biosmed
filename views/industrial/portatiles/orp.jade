@@ -2,15 +2,15 @@
 extends ../../partials/product
 
 block vars
-  - var title='pH'
+  - var title='ORP'
 
 block product-vars
-  - var title = 'pH'
+  - var title = 'ORP'
   - var type = 'industrial'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/industrial/productos', text:'Industrial'})
   - breadcrumbs.push({url:'/industrial/portatiles', text:'portatiles'})
-  - breadcrumbs.push({url:'/industrial/portatiles/ph', text:'pH'})
+  - breadcrumbs.push({url:'/industrial/portatiles/orp', text:'ORP'})
   - var products = []
   - var product = {"name": "D-75", "fullname": "D-75", "features":[], "img": "/img/equipos/d75.jpg", "downloadLink": "#"}
   - product.info = "Analizador portátil de pH - ORP (Canal 1) - Oxígeno Disuelto (canal 2)"
@@ -26,9 +26,6 @@ block product-vars
   - products.push(product)
   - var product = {"name": "D-71", "fullname": "D-71", "features":[], "img": "/img/equipos/d71.jpg", "downloadLink": "#"}
   - product.info = "Analizador portátil de pH (1 Canal)"
-  - products.push(product)
-  - var product = {"name": "B-713", "fullname": "B-713", "features":[], "img": "/img/equipos/b713.jpg", "downloadLink": "#"}
-  - product.info = "Analizador de pH portátil, tipo lápiz, modelo Laquatwin"
   - products.push(product)
   //- product.features.push("Receptáculo de contaminados")
   //- product.features.push("Cajones al frente y a un costado")
