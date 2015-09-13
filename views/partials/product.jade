@@ -62,27 +62,27 @@ block page-content
                 a.btn.btn-primary.btn-raised(href="#{product.downloadLink}") Descargar Informacion
               .text-center
                 button.btn.btn-primpary.btn-raised.cotizar Cotizar
-            if index === 0
-              form.hidden.cotizar-form(role='form', action='', method='post')
-                .row
-                  .col-md-offset-3.col-md-6.col-sm-10.col-sm-offset-1.col-xs-12
-                    h3 Cotización
-                    .form-group
-                      .input-group
-                        input#InputName.form-control(type='text', name='InputName', placeholder='Nombre', required='')
-                        span.input-group-addon
-                          i.glyphicon.glyphicon-ok.form-control-feedback
-                    .form-group
-                      .input-group
-                        input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email', required='')
-                        span.input-group-addon
-                          i.glyphicon.glyphicon-ok.form-control-feedback
-                    .form-group
-                      .input-group
-                        textarea#InputMessage.form-control(name='InputMessage', rows='5', required='', placeholder="Mensaje")
-                        span.input-group-addon
-                          i.glyphicon.glyphicon-ok.form-control-feedback
-                    input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Enviar')
+              if index === 0
+                form.hidden.cotizar-form(role='form', action='', method='post')
+                  .row
+                    .col-md-offset-3.col-md-6.col-sm-10.col-sm-offset-1.col-xs-12
+                      h3 Cotización
+                      .form-group
+                        .input-group
+                          input#InputName.form-control(type='text', name='InputName', placeholder='Nombre', required='')
+                          span.input-group-addon
+                            i.glyphicon.glyphicon-ok.form-control-feedback
+                      .form-group
+                        .input-group
+                          input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email', required='')
+                          span.input-group-addon
+                            i.glyphicon.glyphicon-ok.form-control-feedback
+                      .form-group
+                        .input-group
+                          textarea#InputMessage.form-control(name='InputMessage', rows='5', required='', placeholder="Mensaje")
+                          span.input-group-addon
+                            i.glyphicon.glyphicon-ok.form-control-feedback
+                      input#submit.btn.btn-info.pull-right(type='submit', name='submit', value='Enviar')
 
 
 

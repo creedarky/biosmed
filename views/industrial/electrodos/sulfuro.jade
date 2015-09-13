@@ -2,20 +2,22 @@
 extends ../../partials/product
 
 block vars
-  - var title='Arsenico'
+  - var title='Sulfuro'
 
 block product-vars
-  - var title = 'Arsenico'
+  - var title = 'Sulfuro'
   - var type = 'industrial'
   - var breadcrumbs = [];
   - breadcrumbs.push({url:'/industrial/productos', text:'Industrial'})
-  - breadcrumbs.push({url:'/industrial/portatiles', text:'portatiles'})
-  - breadcrumbs.push({url:'/industrial/portatiles/arsenico', text:'Arsenico'})
+  - breadcrumbs.push({url:'/industrial/electrodos', text:'Electrodos'})
+  - breadcrumbs.push({url:'/industrial/electrodos/sulfuro', text:'Sulfuro'})
   - var products = []
-  - var product = {"name": "Arsenator", "fullname": "Arsenator", "features":[], "img": "/img/equipos/arsenator.jpg", "downloadLink": "#"}
-  - product.info = "Analizador de Arsénico Portatil modelo ARSENATOR"
+  - var product = {"name": "8003-10C", "fullname": "8003-10C", "features":[], "img": "/img/equipos/8003-10c.jpg", "downloadLink": "#"}
+  - product.info = "Electrodo con conector universal BNC para análisis de Sulfuro"
   - products.push(product)
-  //- product.features.push("Receptáculo de contaminados")
+
+
+//- product.features.push("Receptáculo de contaminados")
   //- product.features.push("Cajones al frente y a un costado")
   //- product.features.push("Con interruptores incorporados para enchufar equipos (220V)")
   //- product.features.push("Color a elección")
