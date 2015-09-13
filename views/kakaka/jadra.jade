@@ -1,0 +1,116 @@
+
+extends ../partials/product
+
+block vars
+  - var title='Estética'
+
+block product-vars
+  - var title = 'Estética'
+  - var type = 'estetica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/estetica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/estetica/productos', text:'Estética'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "ZEPHYR MDC", "fullname": "ZEPHYR MDC", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "La tecnología fraccional repara la piel punto por punto regenerando las fibras de colágeno con resultados visibles y permanentes desde el primer día. ¿Cómo funciona Zephyr MDC? ZEPHYR MDC utiliza una matriz de 64 puntos bañados en oro dispuestos en filas paralelas bipolares que disparan energía de radiofrecuencia por fracciones sobre la piel a tratar creando zonas de coagulación fraccionadas precisas y controlables dentro de una capa específica de la dermis.Los efectos inmediatos de esta novedosa tecnología son la contracción del colágeno con la consecuente formación o síntesis de nuevas formas de colágeno (neocolagenogénesis).Durante el procedimiento, el paciente sólo sentirá una sensación de calor, produciéndose un leve enrojecimiento (eritema) y/o micropunteado que desaparecerá en los días siguientes. Resultados: ZEPHYR MDC puede aplicarse en rostro, cuello, abdomen, manos, brazos, interior de muslos y nalgas. Pocas sesiones de entre 15 a 20 minutos ofrecerán efectos inmediatos sin necesidad dehacer reposo."
+  - product.features.push("Aplicaciones: Arrugas: Cicatrices de acné, Fotoenvejecimiento, Estrías, Poros dilatados, Pieles seborreicas, Queratosis")
+  - product.features.push("Dimensiones del equipo SMART: Ancho 360 mm, Largo 400 mm, Alto 130 cm")
+  - product.features.push("Dimensiones del equipo ACX: Ancho 600 mm, Largo 540 mm, Alto")
+  - product.features.push("Radiofrecuencia bipolar fraccional, Frecuencia: 1 m[hz], Potencia máxima: 50 [w] dividida en 50 niveles (paso 1, Tiempo de exposición (pw): de 10 [ms] a 1 [s], Intervalo de repetición (t): de 0,5 [s] a 2 [s]")
+  - product.features.push("Número de programas: 3 (abrasión; coagulación 1; coagulación 2), Tamaño del spot (área de tratamiento), 1,4 [cm] x 1,4 [cm]")
+  - product.features.push("Matriz de micropuntos: 64 electrodos")
+  - products.push(product)
+  - product = {"name": "HEAT MODEL", "fullname": "HEAT MODEL", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "La mejor opción para reducir medidas. Heat Model combate efectivamente la celulitis y la obesidad corporal. Su terapia de calor seco localizado tiene además excelente aplicación en tratamientos de Reumatología, Traumatología y Rehabilitación. Termolipólisis: Esta efectiva terapia eleva la temperatura coporal con el objetivo de mejorar las condiciones circulatorias e incrementar el metabolismo a diferentes niveles. La emisión de calor intenso mediante bandas especialmente diseñadas, produce una degradación de la grasa almacenada en los adipocitos favoreciendo así su eliminación y la consiguiente pérdida de peso y volumen corporal. Obesidad: Heat Model produce calor en profundidad, haciendo que el cuerpo intente enfriar el área que esta bajo la influencia del mismo. En ese momento el paciente suda, pero esto no es suficiente para enfriar, puesto que el equipo continúa trabajando. A partir de allí, es el hipotálamo el que se encargará de regular la temperatura corporal elevando la temperatura de las zonas que están mas frías (y fuera de la influencia del equipo), tomando para ello las grasas y a través de la combustión de las mismas. Es un equipo indicado para personas que tienen un sobrepeso de aproximadamente 9 Kg. en adelante. Heat Model produce una quema de grasas, pero lo mas importante es que incrementa el metabolismo basal, permitiéndole al paciente, bajar de peso, aun manteniendo sus costumbres alimentarias. Celulitis: El calor emitido por Heat Model genera una apertura de poros utilizada para la introducción de productos específicos para celulitis. A su vez, eleva la temperatura corporal produciendo un calor interno y con ello un incremento de la circulación sanguínea, con el consiguiente beneficio para la eliminación de toxinas y oxigenación del cuerpo entero."
+  - product.features.push("APLICACIONES: Sobrepeso moderado, Adiposidad localizada")
+  - product.features.push("Dimensiones del equipo SMART:Ancho 360 mm, Largo 400 mm, Alto 130 cm")
+  - product.features.push("Dimensiones del equipo TR:Ancho 394 mm, Largo 493 mm,")
+  - product.features.push("Tensión [V]: Frecuencia [Hz]:220- 240 / 50, 110 / 60")
+  - product.features.push("Display flat LCD, 10”")
+  - product.features.push("Frío/Calor: Rango de Temperatura, Calor: +37ºC a +45ºC, Frío: -10ºC a +5ºC")
+  - product.features.push("Comando: Touchpad")
+  - product.features.push("USB: Puerto USB 2.0")
+  - product.features.push("Vacuum Peso del equipo: Aprox. 36 Kg")
+  - product.features.push("Fabricante: Renacer SRL")
+  - product.features.push("Modelo: Lipocell")
+  - product.features.push("Marca: Starbene")
+  - product.features.push("Clasificacion IEC: 60601-1 – Equipo Clase I tipo")
+  - products.push(product)
+  - product = {"name": "FOREVER", "fullname": "FOREVER", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "La evolución en depilación definitiva Starbene desarrolló en Argentina el tratamiento más avanzado en depilación definitiva con la innovadora tecnología de Láser Diodo. Este preciso rayo penetra de manera más profunda y segura en la piel eliminando el 99.9% del vello no deseado de manera totalmente indolora y con resultados permanentes. ¿Qué es el Láser Diodo? EL láser se caracteriza fundamentalmente por tener una longitud de onda más larga que los otras opciones disponibles en el mercado. Las principales características de la luz emitida por estos equipos son el monocromatismo(emite una sola longitud de onda), la coherencia temporal y espacial (todas las ondas emitidas alcanzan el pico y el valle en el mismo instante, es decir, están en fase) y la colimación (todas las ondas emitidas son paralelas y tienen la misma dirección). ¿Cómo funciona Forever Láser Diodo? Forever funciona con el proceso de fototermólisis selectiva que consiste en la destrucción específica de una estructura celular (cromóforo) por el aumento térmico inducido por un láser. Forever emite en 808 nm del espectro electromagnético. A esta longitud de onda la melanina presenta un coeficiente de absorción suficientemente elevado para justificar su eficacia en fotodepilación. Sistema de enfriamiento paralelo “Ventana de contacto de cristal de Záfiro” es el sistema de enfriamiento paralelo ubicado en la punta de la pieza de mano de Forever que enfría al contacto la piel. Esto permite que la energía del Láser que genera excesivo calor al aplicarlo sobre la piel no genere dolor ni molestia. Además protege y enfría antes, durante y después del pulso la capa superficial de la piel que rodea el vello. La combinación de este enfriamiento y otros parámetros clave permiten un tratamiento seguro y efectivo en todos los tipos de piel."
+  - product.features.push("APLICACIONES: Depilación definitiva")
+  - product.features.push("Longitud de onda: 808")
+  - product.features.push("Fluencia: 2 – 60")
+  - product.features.push("Ancho de pulsos: 10 – 300 ms")
+  - product.features.push("Tamaño del spot de luz: 10,5 mm x 11,5")
+  - product.features.push("Método de refrigeración: agua")
+  - product.features.push("COOLING: Peltier integrado al aplicador láser.")
+  - product.features.push("Display LCD, 8”")
+  - product.features.push("Pantalla táctil")
+  - product.features.push("Tensión: 220 / 110")
+  - product.features.push("Potencia: 1200")
+  - product.features.push("Ancho de pulsos: 10 – 300 ms")
+  - product.features.push("Tamaño del spot de luz: 10,5 mm x 11,5")
+  - product.features.push("Método de refrigeración: agua")
+  - products.push(product)
+  - product = {"name": "LIPOCELLCRIO SMART", "fullname": "LIPOCELLCRIO SMART", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Criolipólisis. Tecnología Glacial. El equipo de Criolipólisis más completo del mercado: silencioso y resistente, que permite trabajar sin interrupciones gracias a su moderno sistema de bomba de vacío. LipocellCRIO Force utiliza tecnología glacial para la reducción del tejido adiposo por medio de la aplicación del frío controlado.  Un equipo de última generación que ofrece resultados desde la primera sesión. ¿Cómo funciona el equipo? LipocellCRIO Force cuenta con un cabezal que por medio de vacuum succiona el pliegue seleccionado y lo somete a temperaturas que van desde los -5º C hasta los -10º C durante un tiempo sostenido. Esto genera la deshidratación de la célula grasa y su posterior muerte (apoptosis, muerte celular programada).La aplicación va de los 45 a los 60 minutos por pliegue a tratar. Se aconseja una aplicación cada 45 días. ¿Qué pacientes son aptos para este equipo? El fenómeno de Criolipolisis se considera seguro y eficaz para la mayoría de los pacientes que buscan la eliminación de tejido adiposo. El equipo se debe aplicar en pacientes que hayan pasado por una evaluación previa. Por tratarse de un método ambulatorio no invasivo, tras la aplicación el paciente puede retornar a sus tareas habituales sin inconveniente alguno."
+  - product.features.push("Con filtro de color para que los tejidos y fluidos corporales se aprecien de color natural")
+  - product.features.push("1 bulbo Halógeno de 100 W-")
+  - product.features.push("Filtro de calor para proveer luz fría 4.200ºk. Lámpara de pedestal rodable.")
+  - product.features.push("Rotación 180 grados.")
+  - product.features.push("Mango esterilizable para los movimientos y ajustes de altura.")
+  - products.push(product)
+  - product = {"name": "STARLIGHT TR", "fullname": "STARLIGHT TR", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Movilidad y resultados. Starlight TR utiliza una moderna tecnología de emisión de luz para asegurar los mejores resultados en Fotodepilación y Fotorejuvenecimiento con Luz Pulsada Intensa (IPL), sin generar dolor. Starlight TR emplea Luz Pulsada Intensa, una tecnología versátil, eficaz y segura para realizar tratamientos de fotodepilación, eliminar hipercromías y ciertas lesiones vasculares además de rejuvenecer la piel. Starlight TR ofrece programas preestablecidos. Para utilizarlo basta con seleccionar el fototipo del paciente y el equipo selecciona todos los parámetros necesarios para comenzar el tratamiento. Su facilidad y comodidad de traslado favorecen el desarrollo de un segmento de atención domiciliaria, como servicio adicional al tradicional de los centros de estética. Permite también, atender las necesidades de varios locales o salones, logrando transformar pequeños volúmenes de demanda, en una gran dimensión de la plaza agregada resultante. Su tasa de retorno es de la más altas en su tipo, ya que ofrece estabilidad, rapidez y comodidad de aplicación. A su vez, tiene un bajo costo de funcionamiento por tiempo de operación de los tratamientos."
+  - product.features.push("APLICACIONES: Fotodepilación, Fotorejuvenecimiento, Lesiones Pigmentarias, Alteraciones Vasculares Faciales")
+  - product.features.push("Dimensiones del equipo: Ancho 394 mm, Largo 493 mm, Alto 714 mm")
+  - product.features.push("Fuente de luz: Intense Pulsed Light (IPL) Xenon lamp")
+  - product.features.push("Fluencia: 15 a 50 Joules/cm2")
+  - product.features.push("Secuencia de pulsos:simples,dobles y triples")
+  - product.features.push("Duración de pulsos: 0.1-10 ms")
+  - product.features.push("Separación entre pulsos: 0.1-25 ms")
+  - products.push(product)
+  - product = {"name": "RC SIX POWER BASIC R", "fullname": "RC SIX POWER BASIC R", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Un exclusivo concepto de Radiofrecuencia. La terapia de Radiofrecuencia de 6 Mhz es una excelente herramienta para lograr rejuvenecimiento en la piel con efectos visibles desde la primer sesión. El objetivo de la acción terapéutica de radiofrecuencia de 6MHz. es lograr la revitalización general de los tejidos a través de los efectos térmicos y eléctricos que produce sobre la estructura de la piel, principalmente sobre el colágeno dérmico. RC Six Power Basic R se  caracteriza por  ser un equipo liviano, de sólo 10  kg. Cuenta con doscabezales  intercambiables,  facial  y  corporal.  De  manera  opcional,  un  sistema  electrónico decooling.Es uno de los equipos que no pueden faltar en cualquier centro médico estético."
+  - product.features.push("APLICACIONES: Arrugas y lineas de expresión, Lifting sin cirugía, Flaccidez cutánea, Celulitis")
+  - product.features.push("Dimensiones: alto 41 cm, ancho 42 cm, profundidad 46cm")
+  - product.features.push("Peso: 10 Kg")
+  - product.features.push("Frecuencia RF: 6 MHz")
+  - product.features.push("Cabezal intercambiable")
+  - product.features.push("Electronic Cooling System: ­7oC instantáneo")
+  - product.features.push("Display: LCD 128×64")
+  - product.features.push("Teclado a membrana")
+  - product.features.push("Fabricante: Renacer SRL")
+  - product.features.push("Modelo: RC Six Power Basic R")
+  - product.features.push("Marca: Starbene")
+  - product.features.push("Clasificacion IEC: 60601­1: Equipo Clase I tipo BF")
+  //- product.features.push("Display: LCD 128×64")
+  - products.push(product)
+  - product = {"name": "CAVISTAR RF (6) R", "fullname": "CAVISTAR RF (6) R", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "La mejor combinación para modelar el cuerpo. La verdadera Cavitación junto con la más potente y efectiva Radiofrecuencia de 6 Mhz. Ofrece excelentes resultados en áreas que la dieta y la gimnasia no pueden reducir. CaviStar RF(6) R es un equipo médico de última generación que ofrece diversas alternativas de tratamientos  estéticospara  combatir  adiposidades  localizadas,  sobrepeso,  celulitis  y  flacidez cutánea. Cuenta con tecnología de última generación que garantiza la seguridad del paciente, el buen funcionamiento del equipo  y la efectividad de los tratamientos. La acción terapéutica de este equipo tiene como objetivo la reducción de pliegues y perímetros de tejido graso, contrarrestar la flacidez cutánea y favorecer el efecto lifting. CaviStar RF(6) R es el único equipo en el mercado que utiliza el fenómeno de Cavitación a 28 kHz en combinación con Radiofrecuencia de 6 Mhz. Sus costos de operación no son altos, lo que permite tener un margen de ganancia reforzado por la alta demanda de sus prestaciones. Su periodo de recuperación con un uso base es cercano a los seis meses."
+  - product.features.push("APLICACIONES: Cavitación, Adiposidades Localizadas, Sobrepeso, Celulitis, Radiofrecuencia, Foto envejecimiento, Envejecimiento cutáneo, Arrugas, Envejecimiento facial, Flacidez cutánea corporal (abdomen, cara interna de muslos, cara postero-interna de brazos, glúteos, muslos, etc) ● Tratamientos post­parto. Piel de naranja en celuliti,● Tratamientos pre y post­quirúrgicos")
+  - product.features.push("Peso: 7 kg aprox")
+  - product.features.push("Dimensiones: ancho 520 mm, larg 540 mm, alto: 330 mm")
+  - product.features.push("Frecuencia RF: 6 MHz")
+  - product.features.push("Cabezal intercambiable")
+  - product.features.push("Electronic Cooling System: ­7oC instantáneo")
+  - product.features.push("Display: LCD 128×64")
+  - product.features.push("Teclado a membrana")
+  - product.features.push("Fabricante: Renacer SRL")
+  - product.features.push("Modelo: RC Six Power Basic R")
+  - product.features.push("Marca: Starbene")
+  - product.features.push("Clasificacion IEC: 60601­1: Equipo Clase I tipo BF")
+  //- product.features.push("Display: LCD 128×64")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
