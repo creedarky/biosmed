@@ -1,0 +1,38 @@
+
+extends ../partials/product
+
+block vars
+  - var title='Estética'
+
+block product-vars
+  - var title = 'Estética'
+  - var type = 'estetica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/estetica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/estetica/productos', text:'Estética'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "DIAMOND 9", "fullname": "DIAMOND 9", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Una alternativa médica y cosmética para tratamientos de la piel. La Dermoabrasión con punta de diamante es un sistema por el cual la piel es movilizada gracias a la presión negativa, permitiendo ser erosionada a distintos niveles por cabezales circulares de diferentes micronajes. Diamond 9 puede ser utilizado en diversos tratamientos faciales o corporales, en los que permite, por ejemplo, la realización de higiene como primer paso de un tratamiento mayor o constituirse como una terapia única (Peeling mecánico). Es el equipo ideal para aquellas instalaciones que buscan prestar un servicio completo a sus clientes con un abanico de opciones muy variado. Como alternativa de inversión es muy ventajoso, ya que para amortizar su costo, no es necesario un gran porcentaje de uso del mismo; con un diez por ciento de ocupación se puede alcanzar una recuperación del capital en un periodo inferior a los 365 días operativos. Opciones de puntas de diamante: 2 de 200, 2 de 180, 2 de 100, 2 de 25, 1 de 220"
+  - product.features.push("APLICACIONES: Envejecimiento de la piel, Arrugas y surcos cutáneos, Comedones, Hipercromias, Estrías, Cicatrices superficiales y profundas, Limpieza superficial y profunda, Hiperseborrea, Hiperqueratosis.")
+  - product.features.push("Peso: Aprox. 4 kg")
+  - product.features.push("Dimensiones: largo 280 mm, ancho 230 mm, alto 125 mm")
+  - product.features.push("Salida máxima de vacio:-0,8 bar")
+  - product.features.push("Potencia máxima: 90 W")
+  - product.features.push("Display LCD 5,7”")
+  - product.features.push("Touchscreen")
+  - product.features.push("Fabricante: F.P. Rubinstein y Cía. SRL")
+  - product.features.push("Modelo: Starpress")
+  - product.features.push("Marca: Starbene")
+  - product.features.push("Clasificacion IEC: – DIAMOND 9")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
+
