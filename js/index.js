@@ -15,6 +15,7 @@
       touchEnabled: true,
       control:false
     });
+    $('.bxslider img').removeClass('hidden');
 
     $('.intro_slider').bxSlider({
       auto: true,
