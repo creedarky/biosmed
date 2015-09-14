@@ -1,0 +1,36 @@
+
+extends ../partials/product
+
+block vars
+  - var title='Estética'
+
+block product-vars
+  - var title = 'Estética'
+  - var type = 'estetica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/estetica/productos', text:'Biosmed'})
+  - breadcrumbs.push({url:'/estetica/productos', text:'Estética'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name":  "RC SIX POWER BASIC R", "fullname": "RC SIX POWER BASIC R", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "Un exclusivo concepto de Radiofrecuencia. La terapia de Radiofrecuencia de 6 Mhz es una excelente herramienta para lograr rejuvenecimiento en la piel con efectos visibles desde la primer sesión. El objetivo de la acción terapéutica de radiofrecuencia de 6MHz. es lograr la revitalización general de los tejidos a través de los efectos térmicos y eléctricos que produce sobre la estructura de la piel, principalmente sobre el colágeno dérmico. RC Six Power Basic R se  caracteriza por  ser un equipo liviano, de sólo 10  kg. Cuenta con doscabezales  intercambiables,  facial  y  corporal.  De  manera  opcional,  un  sistema  electrónico decooling.Es uno de los equipos que no pueden faltar en cualquier centro médico estético."
+  - product.features.push("APLICACIONES: Arrugas y lineas de expresión, Lifting sin cirugía, Flaccidez cutánea, Celulitis")
+  - product.features.push("Dimensiones: alto 41 cm, ancho 42 cm, profundidad 46cm")
+  - product.features.push("Peso: 10 Kg")
+  - product.features.push("Frecuencia RF: 6 MHz")
+  - product.features.push("Cabezal intercambiable")
+  - product.features.push("Electronic Cooling System: ­7oC instantáneo")
+  - product.features.push("Display: LCD 128×64")
+  - product.features.push("Teclado a membrana")
+  - product.features.push("Fabricante: Renacer SRL")
+  - product.features.push("Modelo: RC Six Power Basic R")
+  - product.features.push("Marca: Starbene")
+  - product.features.push("Clasificacion IEC: 60601­1: Equipo Clase I tipo BF")
+  //- product.features.push("Display: LCD 128×64")
+  - products.push(product)
+
+
+
+
+
+

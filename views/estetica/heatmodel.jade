@@ -1,0 +1,39 @@
+
+extends ../partials/product
+
+block vars
+  - var title='Estética'
+
+block product-vars
+  - var title = 'Estética'
+  - var type = 'estetica'
+  - var breadcrumbs = [];
+  - breadcrumbs.push({url:'/estetica', text:'Biosmed'})
+  - breadcrumbs.push({url:'/estetica/productos', text:'Estética'})
+  //  - var products = [{"name":"Ritter 204","fullname":"Mesa de Examen Ginecológico Ritter 204.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 222 / Midmark 622","fullname":"Mesa de Examen Ginecológico Ritter 222 / Midmark 622.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Ritter 223 / Midmark 623","fullname":"Mesa de Examen Ginecológico Ritter 223 / Midmark 623.","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Iluminación","fullname":"Iluminación","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "},{"name":"Pisos ritter","fullname":"Pisos ritter","img":"/img/equipos/mesas.jpg","features":["Respaldo Hidráulico","Escabel incorporado y retráctil","Taqueras retráctiles y movimiento de abanico","Receptáculo de contaminados","Cajones al frente y a un costado","Con interruptores incorporados para enchufar equipos (220V)","Color a elección","Peso Máximo 225 Kg."],"info":"Midmark Ritter posee una cultura corporativa como ninguna otra en el mercado. Al continuar creciendo cada año y a través de cada generación, se mantiene comprometida hacia sus clientes, sus compañeros, su comunidad y hacia una eficaz asistencia médica. Midmark es también una de las empresas líderes en suministración de productos y servicios para los profesionales de la salud, integrando tecnología con valor agregado y un apasionado deseo de entregar una diferencia positiva en la práctica del cuidado de la salud. "}]
+  - var products = []
+  - var product = {"name": "HEAT MODEL", "fullname": "HEAT MODEL", "features":[], "img": "/img/equipos/mesas.jpg", "downloadLink": "#"}
+  - product.info = "La mejor opción para reducir medidas. Heat Model combate efectivamente la celulitis y la obesidad corporal. Su terapia de calor seco localizado tiene además excelente aplicación en tratamientos de Reumatología, Traumatología y Rehabilitación. Termolipólisis: Esta efectiva terapia eleva la temperatura coporal con el objetivo de mejorar las condiciones circulatorias e incrementar el metabolismo a diferentes niveles. La emisión de calor intenso mediante bandas especialmente diseñadas, produce una degradación de la grasa almacenada en los adipocitos favoreciendo así su eliminación y la consiguiente pérdida de peso y volumen corporal. Obesidad: Heat Model produce calor en profundidad, haciendo que el cuerpo intente enfriar el área que esta bajo la influencia del mismo. En ese momento el paciente suda, pero esto no es suficiente para enfriar, puesto que el equipo continúa trabajando. A partir de allí, es el hipotálamo el que se encargará de regular la temperatura corporal elevando la temperatura de las zonas que están mas frías (y fuera de la influencia del equipo), tomando para ello las grasas y a través de la combustión de las mismas. Es un equipo indicado para personas que tienen un sobrepeso de aproximadamente 9 Kg. en adelante. Heat Model produce una quema de grasas, pero lo mas importante es que incrementa el metabolismo basal, permitiéndole al paciente, bajar de peso, aun manteniendo sus costumbres alimentarias. Celulitis: El calor emitido por Heat Model genera una apertura de poros utilizada para la introducción de productos específicos para celulitis. A su vez, eleva la temperatura corporal produciendo un calor interno y con ello un incremento de la circulación sanguínea, con el consiguiente beneficio para la eliminación de toxinas y oxigenación del cuerpo entero."
+  - product.features.push("APLICACIONES: Sobrepeso moderado, Adiposidad localizada")
+  - product.features.push("Dimensiones del equipo SMART:Ancho 360 mm, Largo 400 mm, Alto 130 cm")
+  - product.features.push("Dimensiones del equipo TR:Ancho 394 mm, Largo 493 mm,")
+  - product.features.push("Tensión [V]: Frecuencia [Hz]:220- 240 / 50, 110 / 60")
+  - product.features.push("Display flat LCD, 10”")
+  - product.features.push("Frío/Calor: Rango de Temperatura, Calor: +37ºC a +45ºC, Frío: -10ºC a +5ºC")
+  - product.features.push("Comando: Touchpad")
+  - product.features.push("USB: Puerto USB 2.0")
+  - product.features.push("Vacuum Peso del equipo: Aprox. 36 Kg")
+  - product.features.push("Fabricante: Renacer SRL")
+  - product.features.push("Modelo: Lipocell")
+  - product.features.push("Marca: Starbene")
+  - product.features.push("Clasificacion IEC: 60601-1 – Equipo Clase I tipo")
+  - products.push(product)
+
+
+
+
+
+
+
+
+
